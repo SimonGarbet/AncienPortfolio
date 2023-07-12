@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBath, faGolfBallTee, faPoo } from '@fortawesome/free-solid-svg-icons'
 
+import Typewriter from 'typewriter-effect/dist/core';
+
 import '../../Scss/home.scss'
 
 
@@ -44,6 +46,34 @@ useEffect(() => {
 
 
 });
+
+});
+
+useEffect(() => {
+
+  const txtAnim = document.querySelector('h1');
+
+  new Typewriter(txtAnim, {
+    delay : 500,
+    deleteSpeed: 20
+  })
+  .changeDelay(20)
+  .typeString('Je suis Simon Garbet')
+  .pauseFor(1000)
+  .typeString(', Dev Front-End !')
+  .pauseFor(1000)
+  .deleteChars(12)
+  .typeString(' HTML !')
+  .pauseFor(1000)
+  .deleteChars(7)
+  .typeString(' CSS !')
+  .pauseFor(1000)
+  .deleteChars(6)
+  .typeString(' JavaScript !')
+  .pauseFor(1000)
+  .deleteChars(13)
+  .typeString(' React !')
+  .start()
 
 });
 
