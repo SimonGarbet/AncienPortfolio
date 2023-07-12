@@ -55,22 +55,23 @@ useEffect(() => {
 
   new Typewriter(txtAnim, {
     delay : 500,
-    deleteSpeed: 20
+    deleteSpeed: 20,
+    loop: true,
   })
-  .changeDelay(20)
-  .typeString('Je suis Simon Garbet')
-  .pauseFor(1000)
-  .typeString(', Dev Front-End !')
-  .pauseFor(1000)
+  .changeDelay(30)
+  .typeString('Je suis Simon Garbet,')
+  .pauseFor(1500)
+  .typeString(' Dev Front-End !')
+  .pauseFor(1500)
   .deleteChars(12)
   .typeString(' HTML !')
-  .pauseFor(1000)
+  .pauseFor(1500)
   .deleteChars(7)
   .typeString(' CSS !')
-  .pauseFor(1000)
+  .pauseFor(1500)
   .deleteChars(6)
   .typeString(' JavaScript !')
-  .pauseFor(1000)
+  .pauseFor(1500)
   .deleteChars(13)
   .typeString(' React !')
   .start()
