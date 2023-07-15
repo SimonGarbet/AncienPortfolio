@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircle } from '@fortawesome/free-solid-svg-icons'
 
-import '../Scss/style.scss'
+import '../../Scss/style.scss'
 
 
 function Header(){
@@ -12,7 +12,7 @@ function Header(){
             <h1>Simon Garbet</h1>
             </div>
             <nav>
-                <a href='#ligneProjets'>Projets</a>
+                <a href='#lineProjects'>Projets</a>
                 <a href='#A-propos'>A propos</a>
                 <a href='#Contact'>Contact</a>
             </nav>

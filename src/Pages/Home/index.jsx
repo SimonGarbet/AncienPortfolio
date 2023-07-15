@@ -1,13 +1,14 @@
 import React from 'react'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDiamond } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 import Typewriter from 'typewriter-effect';
 
-import Header from '../../Components/header';
+import Error from '../Error'
+import Header from '../../Components/Header';
+import Project from '../../Components/Project';
 
 import '../../Scss/style.scss'
 
@@ -53,6 +54,33 @@ useEffect(() => {
 });
 
 
+  const [isDataLoading, setDataLoading] = useState(false);
+  const [error, setError] = useState(false);
+  const [projectList, setProjectList] = useState([]);
+
+
+
+    useEffect(() => {
+    async function fetchProject() {
+      setDataLoading(true)
+      try {
+        const response = await fetch(`http://localhost:3000/datas.json`)
+        const projectList = await response.json()
+        setProjectList(projectList)
+      } catch (err) {
+        console.log('===== error =====', err)
+        setError(true)
+      } finally {
+        setDataLoading(false)
+      }
+    }
+    fetchProject()
+  }, []);
+
+  if (error) {
+    return <Error />
+  } 
+
 
 
   return (
@@ -65,13 +93,13 @@ useEffect(() => {
 
       <div className='conteneurBandes'>
         <div className='splitterBande1'>
-          <div className='bandeGrise'/>
           <div className='bandeRouge'/>
+          <div className='bandeViolette'/>
           <div className='bandeJaune'/>
         </div>
-        <div className='splitterBande2'>
-          <div className='bandeViolette'/>
+        <div className='splitterBande2'>         
           <div className='bandeBleue'/>
+          <div className='bandeVerte'/>
           </div>
       </div>
 
@@ -99,6 +127,9 @@ useEffect(() => {
           .pauseFor(1500)
           .deleteChars(13)
           .typeString('<span style="color: #15D7F7;"><strong> React</strong></span>')
+          .pauseFor(1500)
+          .deleteChars(6)
+          .typeString('<span style="color: #90c53f;"><strong> Node</strong></span>')
           .pauseFor(1500)
           .start();
           }}
@@ -133,18 +164,34 @@ useEffect(() => {
 
       </div>
 
-      
-
     </section>
 
 
-    <div id='ligneProjets'></div>
+    <div id='lineProjects'></div>
         
      
 
     <section id='Projets'>
 
-      
+          {isDataLoading ? (
+            <span>Chargement des données</span>
+          ) : (
+            <div>
+            {projectList?.map((project) => (
+              <Project
+              key = {project.id}
+              id = {project.id}
+              title = {project.title}
+              subtitle = {project.subtitle}
+              category = {project.category}
+              description = {project.description}
+              imageDesktop = {project.imageDesktop}
+              imageMobile = {project.imageMobile}
+              />
+            ))}
+            </div>
+                  
+        )}
 
 
 
