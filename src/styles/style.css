@@ -1,0 +1,182 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.globalPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 85%;
+  margin: 40px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+.logo h1 {
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: -0.4px;
+}
+
+.header nav {
+  display: flex;
+  gap: 60px;
+  padding-right: 50px;
+}
+.header nav a {
+  color: #111;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#Accueil {
+  display: flex;
+  justify-content: center;
+  gap: 6%;
+  width: 100%;
+}
+
+.conteneurBandes {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.splitterBande1, .splitterBande2 {
+  display: flex;
+}
+
+.bandeGrise {
+  width: 50px;
+  height: 200px;
+  background-color: #cccccc;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.bandeRouge {
+  width: 50px;
+  height: 400px;
+  background-color: #ff5925;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.bandeJaune {
+  width: 50px;
+  height: 350px;
+  background-color: #F0DB4F;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.bandeViolette {
+  width: 50px;
+  height: 500px;
+  background-color: #563D7C;
+  border-radius: 10px 0px 10px 10px;
+}
+
+.bandeBleue {
+  width: 50px;
+  height: 450px;
+  background-color: #15D7F7;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.presentation {
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: 700;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.presentation p {
+  margin-left: 20px;
+}
+
+.helloPresentation {
+  color: #ff5925;
+  font-size: 70px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.typeWriterSentence {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.boutonDecouvrir {
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+  margin: 30px 0px 0px 20px;
+  padding: 20px;
+  background-color: #ff5925;
+  border-radius: 20px;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.buttonLine {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  margin: 25px 0px 0px 5px;
+}
+
+.gravityButton {
+  font-size: 25px;
+  display: grid;
+  place-items: center;
+  width: 90px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.gravityButton > button {
+  border: none;
+  font: inherit;
+  width: 64px;
+  aspect-ratio: 1;
+  background: #cccccc;
+  border-radius: 50%;
+  transform: translate(var(--tx, 0), var(--ty, 0));
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+.gravityButton > button:hover {
+  background-color: #ff5925;
+}
+
+#ligneProjets {
+  background-color: #cccccc;
+  width: 100%;
+  height: 1px;
+  margin-top: 200px;
+}/*# sourceMappingURL=style.css.map */

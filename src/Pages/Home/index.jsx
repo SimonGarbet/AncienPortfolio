@@ -1,12 +1,15 @@
 import React from 'react'
 import { useEffect } from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBath, faGolfBallTee, faPoo } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDiamond } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
 
-import Typewriter from 'typewriter-effect/dist/core';
+import Typewriter from 'typewriter-effect';
 
-import '../../Scss/home.scss'
+import Header from '../../Components/header';
+
+import '../../Scss/style.scss'
 
 
 function Home() {
@@ -49,70 +52,116 @@ useEffect(() => {
 
 });
 
-useEffect(() => {
-
-  const txtAnim = document.querySelector('h1');
-
-  new Typewriter(txtAnim, {
-    delay : 500,
-    deleteSpeed: 20,
-    loop: true,
-  })
-  .changeDelay(30)
-  .typeString('Je suis Simon Garbet,')
-  .pauseFor(1500)
-  .typeString(' Dev Front-End !')
-  .pauseFor(1500)
-  .deleteChars(12)
-  .typeString(' HTML !')
-  .pauseFor(1500)
-  .deleteChars(7)
-  .typeString(' CSS !')
-  .pauseFor(1500)
-  .deleteChars(6)
-  .typeString(' JavaScript !')
-  .pauseFor(1500)
-  .deleteChars(13)
-  .typeString(' React !')
-  .start()
-
-});
-
 
 
 
   return (
-    <section >
-        
-      <h1></h1>
-      
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ad veniam praesentium harum, eveniet necessitatibus ratione impedit assumenda, hic beatae nam numquam omnis non sequi eum delectus voluptate qui quod.</p>
+  <div className='globalPage'>
     
+
+    <Header />
+
+    <section id='Accueil'>
+
+      <div className='conteneurBandes'>
+        <div className='splitterBande1'>
+          <div className='bandeGrise'/>
+          <div className='bandeRouge'/>
+          <div className='bandeJaune'/>
+        </div>
+        <div className='splitterBande2'>
+          <div className='bandeViolette'/>
+          <div className='bandeBleue'/>
+          </div>
+      </div>
+
+      <div className='presentation'>
+
+      <p className='helloPresentation'>Bonjour!</p>
+      <h2>Je suis <strong>Simon Garbet</strong>,</h2>
+
+      <div className='typeWriterSentence'>
+        <p>développeur</p>
+          <Typewriter
+          options={{
+          delay : 500,
+          deleteSpeed: 20,
+          loop: true,
+          wrapperClassName: 'typewriterObject',
+          }}
+          onInit={(typewriter) => {
+          typewriter
+          .changeDelay(30)
+          .pasteString('<span style="color: #563D7C;"><strong>CSS</strong></span>')
+          .pauseFor(1500)
+          .deleteChars(6)
+          .typeString('<span style="color: #F0DB4F;"><strong> Javascript</strong></span>')
+          .pauseFor(1500)
+          .deleteChars(13)
+          .typeString('<span style="color: #15D7F7;"><strong> React</strong></span>')
+          .pauseFor(1500)
+          .start();
+          }}
+          />
+      </div>
+
+      <p>basé à Bordeaux.</p>
+
+      <a href='#Projets' className='boutonDecouvrir'>Découvrir mes Projets</a>
+        
       <div className='buttonLine'>
 
-      <div className = "gravityButton">
-  <button >
-  <FontAwesomeIcon icon={faBath} style={{color: "#b81919",}} />
-  </button>
-    </div>
+        <div className = "gravityButton">
+          <button >
+          <FontAwesomeIcon icon={faGithub} size="lg" className='buttonIcon' style={{color: "#fff",}} />
+          </button>
+        </div>
 
-<div className = "gravityButton">
-  <button>
-  <FontAwesomeIcon icon={faPoo} className='buttonIcon' style={{color: "#19BE2C",}}/>
-  </button>
-</div>
+        <div className = "gravityButton">
+          <button>
+          <FontAwesomeIcon icon={faLinkedin} size="lg" className='buttonIcon' style={{color: "#fff",}}/>
+          </button>
+        </div>
 
-<div className = "gravityButton">
-  <button>
-  <FontAwesomeIcon icon={faGolfBallTee} className='buttonIcon' style={{color: "#198CBE", width: '50%', fill: 'var(--_fill, #111)', transition: 'fill 0.3s'}} />
-  </button>
-</div>
+        <div className = "gravityButton">
+          <button>
+          <FontAwesomeIcon icon={faDiscord} size="lg" className='buttonIcon' style={{color: "#fff", width: '50%', fill: 'var(--_fill, #111)', transition: 'fill 0.3s'}} />
+          </button>
+        </div>
 
-</div>
+      </div>
+
+      </div>
+
+      
+
+    </section>
+
+
+    <div id='ligneProjets'></div>
+        
+     
+
+    <section id='Projets'>
+
+      
+
 
 
     </section>
+
+    <section id='A-propos'>
+
+    </section>
+
+    <section id='Contact'>
+
+    </section>
+
+
+  </div>
+
+    
   )
 }
 
