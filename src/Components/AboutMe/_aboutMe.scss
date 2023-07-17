@@ -1,3 +1,58 @@
 @import '../../Scss/mixins';
 @import '../../Scss/variables';
 @import '../../Scss/placeholders';
+
+#aboutMe {
+    width: 70%;
+    margin: 100px auto;
+
+    display: flex;
+    align-items: center;
+    
+
+    img{
+        border-radius : 86% 14% 55% 45% / 41% 39% 61% 59% ;
+        height: 450px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+        border: 1px solid #fff;
+    }
+}
+
+.globalDescription{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+   
+
+    p{
+        font-size: 20px;
+        text-align: justify;
+        width: 80%;
+        strong{
+            font-size: 21px;
+        }
+        a{
+            color: $terracota;
+            font-weight: 700;
+        }
+    }
+
+
+}
+
+.aboutTitle{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    font-size: 50px;
+    margin-bottom: 60px;
+
+    svg{
+        color: $terracota;
+    }
+    
+}

@@ -8,7 +8,8 @@
     display: flex;
     justify-content: center;
     gap: 6%;
-    width: 100%;
+    width: 85%;
+    margin: auto;
   }
   
 
@@ -26,10 +27,10 @@
     }
   
   
-    .bandeRouge{
+    .bandeGrise{
       width: 50px;
       height: 400px;
-      background-color: $terracota;
+      border : 23px solid $softgrey;
       border-radius: 10px 0px 0px 10px;
       box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
     }
@@ -37,7 +38,7 @@
     .bandeViolette{
       width: 50px;
       height: 500px;
-      background-color: $darkpurple;
+      border : 25px solid $darkpurple;
       border-radius: 0px 0px 10px 10px;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
@@ -45,7 +46,7 @@
     .bandeJaune{
       width: 50px;
       height: 350px;
-      background-color: $yellowjs;
+      border : 23px solid  $yellowjs;
       border-radius: 0px 10px 10px 0px;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
@@ -54,7 +55,7 @@
     .bandeBleue{
       width: 50px;
       height: 450px;
-      background-color: $bluereact;
+      border : 25px solid  $bluereact;
       border-radius: 10px 0px 10px 10px;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
@@ -62,7 +63,7 @@
     .bandeVerte{
       width: 50px;
       height: 200px;
-      background-color: $greennode;
+      border : 23px solid  $greennode;
       border-radius: 0px 10px 10px 0px;
       box-shadow: rgba(0, 0, 0, 0.35) 5px 0px 15px;
     }
@@ -117,10 +118,21 @@
       margin: 30px 0px 0px 20px;
       padding: 20px;
   
-      background-color: $terracota;
+      background-color: rgba(255, 89, 37, 0.95);
       border-radius: 20px;
   
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .buttonLine {
+      display: flex;
+      place-items: center;
+      justify-content: center;
+      margin: 25px 0px 0px 5px;
+
+      button{
+        background: $softgrey;
+      }
     }
   
   

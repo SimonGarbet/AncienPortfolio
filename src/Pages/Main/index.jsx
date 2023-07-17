@@ -6,8 +6,11 @@ import Header from '../../Components/Header';
 import Home from '../../Components/Home';
 import AboutMe from '../../Components/AboutMe';
 import Project from '../../Components/Project';
+import Footer from '../../Components/Footer'
 
 import '../../Scss/style.scss'
+
+
 
 
 function Main() {
@@ -35,9 +38,13 @@ function Main() {
     fetchProject()
   }, []);
 
+
   if (error) {
     return <Error />
   } 
+
+ 
+
 
 
 
@@ -49,13 +56,16 @@ function Main() {
 
     <Home /> 
 
+    <div id = 'lineAboutMe'></div>
+
     <AboutMe />
+
+    
 
 
     <div id='lineProjects'></div>
         
     <section id='Projects'>
-
           {isDataLoading ? (
             <span>Chargement des données</span>
           ) : (
@@ -72,15 +82,11 @@ function Main() {
               imageMobile = {project.imageMobile}
               />
             ))}
-            </div>
-                  
+            </div>                 
         )}
-
-
-
       </section>
 
-
+  <Footer />
 
   </div>
 

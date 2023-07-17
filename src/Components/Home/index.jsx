@@ -1,9 +1,10 @@
 import { faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
-
 import Typewriter from 'typewriter-effect';
 
-import '../../Scss/style.scss';
 import GravityButton from '../GravityButton';
+
+import '../../Scss/style.scss';
+
 
 
 
@@ -15,7 +16,7 @@ function Home(){
 
         <div className='conteneurBandes'>
             <div className='splitterBande1'>
-            <div className='bandeRouge'/>
+            <div className='bandeGrise'/>
             <div className='bandeViolette'/>
             <div className='bandeJaune'/>
             </div>
@@ -60,7 +61,7 @@ function Home(){
 
             <p>basé à Bordeaux.</p>
 
-            <a href='#Projets' className='boutonDecouvrir'>Découvrir mes Projets</a>
+            <a href='#lineProjects' className='boutonDecouvrir'>Découvrir mes Projets</a>
 
             <div className='buttonLine'>
                 <GravityButton 

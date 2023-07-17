@@ -1,0 +1,43 @@
+@import '../../Scss/mixins';
+@import '../../Scss/variables';
+@import '../../Scss/placeholders';
+
+
+.footer{
+    color: #fff;
+    background-color:  rgba(0,0,0, 0.85);
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button{
+        background: transparent;
+    }
+
+    a {
+        color : $terracota;
+    }
+
+}
+
+.emailLine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 20px;
+    }
+}
+
+.buttonLineFooter{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.disclaimerFooter {
+    margin-top: 30px;
+}

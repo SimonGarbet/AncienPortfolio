@@ -1,13 +1,18 @@
 @import '../Components/Header/header';
 @import '../Components/Home/home';
+@import '../Components/AboutMe/aboutMe';
 @import '../Components/Project/project';
 @import '../Components/gravityButton/gravityButton';
+@import '../Components/Footer/footer';
 
 @import './mixins';
 @import './variables';
 @import './placeholders';
 
-
+html {
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
 
 *{
   font-family: Arial, Helvetica, sans-serif;
@@ -18,17 +23,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 85%;
-  margin: 40px auto;
+  width: 100%;
+  margin: 40px auto 0px auto;
 }
 
 
 
-// Lignes Grises
+// Lignes de séparation Sections + Projets
 
-#lineProjects, .lineProjects {
+#lineAboutMe, #lineProjects, .lineProjects {
   background-color: $softgrey;
-  width: 100%;
+  width: 85%;
   height: 1px;
 
   margin: 120px auto;

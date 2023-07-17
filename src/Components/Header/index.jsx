@@ -12,9 +12,8 @@ function Header(){
             <h1>Simon Garbet</h1>
             </div>
             <nav>
-                <a href='#AboutMe'>A propos</a>
+                <a href='#lineAboutMe'>A propos</a>
                 <a href='#lineProjects'>Projets</a>
-                <a href='#Contact'>Contact</a>
             </nav>
         </section>
     )

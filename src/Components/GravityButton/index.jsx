@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import '../../Scss/style.scss';
+import { faBoxesPacking } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -47,6 +48,7 @@ function GravityButton(logo){
        });
        
        return (
+        
         <div className = "gravityButton">
           <button >
           <FontAwesomeIcon icon={logo.logo} size={logo.size} className='buttonIcon' style={{color: logo.color,}} />
