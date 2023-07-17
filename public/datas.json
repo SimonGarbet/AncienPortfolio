@@ -2,9 +2,9 @@
     {
         "id" : "1",
         "title" :  "Mon Vieux Grimoire",
-        "subtitle" : "Back End Node JS",
+        "subtitle" : "Framework ExpressJS et MongoDB",
         "category" : "Node",
-        "description" : "Construction du Back End d'un site web en Node JS et Mongo DB à partir d'un frontend React déjà existant",
+        "description" : "Construction du Back End d'un site web en utilisant le framework ExpressJS et une base de données Mongo DB",
         "imageDesktop" : "http://localhost:3000/Assets/P7GarbetDesktop.jpg",
         "imageMobile" : "http://localhost:3000/Assets/P7GarbetMobile.jpg"
     },
@@ -12,7 +12,7 @@
     {
         "id" : "2",
         "title" :  "Kasa",
-        "subtitle" : "Front End React",
+        "subtitle" : "Framework React",
         "category" : "React",
         "description" : "Programmation du Front End du site Kasa en utilisant le framwork React sans mise en place du Back End",
         "imageDesktop" : "http://localhost:3000/Assets/P6GarbetDesktop.jpg",
@@ -42,7 +42,7 @@
     {
         "id" : "5",
         "title" :  "Booki",
-        "subtitle" : "Débuts sur HTML CSS",
+        "subtitle" : "HTML et CSS",
         "category" : "CSS",
         "description" : "Création du visuel complet du site Booki avec l'aide d'une maquette pré-produite sur Figma",
         "imageDesktop" : "http://localhost:3000/Assets/P2GarbetDesktop.jpg",

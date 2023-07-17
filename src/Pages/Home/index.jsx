@@ -129,7 +129,7 @@ useEffect(() => {
           .typeString('<span style="color: #15D7F7;"><strong> React</strong></span>')
           .pauseFor(1500)
           .deleteChars(6)
-          .typeString('<span style="color: #90c53f;"><strong> Node</strong></span>')
+          .typeString('<span style="color: #90c53f;"><strong> Express</strong></span>')
           .pauseFor(1500)
           .start();
           }}

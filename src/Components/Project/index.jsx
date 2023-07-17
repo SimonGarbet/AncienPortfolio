@@ -33,14 +33,17 @@ function Project({id, title, subtitle, category, description, imageDesktop, imag
        <figure className='globalProject'>
         
             <div className='globalDescriptionProject'>
-                
-                <FontAwesomeIcon icon= {iconFontAwesome} className='fontAwesomeTitleProject' style={{color: colorFontAwesome,}}/>
-                <div className='titlePartProject'>
-                    <h3>{title}</h3>
-                    <p>{subtitle}</p>
+
+
+                <div className='globalTitlePartProject'>
+                    <FontAwesomeIcon icon= {iconFontAwesome} className='fontAwesomeTitleProject' style={{color: colorFontAwesome,}}/>
+                    <div className='titlePartProject'>
+                        <h3>{title}</h3>
+                        <p>{subtitle}</p>
+                    </div>
                 </div>
 
-                <div className='leftsideDescriptionProject'>
+                <div className='rightsideDescriptionProject'>
                     <p>{description}</p>
             
                     <Link to = {`/projet/${id}`} className='lienProjet'>
