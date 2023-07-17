@@ -1,0 +1,168 @@
+@import '../Utils/mixins';
+@import '../Utils/variables';
+@import '../Utils/placeholders';
+
+
+
+#Accueil {
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    width: 100%;
+  }
+  
+
+  
+//Figure Colorée
+  
+    .conteneurBandes{
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  
+    .splitterBande1, .splitterBande2 {
+      display: flex;
+    }
+  
+  
+    .bandeRouge{
+      width: 50px;
+      height: 400px;
+      background-color: $terracota;
+      border-radius: 10px 0px 0px 10px;
+      box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+    }
+  
+    .bandeViolette{
+      width: 50px;
+      height: 500px;
+      background-color: $darkpurple;
+      border-radius: 0px 0px 10px 10px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  
+    .bandeJaune{
+      width: 50px;
+      height: 350px;
+      background-color: $yellowjs;
+      border-radius: 0px 10px 10px 0px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  
+  
+    .bandeBleue{
+      width: 50px;
+      height: 450px;
+      background-color: $bluereact;
+      border-radius: 10px 0px 10px 10px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  
+    .bandeVerte{
+      width: 50px;
+      height: 200px;
+      background-color: $greennode;
+      border-radius: 0px 10px 10px 0px;
+      box-shadow: rgba(0, 0, 0, 0.35) 5px 0px 15px;
+    }
+  
+  
+    //Presentation
+  
+    .presentation{
+      margin-top: 30px;
+      font-size: 40px;
+      font-weight: 700;
+      width: 45%;
+      
+  
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+      p{
+        margin-left: 20px;
+      }
+    }
+  
+    .helloPresentation {
+      color: $terracota;
+      font-size: 70px;
+      font-weight: bold; 
+      margin-left: 20px;
+    }
+  
+    h2{
+      margin-top: 20px;
+      font-size: 40px;
+      font-weight: 700;
+      margin-left: 20px;
+    }
+  
+  
+    .typeWriterSentence {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      
+    }
+  
+  
+  
+    .boutonDecouvrir {
+      color: #ffffff;
+      font-size: 15px;
+      text-decoration: none;
+      margin: 30px 0px 0px 20px;
+      padding: 20px;
+  
+      background-color: $terracota;
+      border-radius: 20px;
+  
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  
+  
+  
+  //Boutons Gravité
+  
+  *, *::before, *::after {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  
+  .buttonLine {
+    //min-height: 100vh;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    margin: 25px 0px 0px 5px;
+  }
+  
+  .gravityButton {
+    font-size: 25px;
+    display: grid;
+    place-items: center;
+    width: 90px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    
+    & > button {
+      border: none;
+      font: inherit;
+      width: 64px;
+      aspect-ratio: 1;
+      background: $softgrey;
+      border-radius: 50%;
+      transform: translate(var(--tx, 0), var(--ty, 0));
+      cursor: pointer;
+      transition: all 0.1s ease-out;
+      
+        &:hover {
+        background-color: $terracota;
+      }
+    }
+  }
+  

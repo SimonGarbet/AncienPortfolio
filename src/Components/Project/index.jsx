@@ -36,7 +36,7 @@ function Project({id, title, subtitle, category, description, imageDesktop, imag
 
 
                 <div className='globalTitlePartProject'>
-                    <FontAwesomeIcon icon= {iconFontAwesome} className='fontAwesomeTitleProject' style={{color: colorFontAwesome,}}/>
+                    <FontAwesomeIcon icon= {iconFontAwesome} className='fontAwesomeTitleProject' style={{color: colorFontAwesome}}/>
                     <div className='titlePartProject'>
                         <h3>{title}</h3>
                         <p>{subtitle}</p>

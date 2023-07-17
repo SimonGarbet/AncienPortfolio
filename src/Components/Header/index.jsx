@@ -8,12 +8,12 @@ function Header(){
     return (
         <section className='header'>
             <div className='logo'>
-            <FontAwesomeIcon icon={faCircle} style={{color: '#ff5925',}} />
+            <FontAwesomeIcon icon={faCircle} style={{color: '#ff5925', }} />
             <h1>Simon Garbet</h1>
             </div>
             <nav>
-                <a href='#lineProjects'>Projets</a>
                 <a href='#A-propos'>A propos</a>
+                <a href='#lineProjects'>Projets</a>
                 <a href='#Contact'>Contact</a>
             </nav>
         </section>
