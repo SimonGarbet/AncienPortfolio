@@ -1,13 +1,11 @@
-@import './Pages/home';
-@import './Pages/projectPage';
-@import './Pages/error';
+@import '../Components/Header/header';
+@import '../Components/Home/home';
+@import '../Components/Project/project';
+@import '../Components/gravityButton/gravityButton';
 
-@import './Components/header';
-@import './Components/project';
-
-@import './Utils/mixins';
-@import './Utils/variables';
-@import './Utils/placeholders';
+@import './mixins';
+@import './variables';
+@import './placeholders';
 
 
 

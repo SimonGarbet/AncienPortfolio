@@ -12,7 +12,7 @@ function Header(){
             <h1>Simon Garbet</h1>
             </div>
             <nav>
-                <a href='#A-propos'>A propos</a>
+                <a href='#AboutMe'>A propos</a>
                 <a href='#lineProjects'>Projets</a>
                 <a href='#Contact'>Contact</a>
             </nav>
