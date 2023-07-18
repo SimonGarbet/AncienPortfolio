@@ -42,7 +42,7 @@ function Footer(){
             <p>simon.garbet@gmail.com</p>
             </div>
 
-            <p className='disclaimerFooter'>Ce site a été entièrement créé par mes soins, avec <strong>l'outil de TypeWriter</strong> que vous pouvez consulter <a href='https://github.com/tameemsafi/typewriterjs' target="_blank" rel="noopener noreferrer">ici</a> et le <strong>Bouton Gravité</strong> récupéré <a href='https://codepen.io/amit_sheen/pen/LYXPVKV' target="_blank" rel="noopener noreferrer">ici</a></p>
+            <p className='disclaimerFooter'>Site réalisé par Simon Garbet avec <strong>l'outil de TypeWriter</strong> que vous pouvez consulter <a href='https://github.com/tameemsafi/typewriterjs' target="_blank" rel="noopener noreferrer">ici</a> et le <strong>Bouton Gravité</strong> récupéré <a href='https://codepen.io/amit_sheen/pen/LYXPVKV' target="_blank" rel="noopener noreferrer">ici</a></p>
             <p>Vous pouvez retrouver le code de ce site juste <a href='https://github.com/SimonGarbet/P8Garbet' target="_blank" rel="noopener noreferrer">ici</a></p>
         </section>
     )

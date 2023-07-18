@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faMeteor } from '@fortawesome/free-solid-svg-icons';
 
 import '../../Scss/style.scss';
 
@@ -9,7 +9,7 @@ function AboutMe() {
     <section id= 'aboutMe'>
       <div className='globalDescription'>
         <div className='aboutTitle'>
-          <FontAwesomeIcon icon={faArrowRight} />
+          <FontAwesomeIcon icon={faMeteor} />
           <h3>À propos</h3>
         </div>
         <p>Je suis <strong> Simon</strong>, fraîchement diplômé du cursus <strong>Développeur Web</strong> d'OpenClassrooms.</p>

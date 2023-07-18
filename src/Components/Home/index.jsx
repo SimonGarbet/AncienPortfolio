@@ -61,7 +61,10 @@ function Home(){
 
             <p>basé à Bordeaux.</p>
 
+            <div className='containerBoutonDecouvrir'>
+                <span className='calqueBoutonDecouvrir'> Découvrir mes Projets</span>
             <a href='#lineProjects' className='boutonDecouvrir'>Découvrir mes Projets</a>
+            </div>
 
             <div className='buttonLine'>
                 <GravityButton 

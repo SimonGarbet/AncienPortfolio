@@ -3,7 +3,7 @@
 @import '../../Scss/placeholders';
 
 
-.header{
+#header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,7 @@
     } 
   }
   
-  .header nav{
+  #header nav{
     display: flex;
     gap: 60px;
     padding-right: 50px;
@@ -34,5 +34,11 @@
       text-decoration: none;
       font-size: 20px;
       font-weight: 500;
+    }
+    .activeLink{
+      color: $terracota;
+      font-weight: bold;
+      font-size: 20px;
+      cursor: pointer;
     }
   }
