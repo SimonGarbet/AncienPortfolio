@@ -77,6 +77,7 @@ function Main() {
               title = {project.title}
               subtitle = {project.subtitle}
               category = {project.category}
+              githubLink={project.githubLink}
               description = {project.description}
               imageDesktop = {project.imageDesktop}
               imageMobile = {project.imageMobile}

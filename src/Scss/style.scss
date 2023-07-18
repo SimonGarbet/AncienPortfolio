@@ -1,3 +1,5 @@
+@import '../Pages/projectPage/projectPage.scss';
+
 @import '../Components/Header/header';
 @import '../Components/Home/home';
 @import '../Components/AboutMe/aboutMe';
@@ -24,7 +26,7 @@ html {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin: 40px auto 0px auto;
+  margin: 0 auto ;
 }
 
 
@@ -32,12 +34,21 @@ html {
 // Lignes de séparation Sections + Projets
 
 #lineAboutMe, #lineProjects, .lineProjects {
-  background-color: $softgrey;
+  border-bottom: 1px solid $softgrey;
   width: 85%;
+  max-width: 2040px;
   height: 1px;
-
-  margin: 120px auto;
+  padding : 60px 0;
+  margin: 0px auto 120px auto;
   }
+
+
+#lineAboutMe {
+  margin-top: 0;
+  height: 0px;
+  border-bottom: none;
+  margin-bottom: 30px;
+}
 
 
  

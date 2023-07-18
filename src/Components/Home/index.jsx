@@ -1,11 +1,11 @@
 import { faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import Typewriter from 'typewriter-effect';
 
 import GravityButton from '../GravityButton';
+import homePicture from '../../Assets/homePicture3.jpg'
 
 import '../../Scss/style.scss';
-
-
 
 
 function Home(){
@@ -14,17 +14,7 @@ function Home(){
        return (
     <section id='Home'>
 
-        <div className='conteneurBandes'>
-            <div className='splitterBande1'>
-            <div className='bandeGrise'/>
-            <div className='bandeViolette'/>
-            <div className='bandeJaune'/>
-            </div>
-            <div className='splitterBande2'>         
-            <div className='bandeBleue'/>
-            <div className='bandeVerte'/>
-            </div>
-        </div>
+        <img src={homePicture} className='homePicture' alt= "Photographie d'une plante" />
 
         <div className='presentation'>
 
@@ -67,20 +57,26 @@ function Home(){
             </div>
 
             <div className='buttonLine'>
-                <GravityButton 
+            <GravityButton 
                 key = 'GravityButton1'
-                logo = {faGithub}
+                logo = {faEnvelope}
                 size = 'lg'
                 color = '#fff'
             />
                 <GravityButton 
                 key = 'GravityButton2'
-                logo = {faLinkedin}
+                logo = {faGithub}
                 size = 'lg'
                 color = '#fff'
             />
                 <GravityButton 
                 key = 'GravityButton3'
+                logo = {faLinkedin}
+                size = 'lg'
+                color = '#fff'
+            />
+                <GravityButton 
+                key = 'GravityButton4'
                 logo = {faDiscord}
                 size = 'lg'
                 color = '#fff'

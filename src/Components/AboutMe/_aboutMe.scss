@@ -2,9 +2,11 @@
 @import '../../Scss/variables';
 @import '../../Scss/placeholders';
 
+
 #aboutMe {
     width: 70%;
-    margin: 100px auto;
+    max-width: 1440px;
+    margin: 0px auto 50px auto;
 
     display: flex;
     align-items: center;

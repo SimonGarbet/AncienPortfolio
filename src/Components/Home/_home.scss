@@ -4,79 +4,42 @@
 
 
 
+
+
 #Home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6%;
-    width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1000px;
+ 
+    width: 100%;
     margin: 0 auto;
+    position: relative;
   }
   
 
-  
-//Figure Colorée
-  
-    .conteneurBandes{
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-    }
-  
-    .splitterBande1, .splitterBande2 {
-      display: flex;
-    }
-  
-  
-    .bandeGrise{
-      width: 50px;
-      height: 400px;
-      background-color:$softgrey;
-      border-radius: 10px 0px 0px 10px;
-      box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
-    }
-  
-    .bandeViolette{
-      width: 50px;
-      height: 500px;
-      background-color: $darkpurple;
-      border-radius: 0px 0px 10px 10px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-  
-    .bandeJaune{
-      width: 50px;
-      height: 350px;
-      background-color:  $yellowjs;
-      border-radius: 0px 10px 10px 0px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-  
-  
-    .bandeBleue{
-      width: 50px;
-      height: 450px;
-      background-color: $bluereact;
-      border-radius: 10px 0px 10px 10px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-  
-    .bandeVerte{
-      width: 50px;
-      height: 200px;
-      background-color: $greennode;
-      border-radius: 0px 10px 10px 0px;
-      box-shadow: rgba(0, 0, 0, 0.35) 5px 0px 15px;
-    }
+.homePicture {
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(110%);
+  height: 1000px;
+  position: absolute;
+  z-index: 1;
+}
+
   
   
     //Presentation
   
     .presentation{
+      border-radius: 20px;
       min-width: 500px;
-      margin-top: 20px;
       font-size: 40px;
       font-weight: 700;
+
+      position: absolute;
+      z-index: 2;
+      right: 12%;
     
       display: flex;
       flex-direction: column;
@@ -85,7 +48,16 @@
       p{
         margin-left: 20px;
       }
+
     }
+
+    //gestion de l'accueil si très grand écran (média querie unique, d'où le fait qu'elle soit isolée)
+    @media (min-width: 2500px) { 
+      .presentation {
+        right: 30%;
+      }
+     }
+
   
     .helloPresentation {
       color: $terracota;
@@ -111,16 +83,16 @@
   
   
 
-    .containerBoutonDecouvrir {
+  .containerBoutonDecouvrir {
   border: 4px solid $terracota;
   background-color: $terracota;
- position: relative;
- overflow: hidden;
- transition: 0.5s;
- letter-spacing: 1px;
- border-radius: 20px;
-margin: 30px 0px 0px 20px;
- box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  margin: 30px 0px 0px 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .boutonDecouvrir {
@@ -221,7 +193,7 @@ margin: 30px 0px 0px 20px;
       margin: 25px 0px 0px 5px;
 
       button{
-        background: $softgrey;
+        background: rgba(0, 0, 0, 0.60);
       }
 }
   

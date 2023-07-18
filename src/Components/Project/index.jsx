@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom'
 
+import GravityButton from '../GravityButton';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faCircle, faDiamond, faSquare, faPlay, faShield} from '@fortawesome/free-solid-svg-icons';
-
-
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import '../../Scss/style.scss';
 
 
 
-function Project({id, title, subtitle, category, description, imageDesktop, imageMobile}){
+function Project({id, title, subtitle, category, description, githubLink, imageDesktop, imageMobile}){
 
     let iconFontAwesome = faShield
     let colorFontAwesome = '#949494'
@@ -31,6 +31,7 @@ function Project({id, title, subtitle, category, description, imageDesktop, imag
  
     return (
        <figure className='globalProject'>
+        <div className='lienProjet'>
         
             <div className='globalDescriptionProject'>
 
@@ -38,18 +39,28 @@ function Project({id, title, subtitle, category, description, imageDesktop, imag
                 <div className='globalTitlePartProject'>
                     <FontAwesomeIcon icon= {iconFontAwesome} className='fontAwesomeTitleProject' style={{color: colorFontAwesome}}/>
                     <div className='titlePartProject'>
-                        <h3>{title}</h3>
+                        <h3>{title} </h3>
                         <p>{subtitle}</p>
+                        <div>
+                            <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faGithub} style={{color: "rgba(0,0,0,0.8",}} />
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div className='rightsideDescriptionProject'>
                     <p>{description}</p>
             
-                    <Link to = {`/projet/${id}`} className='lienProjet'>
+                    
+                    <Link to = {`/projet/${id}`} className='projectView'>
                     <p>Voir le Projet</p>
                     <FontAwesomeIcon icon={faArrowRight} style={{color: colorFontAwesome,}} />
                     </Link>
+                    
+                    
+                    
+                    
                 </div>
             </div>
 
@@ -58,7 +69,7 @@ function Project({id, title, subtitle, category, description, imageDesktop, imag
                 <img src ={imageMobile} className='pictureMobile'  alt =  'Aperçu Projet 7 Backend Version Mobile' />                
             </div>
             <div className='lineProjects'></div>
-
+        </div>
        </figure>
     )
 }

@@ -7,9 +7,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
-    margin-bottom: 150px;
+    margin: 0 auto;
+    padding-top : 50px;
+    margin-bottom: 50px;
     width: 85%;
+    max-width: 1840px;
   }
   
   .logo{
@@ -17,9 +19,11 @@
     align-items: baseline;
     gap: 10px;
     font-size: 20px;
+    text-decoration: none;
     h1{
       font-weight: 700;
       font-size: 25px;
+      color: #111;
       letter-spacing: -0.5px;
       text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.35);
     } 
