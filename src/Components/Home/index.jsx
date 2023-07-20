@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 import { faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import Typewriter from 'typewriter-effect';
@@ -10,6 +12,17 @@ import '../../Scss/style.scss';
 
 function Home(){
 
+
+    const [animation, setAnimation] = useState(false);
+
+    useEffect(() => {
+
+        if (animation === true) {
+        setTimeout(() => {setAnimation(false)}, "2700" )
+        }
+        
+      }, [animation]);
+    
        
        return (
     <section id='Home'>
@@ -57,30 +70,42 @@ function Home(){
             </div>
 
             <div className='buttonLine'>
+
+            <a href='mailto: simon.garbet@gmail.com' target="_blank" rel="noopener noreferrer">
             <GravityButton 
                 key = 'GravityButton1'
                 logo = {faEnvelope}
                 size = 'lg'
                 color = '#fff'
             />
+            </a>
+
+            <a href='https://github.com/SimonGarbet/P8Garbet' target="_blank" rel="noopener noreferrer">   
                 <GravityButton 
                 key = 'GravityButton2'
                 logo = {faGithub}
                 size = 'lg'
                 color = '#fff'
             />
+            </a> 
+
+            <a href='https://fr.linkedin.com' target="_blank" rel="noopener noreferrer">
                 <GravityButton 
                 key = 'GravityButton3'
                 logo = {faLinkedin}
                 size = 'lg'
                 color = '#fff'
             />
+            </a>
+
+            <div className = {animation ? "copiedDivDiscord" : "classicDivDiscord" } onClick={() => {setAnimation(true); navigator.clipboard.writeText('_syzymon')}}>
                 <GravityButton 
                 key = 'GravityButton4'
                 logo = {faDiscord}
                 size = 'lg'
                 color = '#fff'
             />
+            </div>
             </div>     
         
         </div>
@@ -89,6 +114,7 @@ function Home(){
        )
     
 }
+
 
 
 

@@ -11,6 +11,7 @@
 
 
 .gravityButton {
+  position: relative;
   font-size: 25px;
   display: grid;
   place-items: center;
@@ -18,19 +19,94 @@
   aspect-ratio: 1;
   border-radius: 50%;
   
-  & > button {
+  .buttonIcon {
+    position: absolute;
     border: none;
     font: inherit;
     width: 64px;
     aspect-ratio: 1;
-    //background: transparent;
     border-radius: 50%;
     transform: translate(var(--tx, 0), var(--ty, 0));
     cursor: pointer;
     transition: all 0.1s ease-out;
+    transition: opacity 0.2s ease-in-out;
     
       &:hover {
       background-color: $terracota;
     }
+
   }
+
+  .buttonIconCheck {
+    position: absolute;
+  border: none;
+    font: inherit;
+    width: 64px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transform: translate(var(--tx, 0), var(--ty, 0));
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.1s ease-out;
+    transition: opacity 0.2s ease-in-out;
+    
+      &:hover {
+      background-color: $terracota;
+    }
+
+  }
+
+  
 }
+
+
+
+.gravityCopied {
+  position: relative;
+  font-size: 25px;
+  display: grid;
+  place-items: center;
+  width: 90px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  
+  .buttonIcon {
+    position: absolute;
+    border: none;
+    font: inherit;
+    width: 64px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transform: translate(var(--tx, 0), var(--ty, 0));
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+    
+      &:hover {
+      background-color: $terracota;
+    }
+
+   
+}
+
+  .buttonIconCheck {
+    position: absolute;
+    border: none;
+    background-color: $greennode;
+      font: inherit;
+      width: 64px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      transform: translate(var(--tx, 0), var(--ty, 0));
+      cursor: pointer;
+      transition: all 0.1s ease-out;
+      transition: opacity 0.2s ease-in-out;
+        &:hover {
+        background-color: $terracota;
+      }
+
+
+
+    }
+  }

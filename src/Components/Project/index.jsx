@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 
-import GravityButton from '../GravityButton';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faCircle, faDiamond, faSquare, faPlay, faShield} from '@fortawesome/free-solid-svg-icons';

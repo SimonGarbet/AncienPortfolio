@@ -1,13 +1,14 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleCheck} from '@fortawesome/free-solid-svg-icons';
 
 import '../../Scss/style.scss';
-import { faBoxesPacking } from '@fortawesome/free-solid-svg-icons';
 
 
 
-function GravityButton(logo){
+function GravityButton({logo, size, color}){
+  
 
     useEffect(() => {
 
@@ -45,18 +46,39 @@ function GravityButton(logo){
        
        });
        
-       });
-       
-       return (
+       }, []);
+
+       const [animation, setAnimation] = useState(false);
+
+    useEffect(() => {
+
+        if (animation === true) {
+        setTimeout(() => {setAnimation(false)}, "2000" )
+        }
         
-        <div className = "gravityButton">
-          <button >
-          <FontAwesomeIcon icon={logo.logo} size={logo.size} className='buttonIcon' style={{color: logo.color,}} />
+      }, [animation]);
+
+
+    return (
+      <div onClick={() => setAnimation(true) } className = {animation ? 'gravityCopied' : 'gravityButton'}>
+        <button className='buttonIconCheck'>
+          <FontAwesomeIcon icon={faCircleCheck} size={size} style={{color: color,}} />
           </button>
-        </div>  
-       )
+          <button className='buttonIcon'>
+          <FontAwesomeIcon icon={logo} size={size}  style={{color: color,}} />
+          </button>   
+        </div>        
+    )
+
     
+            
+          
+
 }
+
+
+    
+
 
 
 

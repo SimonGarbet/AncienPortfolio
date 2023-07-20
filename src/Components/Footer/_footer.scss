@@ -10,6 +10,7 @@
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     button{
@@ -22,14 +23,7 @@
 
 }
 
-.emailLine{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    p{
-        font-size: 20px;
-    }
-}
+
 
 .buttonLineFooter{
     display: flex;
@@ -38,6 +32,70 @@
 }
 
 
+// Pour la classe copiedDivDiscord sur le bouton Discord, vous pouvez la retrouver sur _home.scss.
+
+
+.emailLine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    p{
+        font-size: 20px;
+    }
+}
+
+.classicButtonEmail {
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    margin-left: 10px;
+  
+    &:hover{
+      background-color: $terracota;
+    }
+  
+}
+
+.copiedButtonEmail {
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    margin-left: 10px;
+    background-color: $greennode !important;
+
+}
+
+
+.copiedButtonEmail::before {
+    content: 'Email Copié';
+    position: absolute;
+    color: #fff;
+    width: 160px;
+    left: 50px;
+    bottom: 5px;
+    text-align: center;
+    font-size: 16px;
+    background-color: $greennode;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+
+
+
+
 .disclaimerFooter {
     margin-top: 30px;
+
+    p{
+        text-align: center;
+    }
 }

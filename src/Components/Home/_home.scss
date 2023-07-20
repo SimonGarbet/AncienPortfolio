@@ -197,7 +197,39 @@
       }
 }
   
-  
-  
 
+
+  .copiedDivDiscord {
+    width: 90px;
+    height: 90px;
+    position: relative;
+  }
+
+  .copiedDivDiscord::before {
+    content: 'Pseudo Copié';
+    position: absolute;
+    color: #fff;
+    width: 160px;
+    text-align: center;
+    left: 100px;
+    top: 25%;
+    font-size: 20px;
+    background-color: $greennode;
+    padding: 10px;
+    border-radius: 20px;
+    animation: softGrindOpacity 2.75s;
+  }
+
+  @keyframes softGrindOpacity { 
+    0% {
+      opacity: 0;
+    }
   
+    80% {
+      opacity: 1;
+    }
+
+    100%{
+      opacity: 0;
+    }
+  }
