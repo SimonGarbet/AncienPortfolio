@@ -1,0 +1,140 @@
+[
+    {
+        "id" : "5",
+        "maincolor": "#2c180f",
+        "title" :  "Mon Vieux Grimoire",
+        "subtitle" : "ExpressJS et MongoDB",
+        "category" : "Backend",
+        "summary" : "Construction du Back End d'un site web en utilisant le framework ExpressJS et une base de données Mongo DB",
+        "description" : "Construction du Back End d'un site web en utilisant le framework ExpressJS et une base de données Mongo DB",
+        "githubLink" : "https://github.com/SimonGarbet/P7Garbet",
+        "skills" : [
+            "Configurer la navigation entre les pages de l'application avec React Router", 
+            "Initialiser une application avec Create React App", 
+            "Développer des éléments de l'interface d'un site web grâce à des composants React"
+        ],
+        "imageDesktop" : "http://localhost:3000/Assets/P7Garbet/P7GarbetDesktop.jpg",
+        "imageMobile" : "http://localhost:3000/Assets/P7Garbet/P7GarbetMobile.jpg",
+        "vignette" : "http://localhost:3000/Assets/P7Garbet/Vignette/P7GarbetVignetteFond.jpg",
+        "imagesPageProject" : {
+            "Desktop" : [
+                {"id" :  "idesk1", "url" :"http://localhost:3000/Assets/P2Garbet/P2GarbetPageDesktop1.jpg"}
+            ],
+            "Mobile" : [
+                {"id" : "imobil1 ", "url" : "http://localhost:3000/Assets/P2Garbet/P2GarbetPageMobile1.jpg"}
+            ]
+        }
+    },
+
+    {
+        "id" : "4",
+        "maincolor" : "#ff6060",
+        "title" :  "Kasa",
+        "subtitle" : "Framework React",
+        "category" : "React",
+        "summary" : "Programmation du Front End du site Kasa en utilisant le framwork React sans mise en place du Back End",
+        "description" : "Programmation du Front End du site Kasa en utilisant le framwork React sans mise en place du Back End",
+        "githubLink" : "https://github.com/SimonGarbet/P6Garbet",
+        "skills" : [
+            "Configurer la navigation entre les pages de l'application avec React Router", 
+            "Initialiser une application avec Create React App", 
+            "Développer des éléments de l'interface d'un site web grâce à des composants React"
+        ],
+        "imageDesktop" : "http://localhost:3000/Assets/P6Garbet/P6GarbetDesktop.jpg",
+        "imageMobile" : "http://localhost:3000/Assets/P6Garbet/P6GarbetMobile.jpg",
+        "vignette" : "http://localhost:3000/Assets/P6Garbet/Vignette/P6GarbetVignetteFond.jpg",
+        "imagesPageProject" : {
+            "Desktop" : [
+                {"id" :  "idesk1", "url" :"http://localhost:3000/Assets/P2Garbet/P2GarbetPageDesktop1.jpg"}
+            ],
+            "Mobile" : [
+                {"id" : "imobil1 ", "url" : "http://localhost:3000/Assets/P2Garbet/P2GarbetPageMobile1.jpg"}
+            ]
+        }
+    },
+
+    {
+        "id" : "3",
+        "maincolor" : "#111",
+        "title" :  "Nina Carducci",
+        "subtitle" : "Debug et Optimisation",
+        "category" : "Optimisation",
+        "summary" : "Optimisation du site de Nina Carducci concernant les performances, la SEO, et l'accessibilité",
+        "description" : "Optimisation du site de Nina Carducci concernant les performances, la SEO, et l'accessibilité",
+        "githubLink" : "https://github.com/SimonGarbet/P5Garbet",
+        "skills" : [
+            "Configurer la navigation entre les pages de l'application avec React Router", 
+            "Initialiser une application avec Create React App", 
+            "Développer des éléments de l'interface d'un site web grâce à des composants React"
+        ],
+        "imageDesktop" : "http://localhost:3000/Assets/P5Garbet/P5GarbetDesktop.jpg",
+        "imageMobile" : "http://localhost:3000/Assets/P5Garbet/P5GarbetMobile.jpg",
+        "vignette" : "http://localhost:3000/Assets/P5Garbet/Vignette/P5GarbetVignetteFond.jpg",
+        "imagesPageProject" : {
+            "Desktop" : [
+                {"id" :  "idesk1", "url" :"http://localhost:3000/Assets/P2Garbet/P2GarbetPageDesktop1.jpg"}
+            ],
+            "Mobile" : [
+                {"id" : "imobil1 ", "url" : "http://localhost:3000/Assets/P2Garbet/P2GarbetPageMobile1.jpg"}
+            ]
+        }
+    },
+
+    {
+        "id" : "2",
+        "maincolor" : "#b1663c",
+        "title" :  "Sophie Bluel",
+        "subtitle" : "Javascript Vanilla",
+        "category" : "Javascript",
+        "summary" : "Développement du site de Sophie Bluel en Javascript Vanilla à l'aide d'un Back End déjà réalisé",
+        "description" : "Développement du site de Sophie Bluel en Javascript Vanilla à l'aide d'un Back End déjà réalisé",
+        "githubLink" : "https://github.com/SimonGarbet/P3Garbet",
+        "skills" : [
+            {"id" :  "skill1",  "body" : "Intégrer du contenu conformément à une maquette avec HTML et CSS"}, 
+            {"id" : "skill2",  "body" :"Implémenter une interface responsive avec HTML et CSS"}
+        ],
+        "imageDesktop" : "http://localhost:3000/Assets/P3Garbet/P3GarbetDesktop.jpg",
+        "imageMobile" : "http://localhost:3000/Assets/P3Garbet/P3GarbetMobile.jpg",
+        "vignette" : "http://localhost:3000/Assets/P3Garbet/Vignette/P3GarbetVignetteFond.png",
+        "imagesPageProject" : {
+            "Desktop" : [
+                {"id" :  "idesk1", "url" :"http://localhost:3000/Assets/P2Garbet/P2GarbetPageDesktop1.jpg"}
+            ],
+            "Mobile" : [
+                {"id" : "imobil1 ", "url" : "http://localhost:3000/Assets/P2Garbet/P2GarbetPageMobile1.jpg"}
+            ]
+        }
+    },
+
+    {
+        "id" : "1",
+        "maincolor" : "#0165fc",
+        "title" :  "Booki",
+        "subtitle" : "HTML et CSS",
+        "category" : "CSS",
+        "summary" : "Création du visuel complet du site Booki avec l'aide d'une maquette pré-produite sur Figma",
+        "description" : [
+        "Premier projet Openclassrooms de programmation que j'ai réalisé. Il s'agissait d'apprendre à maîtriser le HTML et le CSS dans le but de faire cette page fixe",
+        "La maquette à repoduire était celle d'un site de location de logement de vacances : Booki",
+        "A la suite de ce projet, je me suis perfectionné avec avec la structuration HTML, les fonctions CSS de base, la commande Display : Flex, ainsi que la gestion des Media Queries"
+        ],
+        "githubLink" : "https://github.com/SimonGarbet/SimonGarbet.github.io",
+        "skills" : [
+            {"id" :  "skill1",  "body" : "Intégrer du contenu conformément à une maquette avec HTML et CSS"}, 
+            {"id" : "skill2",  "body" :"Implémenter une interface responsive avec HTML et CSS"}
+        ],
+        "imageDesktop" : "http://localhost:3000/Assets/P2Garbet/P2GarbetDesktop.jpg",
+        "imageMobile" : "http://localhost:3000/Assets/P2Garbet/P2GarbetMobile.jpg",
+        "vignette" : "http://localhost:3000/Assets/P2Garbet/Vignette/P2GarbetVignetteFond.jpg",
+        "imagesPageProject" : {
+            "Desktop" : [
+                {"id" :  "idesk1", "url" :"http://localhost:3000/Assets/P2Garbet/P2GarbetPageDesktop1.jpg"}
+            ],
+            "Mobile" : [
+                {"id" : "imobil1 ", "url" : "http://localhost:3000/Assets/P2Garbet/P2GarbetPageMobile1.jpg"}
+            ]
+        }
+    }
+
+
+]

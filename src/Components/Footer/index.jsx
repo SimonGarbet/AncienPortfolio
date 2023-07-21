@@ -37,10 +37,27 @@ function Footer(){
     return (
         <section className='footer'>
 
+            <div className='emailLine'>
+                <p>simon.garbet@gmail.com </p>
+                <button className= {animationEmail ? "copiedButtonEmail" : "classicButtonEmail"} onClick={() => {setAnimationEmail(true); navigator.clipboard.writeText('simon.garbet@gmail.com')}}>
+                    <FontAwesomeIcon icon={faCopy} style={{color: "#ffffff",}} />
+                </button>
+           </div>
+
             <div className='buttonLineFooter'>
+
+            <a href='mailto: simon.garbet@gmail.com' target="_blank" rel="noopener noreferrer">
+            <GravityButton 
+                key = 'GravityButton5'
+                logo = {faEnvelope}
+                size = 'lg'
+                color = '#fff'
+            />
+            </a>
+
             <a href='https://github.com/SimonGarbet/P8Garbet' target="_blank" rel="noopener noreferrer">
             <GravityButton 
-                key = 'GravityButton1'
+                key = 'GravityButton6'
                 logo = {faGithub}
                 size = 'lg'
                 color = '#fff'
@@ -48,7 +65,7 @@ function Footer(){
             </a>
             <a href='https://fr.linkedin.com' target="_blank" rel="noopener noreferrer">
                 <GravityButton 
-                key = 'GravityButton2'
+                key = 'GravityButton7'
                 logo = {faLinkedin}
                 size = 'lg'
                 color = '#fff'
@@ -57,7 +74,7 @@ function Footer(){
 
             <div className = {animation ? "copiedDivDiscord" : "classicDivDiscord" } onClick={() => {setAnimation(true); navigator.clipboard.writeText('_syzymon')}}>
                 <GravityButton 
-                key = 'GravityButton3'
+                key = 'GravityButton8'
                 logo = {faDiscord}
                 size = 'lg'
                 color = '#fff'
@@ -65,21 +82,6 @@ function Footer(){
             />
             </div>
             </div>
-
-            <div className='emailLine'>
-            <a href='mailto: simon.garbet@gmail.com' target="_blank" rel="noopener noreferrer">
-            <GravityButton 
-                key = 'GravityButton3'
-                logo = {faEnvelope}
-                size = 'lg'
-                color = '#fff'      
-            />
-            </a>
-            <p>simon.garbet@gmail.com </p>
-            <button className= {animationEmail ? "copiedButtonEmail" : "classicButtonEmail"} onClick={() => {setAnimationEmail(true); navigator.clipboard.writeText('simon.garbet@gmail.com')}}>
-                <FontAwesomeIcon icon={faCopy} style={{color: "#ffffff",}} />
-            </button>
-           </div>
             
             <div className='disclaimerFooter'>
             <p >Site réalisé par Simon Garbet avec <strong>l'outil de TypeWriter</strong> que vous pouvez consulter <a href='https://github.com/tameemsafi/typewriterjs' target="_blank" rel="noopener noreferrer">ici</a> et le <strong>Bouton Gravité</strong> récupéré <a href='https://codepen.io/amit_sheen/pen/LYXPVKV' target="_blank" rel="noopener noreferrer">ici</a></p>

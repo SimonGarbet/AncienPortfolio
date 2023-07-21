@@ -1,0 +1,106 @@
+@import '../../Scss/mixins';
+@import '../../Scss/variables';
+@import '../../Scss/placeholders';
+
+.globalProjectPage{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .backLink {
+    margin: 20px 0px 80px 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    font-size: 25px;
+     
+    p {
+        padding: 16px 10px 10px 10px;
+        font-size: 25px;
+        font-weight: 700;
+        color: #111;
+        &:hover{
+            color: $terracota;
+        }
+    }
+
+    svg{
+        color: $terracota;
+    }
+
+  }
+
+
+.containerAllCards {
+width: 80%;
+margin: 70px auto;
+display: flex;
+align-items: center;
+grid-gap : 15px;
+
+&::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    top: 599px;
+    background: linear-gradient( #FFE4C4, #FFF8DC, #FFE4C4, #FFF8DC, #FFE4C4)	;
+    height: 60px;
+    z-index: -1;
+}
+
+h3 {
+    font-size: 30px;
+    margin-right: 70px;
+    font-weight: 500;
+    span {
+        color: $terracota;
+        font-weight: 700;
+    }
+}
+}
+
+
+.projectPageTitle {
+
+    display: flex;
+    align-items: flex-start;
+    width: 85%;
+    margin: 150px auto;
+    gap: 100px;
+    
+
+    .projectTitleGithub {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 6px;
+
+        button {
+            background-color: #111;
+        }
+    }
+
+
+    h2{
+        font-size: 70px;
+        margin-right: 50px;
+    }
+
+    .subtitleProjectPage{
+        font-size: 30px;
+        color: $mediumgrey;
+        margin-left: 10px;
+    }
+
+    .descriptionProjectPage{
+        padding: 50px;
+    }
+}

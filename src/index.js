@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Main from './Pages/Main/';
+import Home from './Pages/Home/';
 import PageProjet from './Pages/projectPage/';
 import Error from './Pages/Error/';
 
@@ -13,8 +13,8 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-      <Route path='/' element={<Main/>}/>
-      <Route path='/projets/:id' element={<PageProjet/>} />
+      <Route path='/' element={<Home/>}/>
+      <Route path='/projet/:id' element={<PageProjet/>} />
       <Route path='*' element={<Error/>}/>
       </Routes>
     </Router>

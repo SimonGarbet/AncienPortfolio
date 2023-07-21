@@ -9,7 +9,7 @@ import '../../Scss/style.scss';
 
 
 
-function Project({id, title, subtitle, category, description, githubLink, imageDesktop, imageMobile}){
+function Project({id, title, subtitle, category, summary, githubLink, imageDesktop, imageMobile}){
 
     let iconFontAwesome = faShield
     let colorFontAwesome = '#949494'
@@ -20,7 +20,7 @@ function Project({id, title, subtitle, category, description, githubLink, imageD
     } else if (category === 'React') {
         iconFontAwesome = faSquare
         colorFontAwesome = '#15D7F7'
-    } else if (category === 'Node') {
+    } else if (category === 'Backend') {
         iconFontAwesome = faDiamond
         colorFontAwesome = '#90c53f'
     } else if (category === 'CSS') {
@@ -29,8 +29,8 @@ function Project({id, title, subtitle, category, description, githubLink, imageD
     }
  
     return (
-       <figure className='globalProject'>
-        <div className='lienProjet'>
+       <figure className='globalProjectComponent'>
+        <div className='projectComponentLink'>
         
             <div className='globalDescriptionProject'>
 
@@ -49,7 +49,7 @@ function Project({id, title, subtitle, category, description, githubLink, imageD
                 </div>
 
                 <div className='rightsideDescriptionProject'>
-                    <p>{description}</p>
+                    <p>{summary}</p>
             
                     
                     <Link to = {`/projet/${id}`} className='projectView'>

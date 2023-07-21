@@ -1,0 +1,30 @@
+@import '../../Scss/mixins';
+@import '../../Scss/variables';
+@import '../../Scss/placeholders';
+
+.globalHomePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto ;
+  }
+  
+  
+  #lineAboutMe, #lineProjects, .lineProjects {
+    border-bottom: 1px solid $softgrey;
+    width: 85%;
+    max-width: 2040px;
+    height: 1px;
+    padding : 60px 0;
+    margin: 0px auto 120px auto;
+    }
+  
+  
+  #lineAboutMe {
+    margin-top: 0;
+    height: 0px;
+    border-bottom: none;
+    margin-bottom: 30px;
+  }
+  

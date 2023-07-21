@@ -4,8 +4,6 @@
 
 
 
-
-
 #Home{
   display: flex;
   align-items: center;
@@ -45,6 +43,14 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 5px;
+
+      h2{
+        margin-top: 20px;
+        font-size: 40px;
+        font-weight: 700;
+        margin-left: 20px;
+      }
+      
       p{
         margin-left: 20px;
       }
@@ -66,12 +72,7 @@
       margin-left: 20px;
     }
   
-    h2{
-      margin-top: 20px;
-      font-size: 40px;
-      font-weight: 700;
-      margin-left: 20px;
-    }
+    
   
   
     .typeWriterSentence {
@@ -105,7 +106,8 @@
   letter-spacing: 1px;
   text-decoration: none;
 
-    @include boutonDecouvrirMixin(#fff, "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+    @include boutonDecouvrirMixin(#fff, 
+    "../../Assets/urban-sprite.png",
   3000%,
   100%,
   none,
@@ -206,17 +208,18 @@
   }
 
   .copiedDivDiscord::before {
-    content: 'Pseudo Copié';
+    content: 'Pseudo Discord Copié';
     position: absolute;
     color: #fff;
-    width: 160px;
+    width: 200px;
     text-align: center;
     left: 100px;
-    top: 25%;
-    font-size: 20px;
+    top: 19%;
+    font-size: 17px;
+    font-weight: 500;
     background-color: $greennode;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 15px;
+    border-radius: 10px;
     animation: softGrindOpacity 2.75s;
   }
 
@@ -225,7 +228,11 @@
       opacity: 0;
     }
   
-    80% {
+    30% {
+      opacity: 1;
+    }
+
+    70% {
       opacity: 1;
     }
 

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 import Error from '../Error'
 import Header from '../../Components/Header';
-import Home from '../../Components/Home';
+import Banner from '../../Components/Banner';
 import AboutMe from '../../Components/AboutMe';
 import Project from '../../Components/Project';
 import Footer from '../../Components/Footer'
@@ -51,12 +51,12 @@ function Main() {
 
 
   return (
-  <div className='globalPage'>
+  <div className='globalHomePage'>
     
 
     <Header />
 
-    <Home /> 
+    <Banner /> 
 
     <div id = 'lineAboutMe'></div>
 
@@ -80,7 +80,7 @@ function Main() {
               subtitle = {project.subtitle}
               category = {project.category}
               githubLink={project.githubLink}
-              description = {project.description}
+              summary = {project.summary}
               imageDesktop = {project.imageDesktop}
               imageMobile = {project.imageMobile}
               />

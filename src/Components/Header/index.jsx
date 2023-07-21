@@ -14,7 +14,7 @@ function Header(){
             <h1>Simon Garbet</h1>
             </Link>
             <nav>
-            <a href ='#header' >Home</a>
+            <a href ='#header' className='coloredNavLink'>Home</a>
             <a href='#lineAboutMe'>A propos</a>
             <a href='#lineProjects'>Projets</a>
             </nav>

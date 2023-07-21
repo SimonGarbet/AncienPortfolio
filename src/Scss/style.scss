@@ -1,11 +1,15 @@
-@import '../Pages/projectPage/projectPage.scss';
+@import '../Pages/Home/home';
+@import '../Pages/projectPage/projectPage';
 
-@import '../Components/Header/header';
-@import '../Components/Home/home';
 @import '../Components/AboutMe/aboutMe';
-@import '../Components/Project/project';
-@import '../Components/gravityButton/gravityButton';
+@import '../Components/Banner/banner';
+@import '../Components/Card/card';
 @import '../Components/Footer/footer';
+@import '../Components/gravityButton/gravityButton';
+@import '../Components/Header/header';
+@import '../Components/Project/project';
+
+
 
 @import './mixins';
 @import './variables';
@@ -21,34 +25,6 @@ html {
   box-sizing: border-box;
 }
 
-.globalPage{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto ;
-}
-
-
-
-// Lignes de séparation Sections + Projets
-
-#lineAboutMe, #lineProjects, .lineProjects {
-  border-bottom: 1px solid $softgrey;
-  width: 85%;
-  max-width: 2040px;
-  height: 1px;
-  padding : 60px 0;
-  margin: 0px auto 120px auto;
-  }
-
-
-#lineAboutMe {
-  margin-top: 0;
-  height: 0px;
-  border-bottom: none;
-  margin-bottom: 30px;
-}
 
 
  

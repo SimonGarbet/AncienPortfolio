@@ -14,11 +14,12 @@
 
     img{
         border-radius : 86% 14% 55% 45% / 41% 39% 61% 59% ;
-        height: 450px;
+        height: 400px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
         border: 1px solid #fff;
     }
 }
+
 
 .globalDescription{
 
@@ -31,7 +32,7 @@
 
     p{
         font-size: 20px;
-        text-align: justify;
+        text-align:start;
         width: 80%;
         strong{
             font-size: 21px;

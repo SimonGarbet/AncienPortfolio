@@ -27,7 +27,7 @@ function Home(){
        return (
     <section id='Home'>
 
-        <img src={homePicture} className='homePicture' alt= "Photographie d'une plante" />
+        <img src={homePicture} className='homePicture' alt= "Photographie d'une personne faisant du surf" />
 
         <div className='presentation'>
 
