@@ -11,41 +11,6 @@
   }
 
 
-.containerAllCards {
-width: 100%;
-margin: 60px auto 30px auto;
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-grid-gap : 15px;
-
-&::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    margin: 0 auto;
-    left: 0;
-    bottom: -30px;
-    background: linear-gradient( #FFE4C4, #FFF8DC, #FFE4C4, #FFF8DC, #FFE4C4)	;
-    height: 80px;
-    z-index: -1;
-}
-
-h3 {
-    font-size: 30px;
-    margin-right: 70px;
-    font-weight: 500;
-    width: 20%;
-    span {
-        color: $terracota;
-        font-weight: 700;
-    }
-}
-}
-
-
 
 
 .projectPageTitle {
@@ -53,6 +18,7 @@ h3 {
     display: flex;
     align-items: center;
     width: 85%;
+    max-width: 2000px;
     height: 400px;
     margin: 80px auto;
     gap: 100px;
@@ -101,6 +67,7 @@ h3 {
             
         }
 
+
         p{
             color: #fff;
             font-size: 22px;
@@ -111,8 +78,17 @@ h3 {
             color: #fff !important;
         }
        }
+
+       .figmaLinkProject{
+        margin-top: -10px;
+        background-color: #ff7262;
+
         
     }
+        
+    }
+
+    
 
     .skillSection{
 
@@ -146,6 +122,7 @@ h3 {
 
     .descriptionProjectPage{
         width: 85%;
+        max-width: 2000px;
         margin: 0 auto;
         font-size: 20px;
         text-align: justify;
@@ -167,6 +144,7 @@ h3 {
     
     .globalPicturePageProject{
         width: 85%;
+        max-width: 2000px;
         margin:  80px auto;
         display: flex;
         gap: 50px;
@@ -175,6 +153,7 @@ h3 {
         .totalDesktopPicture{
             display: flex;
             flex-direction: column;
+            gap: 50px;
             width: 70%;
             cursor: pointer;
         }
@@ -185,6 +164,40 @@ h3 {
         }
 
     }
+
+    .containerAllCards {
+        width: 100%;
+        margin: 60px auto 30px auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap : 15px;
+        
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            margin: 0 auto;
+            left: 0;
+            bottom: -30px;
+            background: linear-gradient( #FFE4C4, #FFF8DC, #FFE4C4, #FFF8DC, #FFE4C4)	;
+            height: 80px;
+            z-index: -1;
+        }
+        
+        h3 {
+            font-size: 30px;
+            margin-right: 70px;
+            font-weight: 500;
+            width: 20%;
+            span {
+                color: $terracota;
+                font-weight: 700;
+            }
+        }
+        }
 
 
 

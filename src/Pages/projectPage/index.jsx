@@ -10,7 +10,7 @@ import Footer from '../../Components/Footer'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faCircle } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faFigma } from '@fortawesome/free-brands-svg-icons';
 
 import '../../Scss/style.scss';
 
@@ -81,6 +81,12 @@ function ProjectPage() {
                   <p>Github</p>
                 <FontAwesomeIcon icon={faGithub} />
                 </a>
+                {(projectTarget[0].figmaLink === "") ?
+                (<div></div>) :
+                (<a className='figmaLinkProject' href={projectTarget[0].figmaLink} target="_blank" rel="noopener noreferrer">
+                  <p>Figma</p>
+                <FontAwesomeIcon icon={faFigma} />
+                </a>)}
               </div>
 
               <div className='skillSection'>

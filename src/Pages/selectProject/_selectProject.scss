@@ -1,0 +1,37 @@
+@import '../../Scss/mixins';
+@import '../../Scss/variables';
+@import '../../Scss/placeholders';
+
+.containerAllCardsSelectPage{
+        width: 100%;
+        margin: 220px auto 350px auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap : 15px;
+        
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            margin: 0 auto;
+            left: 0;
+            bottom: -80px;
+            background: linear-gradient( #FFE4C4, #FFF8DC, #FFE4C4, #FFF8DC, #FFE4C4)	;
+            height: 80px;
+            z-index: -1;
+        }
+
+        h3 {
+            font-size: 30px;
+            margin-right: 70px;
+            font-weight: 500;
+            width: 15%;
+            span {
+                color: $terracota;
+                font-weight: 700;
+            }
+        }
+}
