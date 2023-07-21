@@ -7,25 +7,28 @@
         "category" : "Backend",
         "summary" : "Construction du Back End d'un site web en utilisant le framework ExpressJS et une base de données Mongo DB",
         "description" : [
-            {"id" :  "sen1", "body" : "Premier projet Openclassrooms de programmation que j'ai réalisé."},
-            {"id" :  "sen2",  "body" :"La maquette à repoduire était celle d'un site de location de logement de vacances : Booki"},
-            {"id" :  "sen3",  "body" : "A la suite de ce projet, je me suis perfectionné avec avec la structuration HTML, les fonctions CSS de base, la commande Display : Flex, ainsi que la gestion des Media Queries"}
+            {"id" :  "sen1", "body" : "Ceci est l'unique projet Openclassrooms de développement web backend reposant sur ExpressJS et MongoDB."},
+            {"id" :  "sen2",  "body" :"L'objectif était de relier notre frontend déjà construit à notre serveur et base de données pour gérer toutes les requêtes possibles sur un site de notation de livres."},
+            {"id" :  "sen3",  "body" : "Avec ce projet, j'ai découvert comment connecter une base de données Mongo DB à son site, utiliser les middlewares sur lequel repose Express et réaliser les opérations CRUD."}
             ],
-        "githubLink" : "https://github.com/SimonGarbet/P7Garbet",
+        "githubLink" : "https://github.com/SimonGarbet/P7GarbetGlobal",
+        "figmaLink" : "https://www.figma.com/file/1n68sa3kpYLlx693ZwaWVQ/Maquette-Mon-Vieux-Grimoire?type=design&t=ywJtJiZCeatxeHnO-6",
         "skills" : [
-            {"id" :  "skill1",  "body" : "Configurer la navigation entre les pages de l'application avec React Router"}, 
-            {"id" :  "skill2",  "body" : "Initialiser une application avec Create React App"}, 
-            {"id" :  "skill3",  "body" : "Développer des éléments de l'interface d'un site web grâce à des composants React"}
+            {"id" :  "skill1",  "body" : "Implémenter un modèle logique de données conformément à la réglementation"}, 
+            {"id" :  "skill2",  "body" : "Mettre en œuvre des opérations CRUD de manière sécurisée"}, 
+            {"id" :  "skill3",  "body" : "Stocker des données de manière sécurisée"}
         ],
         "imageDesktop" : "http://localhost:3000/Assets/P7Garbet/P7GarbetDesktop.jpg",
         "imageMobile" : "http://localhost:3000/Assets/P7Garbet/P7GarbetMobile.jpg",
         "vignette" : "http://localhost:3000/Assets/P7Garbet/Vignette/P7GarbetVignetteFond.jpg",
         "imagesPageProject" : {
             "Desktop" : [
-                {"id" :  "idesk1", "url" :"http://localhost:3000/Assets/P2Garbet/P2GarbetPageDesktop1.jpg"}
+                {"id" :  "idesk1", "url" :"http://localhost:3000/Assets/P7Garbet/P7GarbetPageDesktop1.jpg"},
+                {"id" :  "idesk2", "url" :"http://localhost:3000/Assets/P7Garbet/P7GarbetPageDesktop2.jpg"},
+                {"id" :  "idesk3", "url" :"http://localhost:3000/Assets/P7Garbet/P7GarbetPageDesktop3.jpg"}
             ],
             "Mobile" : [
-                {"id" : "imobil1 ", "url" : "http://localhost:3000/Assets/P2Garbet/P2GarbetPageMobile1.jpg"}
+                {"id" : "imobil1 ", "url" : "http://localhost:3000/Assets/P7Garbet/P7GarbetPageMobile1.jpg"}
             ]
         }
     },
@@ -38,11 +41,12 @@
         "category" : "React",
         "summary" : "Programmation du Front End du site Kasa en utilisant le framwork React sans mise en place du Back End",
         "description" : [
-            {"id" :  "sen1", "body" : "Premier projet Openclassrooms de programmation que j'ai réalisé."},
-            {"id" :  "sen2",  "body" :"La maquette à repoduire était celle d'un site de location de logement de vacances : Booki"},
-            {"id" :  "sen3",  "body" : "A la suite de ce projet, je me suis perfectionné avec avec la structuration HTML, les fonctions CSS de base, la commande Display : Flex, ainsi que la gestion des Media Queries"}
+            {"id" :  "sen1", "body" : "Ce projet Openclasrooms m'a appris à utiliser React. Framework que j'ai aussi utilisé pour ce portfolio."},
+            {"id" :  "sen2",  "body" :"A partir d'une maquette donnée, il fallait reproduire l'intégralité du visuel en créant et utilisant un maximum de composant."},
+            {"id" :  "sen3",  "body" : "Pour ce projet, j'ai appris à utiliser React de manière générale, de la création de composant, au re-render du site via useEffect ou encore des changements de state, mais aussi me perfectionner en JavaScript."}
             ],
         "githubLink" : "https://github.com/SimonGarbet/P6Garbet",
+        "figmaLink" : "https://www.figma.com/file/N9L6Gm1OWUzojFp9DG0Iw2/Maquette-Kasa?type=design&t=ywJtJiZCeatxeHnO-6",
         "skills" : [
             {"id" :  "skill1",  "body" : "Configurer la navigation entre les pages de l'application avec React Router"}, 
             {"id" :  "skill2",  "body" : "Initialiser une application avec Create React App"}, 
@@ -53,10 +57,12 @@
         "vignette" : "http://localhost:3000/Assets/P6Garbet/Vignette/P6GarbetVignetteFond.jpg",
         "imagesPageProject" : {
             "Desktop" : [
-                {"id" :  "idesk1", "url" :"http://localhost:3000/Assets/P2Garbet/P2GarbetPageDesktop1.jpg"}
+                {"id" :  "idesk1", "url" :"http://localhost:3000/Assets/P6Garbet/P6GarbetPageDesktop1.jpg"},
+                {"id" :  "idesk2", "url" :"http://localhost:3000/Assets/P6Garbet/P6GarbetPageDesktop2.jpg"},
+                {"id" :  "idesk3", "url" :"http://localhost:3000/Assets/P6Garbet/P6GarbetPageDesktop3.jpg"}
             ],
             "Mobile" : [
-                {"id" : "imobil1 ", "url" : "http://localhost:3000/Assets/P2Garbet/P2GarbetPageMobile1.jpg"}
+                {"id" : "imobil1 ", "url" : "http://localhost:3000/Assets/P6Garbet/P6GarbetPageMobile1.jpg"}
             ]
         }
     },
@@ -69,25 +75,26 @@
         "category" : "Optimisation",
         "summary" : "Optimisation du site de Nina Carducci concernant les performances, la SEO, et l'accessibilité",
         "description" : [
-            {"id" :  "sen1", "body" : "Premier projet Openclassrooms de programmation que j'ai réalisé."},
-            {"id" :  "sen2",  "body" :"La maquette à repoduire était celle d'un site de location de logement de vacances : Booki"},
-            {"id" :  "sen3",  "body" : "A la suite de ce projet, je me suis perfectionné avec avec la structuration HTML, les fonctions CSS de base, la commande Display : Flex, ainsi que la gestion des Media Queries"}
-            ],
+            {"id" :  "sen1", "body" : "Ce projet Openclassrooms était moins axé sur la programmation et plus sur l'optimisation d'un site."},
+            {"id" :  "sen2",  "body" :"Nous avions un site déjà tout fait, il fallait améliorer son score Lighthouse sur 3 axes, les performances, l'accessibilité et la SEO."},
+            {"id" :  "sen3",  "body" : "A la suite de ce projet, j'ai compris comment réaliser un audit d'un site et quels était les différentes actions à mener pour optimiser son site (et sa crawlabilité). En optimisant la taille des images, augmentant les contrastes, en utilisant des mots pertinents et en structurant de manière intelligente son site."}
+        ],
         "githubLink" : "https://github.com/SimonGarbet/P5Garbet",
+        "figmaLink" : "",
         "skills" : [
-            {"id" :  "skill1",  "body" : "Configurer la navigation entre les pages de l'application avec React Router"}, 
-            {"id" :  "skill2",  "body" : "Initialiser une application avec Create React App"}, 
-            {"id" :  "skill3",  "body" : "Développer des éléments de l'interface d'un site web grâce à des composants React"}
+            {"id" :  "skill1",  "body" : "Optimiser les performances d’un site web"}, 
+            {"id" :  "skill2",  "body" : "Débugger un site web grâce aux Chrome DevTools"}, 
+            {"id" :  "skill3",  "body" : "Rédiger un cahier de recette pour tester un site"}
         ],
         "imageDesktop" : "http://localhost:3000/Assets/P5Garbet/P5GarbetDesktop.jpg",
         "imageMobile" : "http://localhost:3000/Assets/P5Garbet/P5GarbetMobile.jpg",
         "vignette" : "http://localhost:3000/Assets/P5Garbet/Vignette/P5GarbetVignetteFond.jpg",
         "imagesPageProject" : {
             "Desktop" : [
-                {"id" :  "idesk1", "url" :"http://localhost:3000/Assets/P2Garbet/P2GarbetPageDesktop1.jpg"}
+                {"id" :  "idesk1", "url" :"http://localhost:3000/Assets/P5Garbet/P5GarbetPageDesktop1.jpg"}
             ],
             "Mobile" : [
-                {"id" : "imobil1 ", "url" : "http://localhost:3000/Assets/P2Garbet/P2GarbetPageMobile1.jpg"}
+                {"id" : "imobil1 ", "url" : "http://localhost:3000/Assets/P5Garbet/P5GarbetPageMobile1.jpg"}
             ]
         }
     },
@@ -100,24 +107,28 @@
         "category" : "Javascript",
         "summary" : "Développement du site de Sophie Bluel en Javascript Vanilla à l'aide d'un Back End déjà réalisé",
         "description" : [
-            {"id" :  "sen1", "body" : "Premier projet Openclassrooms de programmation que j'ai réalisé."},
-            {"id" :  "sen2",  "body" :"La maquette à repoduire était celle d'un site de location de logement de vacances : Booki"},
-            {"id" :  "sen3",  "body" : "A la suite de ce projet, je me suis perfectionné avec avec la structuration HTML, les fonctions CSS de base, la commande Display : Flex, ainsi que la gestion des Media Queries"}
+            {"id" :  "sen1", "body" : "Projet Openclassrooms venant après le HTML et CSS pour travailller sur la dynamique d'un site."},
+            {"id" :  "sen2",  "body" :"Nous avions déjà un site entièrement réalisé sur sa structure fixe ainsi que sur le backend avec une API pré-établie."},
+            {"id" :  "sen3",  "body" :"L'objectif était de pouvoir filtrer les photos d'une Architecte : Sophie Bluel, ainsi que de pouvoir en déposer et supprimer de nouvelles."},
+            {"id" :  "sen4",  "body" : "A la suite de ce projet, j'ai appris les bases du JavaScript sur lesquelles ont reposé toute ma formation Openclassrooms. De la création de fonction, à la manipulation d'array en passant par l'utilisation d'outil comme les AddEventListener ou le Filter ou encore la manipulation du DOM."}
             ],
         "githubLink" : "https://github.com/SimonGarbet/P3Garbet",
+        "figmaLink" : "https://www.figma.com/file/W7CRXQQyYhde2WM9KHcuqE/Maquette-Sophie-Bluel?type=design&t=ywJtJiZCeatxeHnO-6",
         "skills" : [
-            {"id" :  "skill1",  "body" : "Intégrer du contenu conformément à une maquette avec HTML et CSS"}, 
-            {"id" : "skill2",  "body" :"Implémenter une interface responsive avec HTML et CSS"}
+            {"id" :  "skill1",  "body" : "Récupérer les données utilisateurs dans le JavaScript via des formulaires"}, 
+            {"id" :  "skill2",  "body" : "Manipuler les éléments du DOM avec JavaScript"}, 
+            {"id" :  "skill3",  "body" : "Gérer les événements utilisateurs avec JavaScript"}
         ],
         "imageDesktop" : "http://localhost:3000/Assets/P3Garbet/P3GarbetDesktop.jpg",
         "imageMobile" : "http://localhost:3000/Assets/P3Garbet/P3GarbetMobile.jpg",
         "vignette" : "http://localhost:3000/Assets/P3Garbet/Vignette/P3GarbetVignetteFond.png",
         "imagesPageProject" : {
             "Desktop" : [
-                {"id" :  "idesk1", "url" :"http://localhost:3000/Assets/P2Garbet/P2GarbetPageDesktop1.jpg"}
+                {"id" :  "idesk1", "url" :"http://localhost:3000/Assets/P3Garbet/P3GarbetPageDesktop1.jpg"},
+                {"id" :  "idesk2", "url" :"http://localhost:3000/Assets/P3Garbet/P3GarbetPageDesktop2.jpg"}
             ],
             "Mobile" : [
-                {"id" : "imobil1 ", "url" : "http://localhost:3000/Assets/P2Garbet/P2GarbetPageMobile1.jpg"}
+                {"id" : "imobil1 ", "url" : "http://localhost:3000/Assets/P3Garbet/P3GarbetPageMobile1.jpg"}
             ]
         }
     },
@@ -135,6 +146,7 @@
         {"id" :  "sen3",  "body" : "A la suite de ce projet, je me suis perfectionné avec avec la structuration HTML, les fonctions CSS de base, la commande Display : Flex, ainsi que la gestion des Media Queries"}
         ],
         "githubLink" : "https://github.com/SimonGarbet/SimonGarbet.github.io",
+        "figmaLink" : "https://www.figma.com/file/bGT6BLEUKS8UXSNt2hw7tR/Maquettes-Booki?type=design&node-id=3-0&mode=design&t=0X0YXuDeQsPBL1vc-0",
         "skills" : [
             {"id" :  "skill1",  "body" : "Intégrer du contenu conformément à une maquette avec HTML et CSS"}, 
             {"id" : "skill2",  "body" :"Implémenter une interface responsive avec HTML et CSS"}
