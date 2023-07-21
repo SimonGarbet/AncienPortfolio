@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from './Pages/Home/';
-import PageProjet from './Pages/projectPage/';
+import ProjectPage from './Pages/projectPage/';
 import Error from './Pages/Error/';
 
 
@@ -14,7 +14,8 @@ root.render(
     <Router>
       <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='/projet/:id' element={<PageProjet/>} />
+      <Route path='/projet' element={<Home/>}/>
+      <Route path='/projet/:id' element={<ProjectPage/>} />
       <Route path='*' element={<Error/>}/>
       </Routes>
     </Router>

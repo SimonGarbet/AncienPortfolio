@@ -1,0 +1,43 @@
+@import '../../Scss/mixins';
+@import '../../Scss/variables';
+@import '../../Scss/placeholders';
+
+.containerCollapse {
+    width: 100%;
+    border-radius: 30px;
+    color: #fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+
+    &:hover{
+        transform: scale(1.02);
+    }
+
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+
+        svg {
+            margin-right: 20px;
+        }
+
+    
+    }
+
+    h3{
+        border-radius: 30px;
+        padding: 30px;
+        text-align: center;
+     }
+
+       .screenshotFullCollapse {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0px 0px 30px 30px;
+    }
+       
+}
+
+
