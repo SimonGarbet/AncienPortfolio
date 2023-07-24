@@ -89,15 +89,6 @@ function Home(){
             />
             </a> 
 
-            <a href='https://fr.linkedin.com' target="_blank" rel="noopener noreferrer">
-                <GravityButton 
-                key = 'GravityButton3'
-                logo = {faLinkedin}
-                size = 'lg'
-                color = '#fff'
-            />
-            </a>
-
             <div className = {animation ? "copiedDivDiscord" : "classicDivDiscord" } onClick={() => {setAnimation(true); navigator.clipboard.writeText('_syzymon')}}>
                 <GravityButton 
                 key = 'GravityButton4'

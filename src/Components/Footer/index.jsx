@@ -63,14 +63,6 @@ function Footer(){
                 color = '#fff'
             />
             </a>
-            <a href='https://fr.linkedin.com' target="_blank" rel="noopener noreferrer">
-                <GravityButton 
-                key = 'GravityButton7'
-                logo = {faLinkedin}
-                size = 'lg'
-                color = '#fff'
-            />
-            </a>
 
             <div className = {animation ? "copiedDivDiscord" : "classicDivDiscord" } onClick={() => {setAnimation(true); navigator.clipboard.writeText('_syzymon')}}>
                 <GravityButton 

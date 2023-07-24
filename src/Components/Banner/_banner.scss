@@ -58,12 +58,6 @@
 
     }
 
-    //gestion de l'accueil si très grand écran (média querie unique, d'où le fait qu'elle soit isolée)
-    @media (min-width: 2500px) { 
-      .presentation {
-        right: 30%;
-      }
-     }
 
   
     .helloPresentation {
@@ -241,3 +235,16 @@
       opacity: 0;
     }
   }
+
+
+  //MediaQueries
+
+
+  @media (min-width: 2500px) { 
+    .presentation {
+      right: 30%;
+    }
+   }
+
+
+   

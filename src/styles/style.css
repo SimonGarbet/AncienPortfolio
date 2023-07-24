@@ -349,11 +349,6 @@
   margin-left: 20px;
 }
 
-@media (min-width: 2500px) {
-  .presentation {
-    right: 30%;
-  }
-}
 .helloPresentation {
   color: #ff5925;
   font-size: 70px;
@@ -479,6 +474,11 @@
   }
   100% {
     opacity: 0;
+  }
+}
+@media (min-width: 2500px) {
+  .presentation {
+    right: 30%;
   }
 }
 .containerCard {
