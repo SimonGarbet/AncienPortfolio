@@ -56,9 +56,10 @@ function SelectProject() {
             <Header />
 
 
-
+            <div className='librarySelectPage'>
+            <h3>Choisissez l'un des <span>projets</span></h3> 
           <div className='containerAllCardsSelectPage' onClick= {() => setNewPage(true)}>
-            <h3>Choisissez l'un des <span>projets</span></h3>     
+                
             {projectList?.map((project) => (
             <Card 
             key={project.id}
@@ -69,6 +70,7 @@ function SelectProject() {
             imageFond = {project.vignette}
             />            
             ))}                      
+          </div>
           </div>
             
         </div>

@@ -133,10 +133,13 @@ function ProjectPage() {
 
             </div>
 
+
           <div id='lineProjects'></div>
 
+          <div className='libraryProjects'>
+          <h3>Un autre <span>Projet </span>?</h3>     
           <div className='containerAllCards' onClick= {() => setNewPage(true)}>
-            <h3>Un autre <span>Projet </span>?</h3>     
+            
             {projectList?.map((project) => (
             <Card 
             key={project.id}
@@ -147,6 +150,7 @@ function ProjectPage() {
             imageFond = {project.vignette}
             />            
             ))}                      
+          </div>
           </div>
             
         </div>

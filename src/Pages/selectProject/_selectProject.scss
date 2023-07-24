@@ -2,36 +2,57 @@
 @import '../../Scss/variables';
 @import '../../Scss/placeholders';
 
-.containerAllCardsSelectPage{
-        width: 100%;
-        margin: 220px auto 350px auto;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-gap : 15px;
-        
-        &::after {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 100%;
-            margin: 0 auto;
-            left: 0;
-            bottom: -80px;
-            background: linear-gradient( #FFE4C4, #FFF8DC, #FFE4C4, #FFF8DC, #FFE4C4)	;
-            height: 80px;
-            z-index: -1;
-        }
 
-        h3 {
-            font-size: 30px;
-            margin-right: 70px;
-            font-weight: 500;
-            width: 15%;
-            span {
-                color: $terracota;
-                font-weight: 700;
-            }
+
+
+.librarySelectPage {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    margin: 300px 0;
+
+    h3 {
+        font-size: 30px;
+        font-weight: 500;
+        width: 35%;
+        max-width: 450px;
+        margin-left: 10%;
+        text-align: center;
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        z-index: 2;
+        span {
+            color: $terracota;
+            font-weight: 700;
         }
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient( #FFE4C4, #FFF8DC, #FFE4C4, #FFF8DC, #FFE4C4)	;
+        height: 80px;
+        z-index: -1;
+    }
+
 }
+
+.containerAllCardsSelectPage {
+    width: 65%;
+    max-width: 1000px;
+    margin: 60px 10% 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap : 15px;
+    z-index: 1;
+    }

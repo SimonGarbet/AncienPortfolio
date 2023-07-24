@@ -51,10 +51,10 @@ function GravityButton({logo, size, color}){
 
 
     return (
-      <div onClick={() => setAnimation(true) } 
-      className = {animation ? 'gravityCopied' : 'gravityButton'} 
+      <div className = {animation ? 'gravityCopied' : 'gravityButton'}
+      onClick={() => setAnimation(true) } 
       onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
+      onMouseLeave={handleMouseLeave}
         style={{
           '--tx': `${translation.tx}px`,
           '--ty': `${translation.ty}px`,
