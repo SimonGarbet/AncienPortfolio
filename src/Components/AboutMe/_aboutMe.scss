@@ -5,7 +5,7 @@
 
 #aboutMe {
     width: 70%;
-    max-width: 1440px;
+    max-width: 1840px;
     margin: 0px auto 50px auto;
 
     display: flex;
@@ -59,3 +59,76 @@
     }
     
 }
+
+
+//Media Queries
+
+@media (max-width: 1024px) {
+    #aboutMe {
+    
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+        
+    
+        img{
+            object-fit: cover;
+            height: 350px;
+            border-radius: 30px;
+        }
+    }
+    
+    
+    .globalDescription{
+        align-items: center;
+        gap: 30px;
+
+        .aboutTitle{
+            font-size: 40px;
+            margin-bottom: 40px;
+            margin-right: 20px;
+        }     
+    
+        p{
+            font-size: 18px;
+            text-align:justify;
+            strong{
+                font-size: 19px;
+            }
+        }
+    
+    
+    }
+    
+   
+}
+
+
+@media (max-width: 750px) {
+
+    #aboutMe {
+        
+    
+        img{
+            height: 250px;
+        }
+    }
+
+    .globalDescription{
+
+        .aboutTitle{
+            font-size: 30px;
+        }     
+    
+        p{
+            font-size: 16px;
+            strong{
+                font-size: 16px;
+            }
+        }
+    
+    
+    }
+    
+}
+

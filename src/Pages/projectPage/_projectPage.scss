@@ -101,7 +101,7 @@
         h3{
             font-size: 30px;
         }
-        font-size: 18px;
+        font-size: 20px;
         text-align: justify;
 
         display: flex;
@@ -118,18 +118,13 @@
 
     }
 
-    @media (max-width: 1250px) { 
-        .projectPageTitle {
-            flex-direction: column;
-            height: 100%;
-        }
-       }
+    
 
     .descriptionProjectPage{
         width: 85%;
         max-width: 2000px;
         margin: 0 auto;
-        font-size: 20px;
+        font-size: 19px;
         text-align: justify;
 
         display: flex;
@@ -137,7 +132,7 @@
         gap: 25px;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
         border-radius: 20px;
-        padding: 70px;
+        padding: 50px;
 
         h3 {
             font-size: 30px;
@@ -174,6 +169,7 @@
     .libraryProjects {
 
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         position: relative;
@@ -181,9 +177,8 @@
         h3 {
             font-size: 30px;
             font-weight: 500;
-            width: 35%;
-            max-width: 450px;
-            margin-left: 100px;
+            width: 80%;
+            max-width: 1000px;
             text-align: center;
             padding: 20px;
             border-radius: 20px;
@@ -210,7 +205,7 @@
     }
 
     .containerAllCards {
-        width: 65%;
+        width: 100%;
         max-width: 1000px;
         margin: 60px 0px 30px 0px;
         display: flex;
@@ -221,8 +216,77 @@
 
 
 
+        @media (max-width: 1250px) { 
+            .projectPageTitle {
+                flex-direction: column;
+                height: 100%;
+            }
+           }
 
 
+
+
+           @media (max-width : 750px) {
+
+            .projectPageTitle {
+
+            .projectTitleGithub {
+      
+                h2{
+                    font-size: 55px;
+                }
+        
+                .subtitleProjectPage{
+                    font-size: 25px;
+                }       
+        
+               a {    
+                width: 70%;
+                p{
+                    font-size: 20px;
+                }
+        
+                svg {
+                    height: 25px;
+                }
+               }              
+            }
+        
+            
+        
+            .skillSection{       
+                h3{
+                    font-size: 30px;
+                }
+                font-size: 19px;
+                padding: 30px;
+            }
+             
+        
+            .descriptionProjectPage{
+                font-size: 18px;
+                padding: 30px;
+        
+                h3 {
+                    font-size: 30px;
+                }
+            }
+
+        }
+             
+            
+            .globalPicturePageProject{
+                flex-direction: column;   
+                
+                .totalDesktopPicture{
+                    width: 100%;
+    
+                }
+        
+                .totalMobilePicture{
+                    width: 100%
+                }
+            }
    
-
+        }
    

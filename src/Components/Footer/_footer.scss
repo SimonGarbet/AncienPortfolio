@@ -105,3 +105,39 @@
         font-style: italic;
     }
 }
+
+
+@media (max-width: 750px) { 
+
+    .emailLine{
+   
+        p{
+            font-size: 14px;
+        }
+    }
+
+    .classicButtonEmail {
+        font-size: 14px;
+    }
+    
+    .copiedButtonEmail {
+        font-size: 14px;  
+    }
+    
+    
+    .copiedButtonEmail::before {
+        width: 130px;
+        bottom: 50px;
+        left: -150px;
+        font-size: 12px;
+      }
+
+
+
+    .disclaimerFooter {
+        margin-top: 30px;
+        p{
+            font-size: 14px;
+        }
+    }
+}

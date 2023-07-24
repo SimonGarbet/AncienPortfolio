@@ -197,8 +197,8 @@
 
 
   .copiedDivDiscord {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     position: relative;
   }
 
@@ -209,7 +209,7 @@
     width: 200px;
     text-align: center;
     left: 120px;
-    top: 32px;
+    top: 37px;
     font-size: 17px;
     font-weight: 500;
     background-color: $greennode;
@@ -242,8 +242,105 @@
 
   @media (min-width: 2500px) { 
     .presentation {
-      right: 30%;
+      right: 35%;
     }
+   }
+
+   @media (max-width: 750px) { 
+
+    .globalBanner{
+      height: 900px;
+      }
+
+    .homePicture {
+      height: 700px;
+    }
+
+    .presentation{
+      min-width: 350px;
+      font-size: 28px;
+      
+      right: 70px;
+      top: 20%;
+
+      
+      h2{
+        font-size: 28px;
+      }
+      
+      p{
+        margin-left: 20px;
+      }
+
+    }
+
+
+
+    .helloPresentation{
+      font-size: 60px;
+    }
+
+    
+    .discoverButton {
+      font-size: 15px;
+    }
+
+    .calqDiscoverButton {
+      font-size: 15px;
+  }
+
+  .typeWriterSentence {
+    gap: 10px;
+    
+  }
+
+    .copiedDivDiscord {
+      width: 90px;
+      height: 90px;
+      position: relative;
+    }
+
+    .copiedDivDiscord::before {
+      width: 130px;
+      left: -20px;
+      top: 85px;
+      font-size: 10px;
+    }
+  
+   }
+
+
+
+   @media (max-width: 430px) { 
+
+    .presentation{
+      min-width: 300px;
+      font-size: 24px;
+      
+      right: 20px;
+
+      
+      h2{
+        font-size: 24px;
+      }
+
+    }
+
+
+
+    .helloPresentation{
+      font-size: 50px;
+    }
+
+    
+    .discoverButton {
+      font-size: 14px;
+    }
+
+    .calqDiscoverButton {
+      font-size: 14px;
+  }
+  
    }
 
 

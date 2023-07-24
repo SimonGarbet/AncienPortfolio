@@ -25,7 +25,6 @@ function Project({id, maincolor, title, subtitle, category, summary, githubLink,
  
     return (
        <figure className='globalProjectComponent'>
-        <div className='projectComponentLink'>
         
             <div className='globalDescriptionProject'>
 
@@ -63,7 +62,6 @@ function Project({id, maincolor, title, subtitle, category, summary, githubLink,
                 <img src ={imageMobile} className='pictureMobile'  alt =  'Aperçu Projet 7 Backend Version Mobile' />                
             </div>
             <div className='lineProjects'></div>
-        </div>
        </figure>
     )
 }

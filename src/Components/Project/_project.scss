@@ -8,16 +8,11 @@
     margin: auto;
   }
 
-  .projectComponentLink {
-    color: #111;
-    text-decoration: none;
-  }
-
 
 
 .globalDescriptionProject {
   width: 75%;
-  max-width: 1440px;
+  max-width: 1840px;
   margin: auto;
 
   display: flex;
@@ -135,3 +130,106 @@
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
 }
+
+//Media Queries
+
+@media (max-width: 1024px) {
+
+  .globalDescriptionProject {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .pictureDesktop {
+    min-width: 0px;
+    width: 580px;
+    height: 400px;
+    
+  }
+  .pictureMobile {
+    right: -20px;
+  }
+
+
+  
+ }
+
+
+
+ @media (max-width: 750px) {
+
+  .titlePartProject {
+    min-width: 0;
+  }
+  
+  .fontAwesomeTitleProject {
+    font-size: 20px;
+  }
+  
+  .titlePartProject {
+    h3 {
+      font-size: 35px;
+    }
+  
+    p{
+      font-size: 18px;
+    }
+  
+    }
+  
+  .rightsideDescriptionProject {
+    
+    p{
+      font-size: 18px;
+    };
+  }
+  
+  
+  
+  .projectView {
+
+    font-size: 20px;
+
+    p{
+      font-size: 18px;
+    }
+  }
+
+  .picturePartProject {
+    height: 400px;
+  }
+
+  .pictureDesktop {
+    width: 400px;
+    height: 300px;
+  }
+
+  .pictureMobile {
+    height: 400px;
+    width: 210px;
+    top: 40px;
+    right: 0px;
+ }
+
+
+}
+
+
+@media (max-width: 500px) {
+
+  .pictureDesktop {
+   display: none;
+  }
+
+  .pictureMobile {
+    position: relative;
+    top: 20px;
+    left: 8%;
+    height: 400px;
+    width: 210px;
+ }
+}
+
+
+

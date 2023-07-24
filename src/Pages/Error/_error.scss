@@ -29,3 +29,41 @@
         color: $terracota;
     }
 }
+
+@media (max-width: 1024px) { 
+
+    .errorMessage {
+
+    
+        h2{
+            font-size: 150px;
+        }
+    
+        p{
+            font-size: 30px;
+        }
+    
+        .homeLink{
+            font-size: 25px;
+        }
+    }
+}
+
+@media (max-width: 750px) { 
+
+    .errorMessage {
+
+    
+        h2{
+            font-size: 100px;
+        }
+    
+        p{
+            font-size: 18px;
+        }
+    
+        .homeLink{
+            font-size: 18px;
+        }
+    }
+}

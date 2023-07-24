@@ -11,7 +11,6 @@
     background-color: #fff;
     transition:  all 0.5s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-    border: 5px solid #fff;
     border-radius: 10px;
 
     &:hover{
@@ -42,7 +41,7 @@
     .cardProjectSubtitle {
         position: absolute;
         color: $mediumgrey;
-        font-size: 17px;
+        font-size: 20px;
         bottom: 0;
         width: 300px;
         transform: translate(-80px, -152px) rotate(-90deg);
@@ -50,4 +49,57 @@
     }
 }
 
+
+
+@media (max-width: 1024px) { 
+
+    .containerCard{
+        height: 500px;
+        width: 90px;
+    
+    
+    
+        .backCard{
+            height: 200px;
+        }
+    
+        .cardProjectTitle {
+            font-size: 26px;
+            width: 400px;
+            left : -5px;
+        }
+    
+        .cardProjectSubtitle {
+            font-size: 17px;           
+            width: 300px;
+            left : -10px;
+        }
+    }
+}
+
+
+@media (max-width: 750px) { 
+    .containerCard{
+        width: 60px;
+    
+    
+        .cardProjectSubtitle {
+           display: none;
+        }
+    }
+
+}
+
+@media (max-width: 400px) { 
+    .containerCard{
+        width: 50px;
+
+        .cardProjectTitle {
+            left : -9px;
+        }
+ }
+
+     
+
+}
 

@@ -10,7 +10,7 @@
   font-size: 25px;
   display: grid;
   place-items: center;
-  width: 120px;
+  width: 130px;
   aspect-ratio: 1;
   border-radius: 50%;
   
@@ -18,7 +18,7 @@
     position: absolute;
     border: none;
     font: inherit;
-    width: 80px;
+    width: 70px;
     aspect-ratio: 1;
     border-radius: 50%;
     transform: translate(var(--tx, 0), var(--ty, 0));
@@ -36,7 +36,7 @@
     position: absolute;
     border: none;
     font: inherit;
-    width: 80px;
+    width: 70px;
     aspect-ratio: 1;
     border-radius: 50%;
     transform: translate(var(--tx, 0), var(--ty, 0));
@@ -60,7 +60,7 @@
   font-size: 25px;
   display: grid;
   place-items: center;
-  width: 120px;
+  width: 130px;
   aspect-ratio: 1;
   border-radius: 50%;
   
@@ -68,7 +68,7 @@
     position: absolute;
     border: none;
     font: inherit;
-    width: 80px;
+    width: 70px;
     aspect-ratio: 1;
     border-radius: 50%;
     transform: translate(var(--tx, 0), var(--ty, 0));
@@ -88,7 +88,7 @@
     border: none;
     background-color: $greennode;
       font: inherit;
-      width: 80px;
+      width: 70px;
       opacity: 1;
       aspect-ratio: 1;
       border-radius: 50%;
@@ -103,3 +103,39 @@
 
     }
   }
+
+
+
+
+  @media (max-width: 750px) { 
+
+    .gravityButton {
+      width: 90px;
+
+      .buttonIcon {
+        width: 60px;
+        transform: translate(0);
+      }
+    
+      .buttonIconCheck {
+        width: 60px;
+        transform: translate(0);
+    }
+    
+  }
+    
+    .gravityCopied {
+      width: 90px;
+      
+      .buttonIcon {
+        width: 60px; 
+        transform: translate(0);
+      }
+    
+      .buttonIconCheck {  
+        width: 60px;
+        transform: translate(0);
+      }
+    }
+
+}
