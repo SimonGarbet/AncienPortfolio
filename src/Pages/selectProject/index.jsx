@@ -52,7 +52,7 @@ function SelectProject() {
             <p>Chargement des Données</p>
           ) : (
         
-        <div className='globalProjectPage'>
+        <div className='globalSelectPage'>
             <Header />
 
 

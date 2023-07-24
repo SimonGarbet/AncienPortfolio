@@ -1,0 +1,31 @@
+@import '../../Scss/mixins';
+@import '../../Scss/variables';
+@import '../../Scss/placeholders';
+
+
+
+
+.errorMessage {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    margin : 200px 0;
+
+    h2{
+        font-size: 240px;
+        color: $terracota;
+    }
+
+    p{
+        font-size: 40px;
+    }
+
+    .homeLink{
+        font-size: 30px;
+        color: $terracota;
+    }
+}
