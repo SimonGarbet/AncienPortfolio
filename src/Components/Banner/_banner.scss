@@ -85,7 +85,7 @@
   
   
 
-  .containerBoutonDecouvrir {
+  .containerDiscoverButton {
   border: 4px solid $terracota;
   background-color: $terracota;
   position: relative;
@@ -97,7 +97,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.boutonDecouvrir {
+.discoverButton {
   padding : 20px;
   display: block;
   width: 100%;
@@ -124,7 +124,7 @@
     }
 
 
-  .calqueBoutonDecouvrir {
+  .calqDiscoverButton {
     color: #fff;
     text-align: center;
     width: 100%;

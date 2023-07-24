@@ -64,9 +64,9 @@ function Home(){
 
             <p>basé à Bordeaux.</p>
 
-            <div className='containerBoutonDecouvrir'>
-                <span className='calqueBoutonDecouvrir'> Découvrir mon Profil</span>
-            <a href='#lineAboutMe' className='boutonDecouvrir'>Découvrir mon Profil</a>
+            <div className='containerDiscoverButton'>
+                <span className='calqDiscoverButton'> Découvrir mon Profil</span>
+            <a href='#lineAboutMe' className='discoverButton'>Découvrir mon Profil</a>
             </div>
 
             <div className='buttonLine'>

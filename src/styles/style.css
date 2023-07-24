@@ -1,85 +1,363 @@
-#Accueil {
+@charset "UTF-8";
+.globalHomePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#lineAboutMe, #lineProjects, .lineProjects {
+  border-bottom: 1px solid #cccccc;
+  width: 85%;
+  max-width: 2040px;
+  height: 1px;
+  padding: 60px 0;
+  margin: 0px auto 120px auto;
+}
+
+#lineAboutMe {
+  margin-top: 0;
+  height: 0px;
+  border-bottom: none;
+  margin-bottom: 30px;
+}
+
+.globalProjectPage {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.projectPageTitle {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  max-width: 2000px;
+  height: 400px;
+  margin: 80px auto;
+  gap: 100px;
+}
+.projectPageTitle .projectTitleGithub {
+  display: flex;
+  flex-direction: column;
+  align-items: flex start;
+  gap: 30px;
+  margin-left: 6px;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 6px, rgba(0, 0, 0, 0.3) 0px 10px 15px 10px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 20px;
+  padding: 38px;
+}
+.projectPageTitle .projectTitleGithub h2 {
+  font-size: 65px;
+}
+.projectPageTitle .projectTitleGithub .subtitleProjectPage {
+  font-size: 30px;
+  color: #949494;
+  margin-left: 3px;
+}
+.projectPageTitle .projectTitleGithub a {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 55%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-decoration: none;
+}
+.projectPageTitle .projectTitleGithub a:hover {
+  background-color: #111;
+}
+.projectPageTitle .projectTitleGithub a p {
+  color: #fff;
+  font-size: 22px;
+}
+.projectPageTitle .projectTitleGithub a svg {
+  height: 28px;
+  color: #fff !important;
+}
+.projectPageTitle .projectTitleGithub .figmaLinkProject {
+  margin-top: -10px;
+  background-color: rgba(255, 114, 98, 0.65);
+}
+.projectPageTitle .projectTitleGithub .figmaLinkProject:hover {
+  background-color: #ff7262;
+}
+.projectPageTitle .skillSection {
+  font-size: 18px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 20px;
+}
+.projectPageTitle .skillSection h3 {
+  font-size: 30px;
+}
+
+@media (max-width: 1250px) {
+  .projectPageTitle {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+.descriptionProjectPage {
+  width: 85%;
+  max-width: 2000px;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 20px;
+  padding: 70px;
+}
+.descriptionProjectPage h3 {
+  font-size: 30px;
+}
+
+.globalPicturePageProject {
+  width: 85%;
+  max-width: 2000px;
+  margin: 80px auto;
+  display: flex;
+  gap: 50px;
+}
+.globalPicturePageProject .totalDesktopPicture {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 70%;
+  cursor: pointer;
+}
+.globalPicturePageProject .totalMobilePicture {
+  width: 30%;
+  cursor: pointer;
+}
+
+.libraryProjects {
   display: flex;
   justify-content: center;
-  gap: 6%;
+  align-items: center;
+  position: relative;
+}
+.libraryProjects h3 {
+  font-size: 30px;
+  font-weight: 500;
+  width: 35%;
+  max-width: 450px;
+  margin-left: 100px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.libraryProjects h3 span {
+  color: #ff5925;
+  font-weight: 700;
+}
+.libraryProjects::after {
+  content: "";
+  display: block;
+  position: absolute;
   width: 100%;
+  margin: 0 auto;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(#FFE4C4, #FFF8DC, #FFE4C4, #FFF8DC, #FFE4C4);
+  height: 80px;
+  z-index: -1;
 }
 
-.conteneurBandes {
+.containerAllCards {
+  width: 65%;
+  max-width: 1000px;
+  margin: 60px 0px 30px 0px;
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 15px;
 }
 
-.splitterBande1, .splitterBande2 {
+.librarySelectPage {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  margin: 200px 0;
+}
+.librarySelectPage h3 {
+  font-size: 30px;
+  font-weight: 500;
+  width: 35%;
+  max-width: 450px;
+  margin-left: 10%;
+  text-align: center;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  z-index: 2;
+}
+.librarySelectPage h3 span {
+  color: #ff5925;
+  font-weight: 700;
+}
+.librarySelectPage::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(#FFE4C4, #FFF8DC, #FFE4C4, #FFF8DC, #FFE4C4);
+  height: 80px;
+  z-index: -1;
 }
 
-.bandeRouge {
-  width: 50px;
+.containerAllCardsSelectPage {
+  width: 65%;
+  max-width: 1000px;
+  margin: 60px 10% 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 15px;
+  z-index: 1;
+}
+
+.errorMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 200px 0;
+}
+.errorMessage h2 {
+  font-size: 240px;
+  color: #ff5925;
+}
+.errorMessage p {
+  font-size: 40px;
+}
+.errorMessage .homeLink {
+  font-size: 30px;
+  color: #ff5925;
+}
+
+#aboutMe {
+  width: 70%;
+  max-width: 1440px;
+  margin: 0px auto 50px auto;
+  display: flex;
+  align-items: center;
+}
+#aboutMe img {
+  border-radius: 86% 14% 55% 45%/41% 39% 61% 59%;
   height: 400px;
-  background-color: #ff5925;
-  border-radius: 10px 0px 0px 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+  border: 1px solid #fff;
 }
 
-.bandeViolette {
-  width: 50px;
-  height: 500px;
-  background-color: #563D7C;
-  border-radius: 0px 0px 10px 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.globalDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.globalDescription p {
+  font-size: 20px;
+  text-align: start;
+  width: 80%;
+}
+.globalDescription p strong {
+  font-size: 21px;
+}
+.globalDescription p a {
+  color: #ff5925;
+  font-weight: 700;
 }
 
-.bandeJaune {
-  width: 50px;
-  height: 350px;
-  background-color: #F0DB4F;
-  border-radius: 0px 10px 10px 0px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.aboutTitle {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+.aboutTitle svg {
+  color: #ff5925;
 }
 
-.bandeBleue {
-  width: 50px;
-  height: 450px;
-  background-color: #15D7F7;
-  border-radius: 10px 0px 10px 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.globalBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
-.bandeVerte {
-  width: 50px;
-  height: 200px;
-  background-color: #90c53f;
-  border-radius: 0px 10px 10px 0px;
-  box-shadow: rgba(0, 0, 0, 0.35) 5px 0px 15px;
+.homePicture {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(110%);
+  height: 1200px;
+  position: absolute;
+  z-index: 1;
 }
 
 .presentation {
-  margin-top: 30px;
+  border-radius: 20px;
+  min-width: 500px;
   font-size: 40px;
   font-weight: 700;
-  width: 45%;
+  position: absolute;
+  z-index: 2;
+  right: 12%;
+  top: 27%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
+  gap: 5px;
+}
+.presentation h2 {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 20px;
 }
 .presentation p {
   margin-left: 20px;
 }
 
+@media (min-width: 2500px) {
+  .presentation {
+    right: 30%;
+  }
+}
 .helloPresentation {
   color: #ff5925;
   font-size: 70px;
   font-weight: bold;
-  margin-left: 20px;
-}
-
-h2 {
-  margin-top: 20px;
-  font-size: 40px;
-  font-weight: 700;
   margin-left: 20px;
 }
 
@@ -89,15 +367,272 @@ h2 {
   gap: 15px;
 }
 
-.boutonDecouvrir {
-  color: #ffffff;
-  font-size: 15px;
-  text-decoration: none;
-  margin: 30px 0px 0px 20px;
-  padding: 20px;
+.containerDiscoverButton {
+  border: 4px solid #ff5925;
   background-color: #ff5925;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 1px;
   border-radius: 20px;
+  margin: 30px 0px 0px 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.discoverButton {
+  padding: 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: #fff;
+  -webkit-mask: url("../../Assets/urban-sprite.png");
+  mask: url("../../Assets/urban-sprite.png");
+  -webkit-mask-size: 3000% 100%;
+  mask-size: 3000% 100%;
+  border: none;
+  color: #ff5925;
+  cursor: pointer;
+  animation: ani 0.7s steps(29) forwards;
+}
+.discoverButton:hover {
+  animation: ani2 0.7s steps(29) forwards;
+}
+
+.calqDiscoverButton {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  position: absolute;
+  padding: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+.buttonLine {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  margin: 25px 0px 0px 5px;
+}
+.buttonLine button {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.copiedDivDiscord {
+  width: 90px;
+  height: 90px;
+  position: relative;
+}
+
+.copiedDivDiscord::before {
+  content: "Pseudo Discord Copié";
+  position: absolute;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  left: 100px;
+  top: 19%;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: #90c53f;
+  padding: 15px;
+  border-radius: 10px;
+  animation: softGrindOpacity 2.75s;
+}
+
+@keyframes softGrindOpacity {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.containerCard {
+  position: relative;
+  height: 550px;
+  width: 100px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
+.containerCard:hover {
+  transform: scale(1.1);
+}
+.containerCard .backCard {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(90%);
+}
+.containerCard .cardProjectTitle {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 700;
+  bottom: 37px;
+  transform: translate(-170px, -160px) rotate(-90deg);
+  width: 400px;
+}
+.containerCard .cardProjectSubtitle {
+  position: absolute;
+  color: #949494;
+  font-size: 17px;
+  bottom: 0;
+  width: 300px;
+  transform: translate(-80px, -152px) rotate(-90deg);
+  z-index: 10;
+}
+
+.containerCollapse {
+  width: 100%;
+  border-radius: 30px;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.containerCollapse:hover {
+  transform: scale(1.02);
+  opacity: 1 !important;
+}
+.containerCollapse div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+}
+.containerCollapse div svg {
+  margin-right: 20px;
+}
+.containerCollapse h3 {
+  border-radius: 30px;
+  padding: 20px;
+  text-align: center;
+}
+.containerCollapse .screenshotFullCollapse {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.footer {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 100px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.footer button {
+  background: transparent;
+}
+.footer a {
+  color: #ff5925;
+}
+
+.buttonLineFooter {
+  display: flex;
+  justify-content: center;
+}
+
+.emailLine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.emailLine p {
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px 0px 0px 10px;
+  border: 3px solid #fff;
+  border-right: none;
+  padding: 10px 25px;
+}
+
+.classicButtonEmail {
+  background-color: #ff5925 !important;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  font-size: 20px;
+  border-radius: 0px 10px 10px 0px;
+  border: 3px solid #fff;
+  border-left: none;
+}
+
+.copiedButtonEmail {
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  border: 3px solid #fff;
+  border-left: none;
+  font-size: 20px;
+  background-color: #90c53f !important;
+}
+
+.copiedButtonEmail::before {
+  content: "Email Copié";
+  position: absolute;
+  color: #fff;
+  width: 160px;
+  left: 70px;
+  bottom: 0;
+  text-align: center;
+  font-size: 17px;
+  background-color: #90c53f;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+
+.disclaimerFooter p {
+  font-size: 19px;
+  text-align: center;
+  font-style: italic;
 }
 
 *, *::before, *::after {
@@ -106,14 +641,8 @@ h2 {
   box-sizing: border-box;
 }
 
-.buttonLine {
-  display: flex;
-  place-items: center;
-  justify-content: center;
-  margin: 25px 0px 0px 5px;
-}
-
 .gravityButton {
+  position: relative;
   font-size: 25px;
   display: grid;
   place-items: center;
@@ -121,26 +650,89 @@ h2 {
   aspect-ratio: 1;
   border-radius: 50%;
 }
-.gravityButton > button {
+.gravityButton .buttonIcon {
+  position: absolute;
   border: none;
   font: inherit;
   width: 64px;
   aspect-ratio: 1;
-  background: #cccccc;
   border-radius: 50%;
   transform: translate(var(--tx, 0), var(--ty, 0));
   cursor: pointer;
   transition: all 0.1s ease-out;
+  transition: opacity 0.2s ease-in-out;
 }
-.gravityButton > button:hover {
+.gravityButton .buttonIcon:hover {
+  background-color: #ff5925;
+}
+.gravityButton .buttonIconCheck {
+  position: absolute;
+  border: none;
+  font: inherit;
+  width: 64px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transform: translate(var(--tx, 0), var(--ty, 0));
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.1s ease-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.gravityButton .buttonIconCheck:hover {
   background-color: #ff5925;
 }
 
-.header {
+.gravityCopied {
+  position: relative;
+  font-size: 25px;
+  display: grid;
+  place-items: center;
+  width: 90px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.gravityCopied .buttonIcon {
+  position: absolute;
+  border: none;
+  font: inherit;
+  width: 64px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transform: translate(var(--tx, 0), var(--ty, 0));
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+.gravityCopied .buttonIcon:hover {
+  background-color: #ff5925;
+}
+.gravityCopied .buttonIconCheck {
+  position: absolute;
+  border: none;
+  background-color: #90c53f;
+  font: inherit;
+  width: 64px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transform: translate(var(--tx, 0), var(--ty, 0));
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.gravityCopied .buttonIconCheck:hover {
+  background-color: #ff5925;
+}
+
+#header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 150px;
+  margin: 0 auto;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  width: 85%;
+  max-width: 1840px;
 }
 
 .logo {
@@ -148,33 +740,36 @@ h2 {
   align-items: baseline;
   gap: 10px;
   font-size: 20px;
+  text-decoration: none;
 }
 .logo h1 {
   font-weight: 700;
   font-size: 25px;
+  color: #111;
   letter-spacing: -0.5px;
   text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.35);
 }
 
-.header nav {
+#header nav {
   display: flex;
   gap: 60px;
   padding-right: 50px;
-}
-.header nav a {
-  color: #111;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 22px;
 }
 
-.globalProject {
+.globalProjectComponent {
   width: 100%;
   margin: auto;
 }
 
+.projectComponentLink {
+  color: #111;
+  text-decoration: none;
+}
+
 .globalDescriptionProject {
-  width: 90%;
+  width: 75%;
+  max-width: 1440px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -184,6 +779,7 @@ h2 {
 
 .globalTitlePartProject {
   display: flex;
+  align-items: baseline;
   gap: 20px;
 }
 
@@ -193,7 +789,7 @@ h2 {
 }
 
 .titlePartProject {
-  min-width: 400px;
+  min-width: 330px;
 }
 .titlePartProject h3 {
   font-size: 40px;
@@ -204,6 +800,13 @@ h2 {
   margin-top: 15px;
   margin-left: 2px;
 }
+.titlePartProject svg {
+  margin-top: 20px;
+  font-size: 32px;
+}
+.titlePartProject svg:hover {
+  color: #ff5925 !important;
+}
 
 .rightsideDescriptionProject {
   max-width: 600px;
@@ -212,25 +815,26 @@ h2 {
   gap: 30px;
 }
 .rightsideDescriptionProject p {
-  font-size: 25px;
+  font-size: 22px;
   text-align: justify;
 }
 
-.lienProjet {
+.projectView {
   display: flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
   font-size: 25px;
 }
-.lienProjet p {
+.projectView p {
   font-size: 15;
   font-weight: 700;
   color: #111;
 }
 
 .picturePartProject {
-  width: 90%;
+  width: 75%;
+  max-width: 1000px;
   margin: 0px auto;
   position: relative;
   margin-top: 60px;
@@ -239,44 +843,39 @@ h2 {
 
 .pictureDesktop {
   position: absolute;
-  left: 30px;
   z-index: 1;
   -o-object-fit: cover;
      object-fit: cover;
   width: 80%;
+  min-width: 730px;
+  max-width: 850px;
   height: 500px;
-  border: 10px solid #111;
-  border-radius: 30px;
+  border: 8px solid #111;
+  border-bottom: 20px solid #111;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
 }
 
 .pictureMobile {
   position: absolute;
   top: 130px;
-  right: 20px;
+  right: 3%;
   z-index: 2;
   -o-object-fit: cover;
      object-fit: cover;
   height: 400px;
+  width: 210px;
   border: 6px solid #111;
   border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+}
+
+html {
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
-}
-
-.globalPage {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 85%;
-  margin: 40px auto;
-}
-
-#lineProjects, .lineProjects {
-  background-color: #cccccc;
-  width: 100%;
-  height: 1px;
-  margin: 120px auto;
 }/*# sourceMappingURL=style.css.map */
