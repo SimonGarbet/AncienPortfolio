@@ -1,16 +1,26 @@
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle, faDiamond, faSquare, faPlay, faShield } from '@fortawesome/free-solid-svg-icons';
+import { faCircle, faSquare } from '@fortawesome/free-solid-svg-icons';
 
 import '../../Scss/style.scss'
 
 
+
+
 function Header(){
+
+  const [isOver, setIsOver] = useState(false);
+
+  useEffect(() => {},[isOver]);
+
+
+
     return (
         <section id='header'>
-            <NavLink to = {`/`} className='logo'>
-            <FontAwesomeIcon icon={faCircle} style={{color: '#ff5925', }} />
+            <NavLink to = {`/`} className='logo' onOver onMouseEnter ={() => setIsOver(true)}  onMouseLeave={() => setIsOver(false)}>
+            <FontAwesomeIcon icon = {isOver ? faSquare : faCircle}  style= {{color: isOver ? '#90c53f' : '#ff5925', }} />
             <h1>Simon Garbet</h1>
             </NavLink>
             <nav>

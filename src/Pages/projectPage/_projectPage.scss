@@ -35,6 +35,8 @@
         width: 100%;
         height: 100%;
 
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 6px, rgba(0, 0, 0, 0.3) 0px 10px 15px 10px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
         border-radius: 20px;
         padding: 38px;
 
@@ -50,7 +52,7 @@
 
 
        a {
-        background-color: rgba(0, 0, 0, 0.35);
+        background-color: rgba(0, 0, 0, 0.30);
         border-radius: 20px;
         margin-top: 20px;
         width: 55%;
@@ -81,8 +83,12 @@
 
        .figmaLinkProject{
         margin-top: -10px;
-        background-color: #ff7262;
+        background-color: rgba($color: #ff7262, $alpha: 0.65);
 
+        &:hover{
+            background-color: rgba($color: #ff7262, $alpha: 1);
+
+        }
         
     }
         
@@ -95,7 +101,6 @@
         h3{
             font-size: 30px;
         }
-
         font-size: 18px;
         text-align: justify;
 
@@ -107,7 +112,7 @@
         height: 100%;
         width: 100%;
         padding: 50px;
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
         border-radius: 20px;
     }
 
@@ -130,7 +135,7 @@
         display: flex;
         flex-direction: column;
         gap: 25px;
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
         border-radius: 20px;
         padding: 70px;
 

@@ -76,6 +76,7 @@ function Main() {
               <Project
               key = {project.id}
               id = {project.id}
+              maincolor = {project.maincolor}
               title = {project.title}
               subtitle = {project.subtitle}
               category = {project.category}

@@ -1,7 +1,7 @@
 [
     {
         "id" : "5",
-        "maincolor": "#2c180f",
+        "maincolor": "#dbaa62",
         "title" :  "Mon Vieux Grimoire",
         "subtitle" : "ExpressJS et MongoDB",
         "category" : "Backend",

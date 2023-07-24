@@ -9,23 +9,18 @@ import '../../Scss/style.scss';
 
 
 
-function Project({id, title, subtitle, category, summary, githubLink, imageDesktop, imageMobile}){
+function Project({id, maincolor, title, subtitle, category, summary, githubLink, imageDesktop, imageMobile}){
 
     let iconFontAwesome = faShield
-    let colorFontAwesome = '#949494'
 
     if (category === 'Javascript'){
         iconFontAwesome = faPlay
-        colorFontAwesome = '#F0DB4F'
     } else if (category === 'React') {
         iconFontAwesome = faSquare
-        colorFontAwesome = '#15D7F7'
     } else if (category === 'Backend') {
         iconFontAwesome = faDiamond
-        colorFontAwesome = '#90c53f'
     } else if (category === 'CSS') {
         iconFontAwesome = faCircle
-        colorFontAwesome = '#563D7C'
     }
  
     return (
@@ -36,7 +31,7 @@ function Project({id, title, subtitle, category, summary, githubLink, imageDeskt
 
 
                 <div className='globalTitlePartProject'>
-                    <FontAwesomeIcon icon= {iconFontAwesome} className='fontAwesomeTitleProject' style={{color: colorFontAwesome}}/>
+                    <FontAwesomeIcon icon= {iconFontAwesome} className='fontAwesomeTitleProject' style={{color: maincolor}}/>
                     <div className='titlePartProject'>
                         <h3>{title} </h3>
                         <p>{subtitle}</p>
@@ -54,7 +49,7 @@ function Project({id, title, subtitle, category, summary, githubLink, imageDeskt
                     
                     <Link to = {`/projet/${id}`} className='projectView'>
                     <p>Voir le Projet</p>
-                    <FontAwesomeIcon icon={faArrowRight} style={{color: colorFontAwesome,}} />
+                    <FontAwesomeIcon icon={faArrowRight} style={{color: maincolor,}} />
                     </Link>
                     
                     

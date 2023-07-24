@@ -13,7 +13,7 @@ function Collapse({ title, imagesrc, maincolor }) {
   useEffect(() => {}, [isOpen])
 
     return (
-        <div className='containerCollapse' style={{ background: `${maincolor}`}} onClick={() => setIsOpen(!isOpen)}>
+        <div className='containerCollapse' style={{ background: `${maincolor}`, opacity : isOpen ? '1' : '0.90'}} onClick={() => setIsOpen(!isOpen)}>
           <div>
           <h3>{title}</h3>
           <FontAwesomeIcon icon={faChevronUp} style={{ transform: isOpen ? 'rotate(0)' : 'rotate(180deg)'}}/>

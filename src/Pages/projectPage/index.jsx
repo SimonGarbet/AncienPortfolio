@@ -74,7 +74,7 @@ function ProjectPage() {
 
             <div className='projectPageTitle' >
 
-              <div className='projectTitleGithub' style={{border: `5px solid ${projectTarget[0].maincolor}`,}}>
+              <div className='projectTitleGithub'>
                 <h2>{projectTarget[0].title}</h2>
                 <p className='subtitleProjectPage'>{projectTarget[0].subtitle}</p>             
                 <a href={projectTarget[0].githubLink} target="_blank" rel="noopener noreferrer">

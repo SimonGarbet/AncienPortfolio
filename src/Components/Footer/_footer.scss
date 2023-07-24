@@ -6,7 +6,8 @@
 .footer{
     color: #fff;
     background-color:  rgba(0,0,0, 0.85);
-    padding: 50px;
+    padding: 100px 50px 50px 50px;
+
 
     display: flex;
     flex-direction: column;
@@ -43,9 +44,9 @@
     p{
         font-size: 20px;
         font-weight: 600;
-        color: #111;
-        background-color: #fff;
         border-radius: 10px 0px 0px 10px;
+        border: 3px solid #fff;
+        border-right: none;
         padding: 10px 25px;
     }
 }
@@ -58,6 +59,8 @@
     border: none;
     font-size: 20px;
     border-radius: 0px 10px 10px 0px;
+    border: 3px solid #fff;
+    border-left: none;
 }
 
 .copiedButtonEmail {
@@ -67,6 +70,8 @@
     padding: 10px 15px;
     border: none;
     border-radius: 0px 10px 10px 0px;
+    border: 3px solid #fff;
+    border-left: none;
     font-size: 20px;
     background-color: $greennode !important;
 
@@ -79,12 +84,14 @@
     color: #fff;
     width: 160px;
     left: 70px;
-    bottom: 2px;
+    bottom: 0;
     text-align: center;
     font-size: 17px;
     background-color: $greennode;
     padding: 10px 15px;
     border-radius: 10px;
+    border: 3px solid #fff;
+
   }
 
 
@@ -95,5 +102,6 @@
     p{
         font-size: 19px;
         text-align: center;
+        font-style: italic;
     }
 }
