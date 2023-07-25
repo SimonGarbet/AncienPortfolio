@@ -19,7 +19,7 @@ function Header(){
 
     return (
         <section id='header'>
-            <NavLink to = {`/`} className='logo' onOver onMouseEnter ={() => setIsOver(true)}  onMouseLeave={() => setIsOver(false)}>
+            <NavLink to = {`/`} className='logo' onMouseEnter ={() => setIsOver(true)}  onMouseLeave={() => setIsOver(false)}>
             <FontAwesomeIcon icon = {isOver ? faSquare : faCircle}  style= {{color: isOver ? '#90c53f' : '#ff5925', }} />
             <h1>Simon Garbet</h1>
             </NavLink>

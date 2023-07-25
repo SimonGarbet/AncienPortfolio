@@ -19,7 +19,7 @@
     align-items: center;
     width: 85%;
     max-width: 2000px;
-    height: 400px;
+    height: 500px;
     margin: 80px auto;
     gap: 100px;
     
@@ -57,6 +57,7 @@
         margin-top: 20px;
         width: 55%;
         height: 50px;
+        padding: 8px;
 
         display: flex;
         align-items: center;
@@ -98,6 +99,13 @@
 
     .skillSection{
 
+        div {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 26px;
+        }
+
         h3{
             font-size: 30px;
         }
@@ -121,6 +129,14 @@
     
 
     .descriptionProjectPage{
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 26px;
+        }
+        
         width: 85%;
         max-width: 2000px;
         margin: 0 auto;
@@ -221,8 +237,27 @@
                 flex-direction: column;
                 height: 100%;
             }
+
+
            }
 
+           @media (max-width : 1024px) {
+
+
+           .globalPicturePageProject{
+            flex-direction: column;   
+            
+            .totalDesktopPicture{
+                width: 100%;
+
+            }
+    
+            .totalMobilePicture{
+                width: 100%
+            }
+        }
+
+    }
 
 
 
@@ -262,31 +297,47 @@
                 padding: 30px;
             }
              
-        
-            .descriptionProjectPage{
-                font-size: 18px;
-                padding: 30px;
-        
-                h3 {
-                    font-size: 30px;
-                }
-            }
+         
 
         }
-             
-            
-            .globalPicturePageProject{
-                flex-direction: column;   
-                
-                .totalDesktopPicture{
-                    width: 100%;
+
+        .descriptionProjectPage{
+            font-size: 18px;
+            padding: 30px;
     
-                }
-        
-                .totalMobilePicture{
-                    width: 100%
-                }
+            h3 {
+                font-size: 30px;
             }
+        }
+             
    
         }
-   
+
+
+        @media (max-width : 480px) {
+
+
+            .projectPageTitle {
+
+                .projectTitleGithub {
+          
+                    h2{
+                        font-size: 45px;
+                    }       
+                }
+            
+                
+            
+                .skillSection{       
+                    padding: 20px;
+                }
+                 
+            
+             
+    
+            }
+
+            .descriptionProjectPage{
+                padding: 20px;
+            }
+        }

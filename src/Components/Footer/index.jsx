@@ -55,7 +55,7 @@ function Footer(){
             />
             </a>
 
-            <a href='https://github.com/SimonGarbet/P8Garbet' target="_blank" rel="noopener noreferrer">
+            <a href='https://github.com/SimonGarbet' target="_blank" rel="noopener noreferrer">
             <GravityButton 
                 key = 'GravityButton6'
                 logo = {faGithub}
