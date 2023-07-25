@@ -37,6 +37,8 @@ function Footer(){
     return (
         <section className='footer'>
 
+            <a href='#header' className='scrollTop'>Revenir en haut de page</a>
+
             <div className='emailLine'>
                 <p>simon.garbet@gmail.com </p>
                 <button className= {animationEmail ? "copiedButtonEmail" : "classicButtonEmail"} onClick={() => {setAnimationEmail(true); navigator.clipboard.writeText('simon.garbet@gmail.com')}}>

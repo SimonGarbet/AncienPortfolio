@@ -30,15 +30,15 @@ function Project({id, maincolor, title, subtitle, category, summary, githubLink,
 
 
                 <div className='globalTitlePartProject'>
-                    <FontAwesomeIcon icon= {iconFontAwesome} className='fontAwesomeTitleProject' style={{color: maincolor}}/>
                     <div className='titlePartProject'>
-                        <h3>{title} </h3>
+                    <FontAwesomeIcon icon= {iconFontAwesome} className='fontAwesomeTitleProject' style={{color: maincolor}}/>
+                    <h3>{title} </h3>
+                    </div>
+                    <div className='subtitlePartProject'>
                         <p>{subtitle}</p>
-                        <div>
-                            <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faGithub} style={{color: "rgba(0,0,0,0.8",}} />
-                            </a>
-                        </div>
+                        <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGithub} style={{color: "rgba(0,0,0,0.8",}} />
+                        </a>
                     </div>
                 </div>
 
@@ -49,12 +49,9 @@ function Project({id, maincolor, title, subtitle, category, summary, githubLink,
                     <Link to = {`/projet/${id}`} className='projectView'>
                     <p>Voir le Projet</p>
                     <FontAwesomeIcon icon={faArrowRight} style={{color: maincolor,}} />
-                    </Link>
-                    
-                    
-                    
-                    
-                </div>
+                    </Link>       
+                    </div>        
+                
             </div>
 
             <div className='picturePartProject'>

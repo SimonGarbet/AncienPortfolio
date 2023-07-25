@@ -23,43 +23,50 @@
 
 .globalTitlePartProject {
   display: flex;
-  align-items: baseline;
-  gap: 20px;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .fontAwesomeTitleProject {
   font-size: 30px;
-  margin-top: 7px;
 }
 
 .titlePartProject {
-
+ display: flex;
+ align-items: center;
+  gap: 30px;
   min-width: 330px;
 
   h3 {
     font-size: 40px;
   }
 
-  p{
-    font-size: 20px;
-    color: $mediumgrey;
-    margin-top: 15px;
-    margin-left: 2px;
+}
+
+.subtitlePartProject{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 60px;
+
+
+p{
+  font-size: 20px;
+  color: $mediumgrey;
+}
+
+
+svg {
+  font-size: 32px;
+
+  &:hover{
+    color: $terracota !important;
   }
-
-
-  svg {
-    margin-top: 20px;
-    font-size: 32px;
-
-    &:hover{
-      color: $terracota !important;
-    }
-    
-  }
-
+  
+}
 
 }
+
 
 .rightsideDescriptionProject {
   max-width: 600px;
@@ -139,6 +146,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    gap: 40px;
   }
 
   .pictureDesktop {
@@ -151,6 +159,17 @@
     right: -20px;
   }
 
+  .subtitlePartProject{
+    margin-left: 60px;
+
+  }
+
+  .rightsideDescriptionProject {
+
+    margin-left: 60px;
+
+  }
+
 
   
  }
@@ -158,62 +177,66 @@
 
 
  @media (max-width: 750px) {
-
-  .titlePartProject {
-    min-width: 0;
-  }
   
   .fontAwesomeTitleProject {
-    font-size: 20px;
+    font-size: 25px;
   }
   
   .titlePartProject {
+    min-width: 0;
+    align-items: center;
+
     h3 {
       font-size: 35px;
     }
   
-    p{
-      font-size: 18px;
+  
     }
+
+    .subtitlePartProject{
+      margin-left: 55px;
   
     }
   
-  .rightsideDescriptionProject {
+    .rightsideDescriptionProject {
+  
+      margin-left: 55px;
+  
+    }
+
+    .rightsideDescriptionProject {
     
-    p{
-      font-size: 18px;
-    };
-  }
-  
-  
-  
-  .projectView {
-
-    font-size: 20px;
-
-    p{
-      font-size: 18px;
+      p{
+        font-size: 18px;
+      };
     }
+
+    .pictureDesktop {
+      min-width: 0px;
+      width: 420px;
+      height: 330px;
+      
+    }
+
+    .pictureMobile {
+      height: 350px;
+      width: 190px;
+    }
+
+    .picturePartProject {
+      height: 450px;
+    }
+
   }
+    
+    
+  
 
-  .picturePartProject {
-    height: 400px;
-  }
-
-  .pictureDesktop {
-    width: 400px;
-    height: 300px;
-  }
-
-  .pictureMobile {
-    height: 400px;
-    width: 210px;
-    top: 40px;
-    right: 0px;
- }
+  
+  
 
 
-}
+
 
 
 @media (max-width: 500px) {
@@ -223,12 +246,20 @@
   }
 
   .pictureMobile {
-    position: relative;
-    top: 20px;
-    left: 8%;
+    position: static;
     height: 400px;
     width: 210px;
  }
+
+ .picturePartProject {
+  position: static;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 25 auto;
+  height: 350px;
+}
 }
 
 

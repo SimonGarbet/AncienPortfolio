@@ -25,7 +25,7 @@ function Main() {
     async function fetchProject() {
       setDataLoading(true)
       try {
-        const response = await fetch(`http://localhost:3000/datas/projects.json`)
+        const response = await fetch(`/datas/projects.json`)
         const projectList = await response.json()
         setProjectList(projectList)
       } catch (err) {
