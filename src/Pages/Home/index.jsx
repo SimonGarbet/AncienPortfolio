@@ -15,7 +15,7 @@ import '../../Scss/style.scss'
 
 function Main() {
 
-  const [isDataLoading, setDataLoading] = useState(false);
+  const [isDataLoading, setDataLoading] = useState(true);
   const [error, setError] = useState(false);
   const [projectList, setProjectList] = useState([]);
 

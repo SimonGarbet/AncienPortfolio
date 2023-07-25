@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import Error from '../Error'
 import Card from '../../Components/Card';
@@ -13,10 +14,9 @@ import '../../Scss/style.scss';
 
 function SelectProject() {
 
-    const [isDataLoading, setDataLoading] = useState(false);
+    const [isDataLoading, setDataLoading] = useState(true);
     const [error, setError] = useState(false);
     const [projectList, setProjectList] = useState([]);
-    const [newPage, setNewPage] = useState(true);
 
 
 
@@ -32,13 +32,11 @@ function SelectProject() {
           setError(true)
         } finally {
           setDataLoading(false)
-          setNewPage(false)
         };
       };
 
       fetchProject()
-      // eslint-disable-next-line
-    }, [newPage]);
+    }, []);
 
 
   if (error) {
@@ -58,9 +56,11 @@ function SelectProject() {
 
             <div className='librarySelectPage'>
             <h3>Choisissez l'un des <span>projets</span></h3> 
-          <div className='containerAllCardsSelectPage' onClick= {() => setNewPage(true)}>
+          <div className='containerAllCardsSelectPage'>
                 
             {projectList?.map((project) => (
+            <Link to ={`/projet/${project.id}`}
+              onClick = {() => setDataLoading(true)}>
             <Card 
             key={project.id}
             id={project.id}
@@ -68,7 +68,8 @@ function SelectProject() {
             subtitle = {project.subtitle}
             maincolor = {project.maincolor}
             imageFond = {project.vignette}
-            />            
+            />
+            </Link>            
             ))}                      
           </div>
           </div>
