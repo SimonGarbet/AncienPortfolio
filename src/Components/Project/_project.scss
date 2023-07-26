@@ -83,6 +83,12 @@ svg {
 }
 
 
+.projectRedirectionHome{
+  display: flex;
+ flex-direction: column;
+  gap: 10px;
+}
+
 
 .projectView {
   display: flex;
@@ -92,8 +98,6 @@ svg {
   text-decoration: none;
   font-size: 25px;
   p{
-    font-size: 15;
-    font-weight: 700;
     color: #111;
   }
 }
@@ -138,6 +142,10 @@ svg {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
 }
 
+
+
+
+
 //Media Queries
 
 @media (max-width: 1024px) {
@@ -177,54 +185,71 @@ svg {
 
 
  @media (max-width: 750px) {
+
+  .globalDescriptionProject{
+    width: 80%;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .globalTitlePartProject{
+    gap: 5px;
+  }
   
   .fontAwesomeTitleProject {
     font-size: 25px;
   }
+
+  
   
   .titlePartProject {
     min-width: 0;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
 
     h3 {
       font-size: 35px;
+      text-align: center;
     }
+
   
   
     }
 
     .subtitlePartProject{
-      margin-left: 55px;
-  
+      margin-left: 0px;
+     flex-direction: column;
+     gap: 25px;
     }
   
     .rightsideDescriptionProject {
-  
-      margin-left: 55px;
-  
-    }
+      align-items: center;
+      margin-left: 0px;
+      gap: 20px;
 
-    .rightsideDescriptionProject {
-    
       p{
         font-size: 18px;
+        text-align: center
       };
+  
     }
 
     .pictureDesktop {
       min-width: 0px;
       width: 420px;
       height: 330px;
-      
+      top: -20px;
     }
 
     .pictureMobile {
       height: 350px;
       width: 190px;
+      top: 40px;
     }
 
     .picturePartProject {
-      height: 450px;
+      height: 380px;
     }
 
   }
@@ -257,8 +282,8 @@ svg {
   align-items: center;
   flex-direction: column;
   width: 80%;
-  margin: 25 auto;
-  height: 350px;
+  margin: 30px auto;
+  height: 330px;
 }
 }
 

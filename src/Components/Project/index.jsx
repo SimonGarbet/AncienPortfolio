@@ -25,6 +25,8 @@ function Project({id, maincolor, title, subtitle, category, summary, githubLink,
  
     return (
        <figure className='globalProjectComponent'>
+
+            < div className='lineProjects'></div>
         
             <div className='globalDescriptionProject'>
 
@@ -36,20 +38,23 @@ function Project({id, maincolor, title, subtitle, category, summary, githubLink,
                     </div>
                     <div className='subtitlePartProject'>
                         <p>{subtitle}</p>
-                        <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faGithub} style={{color: "rgba(0,0,0,0.8",}} />
-                        </a>
+                        
                     </div>
                 </div>
 
                 <div className='rightsideDescriptionProject'>
                     <p>{summary}</p>
             
-                    
-                    <Link to = {`/projet/${id}`} className='projectView'>
-                    <p>Voir le Projet</p>
-                    <FontAwesomeIcon icon={faArrowRight} style={{color: maincolor,}} />
-                    </Link>       
+                    <div className='projectRedirectionHome'>
+                        <Link to = {`/projet/${id}`} className='projectView'>
+                        <FontAwesomeIcon icon={faArrowRight} style={{color: maincolor,}} />
+                        <p>Voir le <strong>Projet</strong></p>                       
+                        </Link>
+                        <a href={githubLink} target="_blank" rel="noopener noreferrer" className='projectView'>
+                        <FontAwesomeIcon icon={faArrowRight} style={{color: maincolor,}} />
+                        <p>Voir le <strong>Github</strong></p>                     
+                        </a>
+                    </div>       
                     </div>        
                 
             </div>
@@ -58,7 +63,6 @@ function Project({id, maincolor, title, subtitle, category, summary, githubLink,
                 <img src ={imageDesktop} className='pictureDesktop' alt =  'Aperçu Projet 7 Backend Version Desktop' />
                 <img src ={imageMobile} className='pictureMobile'  alt =  'Aperçu Projet 7 Backend Version Mobile' />                
             </div>
-            <div className='lineProjects'></div>
        </figure>
     )
 }

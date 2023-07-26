@@ -8,6 +8,9 @@ import AboutMe from '../../Components/AboutMe';
 import Project from '../../Components/Project';
 import Footer from '../../Components/Footer'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+
 import '../../Scss/style.scss'
 
 
@@ -63,9 +66,6 @@ function Main() {
     <AboutMe />
 
     
-
-
-    <div id='lineProjects'></div>
         
     <section id='Projects'>
           {isDataLoading ? (
@@ -88,7 +88,16 @@ function Main() {
             ))}
             </div>                 
         )}
+
+          <a href='#header' className='scrollTop'>
+                <FontAwesomeIcon icon={faChevronUp} style={{color: "#fff",}} />
+                <FontAwesomeIcon icon={faChevronUp} style={{color: "#fff",}} />
+          </a>
+
+      
       </section>
+
+      
 
   <Footer />
 

@@ -60,6 +60,8 @@
 
         .librarySelectPage {
 
+            margin: 50px 0;
+
             h3 {
                 font-size: 30px;
 
@@ -69,6 +71,18 @@
             }
         
     }
+
+
+}
+
+
+
+@media (max-width: 750px) { 
+
+    .containerAllCardsSelectPage {
+      flex-direction: column;
+      gap: 2px;
+        }
 
 
 }

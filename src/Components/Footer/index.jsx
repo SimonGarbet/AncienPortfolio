@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faCopy} from '@fortawesome/free-solid-svg-icons';
+import {  faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faCopy } from '@fortawesome/free-solid-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -36,8 +36,6 @@ function Footer(){
 
     return (
         <section className='footer'>
-
-            <a href='#header' className='scrollTop'>Revenir en haut de page</a>
 
             <div className='emailLine'>
                 <p>simon.garbet@gmail.com </p>

@@ -65,7 +65,7 @@
 
 @media (max-width: 1024px) {
     #aboutMe {
-    
+        width: 85%;
         flex-direction: column;
         justify-content: center;
         gap: 60px;
@@ -107,6 +107,8 @@
 @media (max-width: 750px) {
 
     #aboutMe {
+
+            width: 95%;
 
        margin-bottom: 0px;
         

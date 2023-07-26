@@ -309,6 +309,12 @@
                 font-size: 30px;
             }
         }
+
+        .containerAllCards {
+           flex-direction: column;
+           height: 380px;
+           gap: 2px;
+            }
              
    
         }
