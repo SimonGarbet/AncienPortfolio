@@ -11,24 +11,24 @@
             {"id" :  "sen2",  "body" :"L'objectif était de relier notre frontend déjà construit à notre serveur et base de données pour gérer toutes les requêtes possibles sur un site de notation de livres."},
             {"id" :  "sen3",  "body" : "Avec ce projet, j'ai découvert comment connecter une base de données Mongo DB à son site, utiliser les middlewares sur lequel repose Express et réaliser les opérations CRUD."}
             ],
-        "githubLink" : "https://github.com/SimonGarbet/P7GarbetGlobal",
+        "githubLink" : "https://github.com/SimonGarbet/P7Garbet",
         "figmaLink" : "https://www.figma.com/file/1n68sa3kpYLlx693ZwaWVQ/Maquette-Mon-Vieux-Grimoire?type=design&t=ywJtJiZCeatxeHnO-6",
         "skills" : [
             {"id" :  "skill1",  "body" : "Implémenter un modèle logique de données conformément à la réglementation"}, 
             {"id" :  "skill2",  "body" : "Mettre en œuvre des opérations CRUD de manière sécurisée"}, 
             {"id" :  "skill3",  "body" : "Stocker des données de manière sécurisée"}
         ],
-        "imageDesktop" : "/Assets/P7Garbet/Summary/P7GarbetDesktop.jpg",
-        "imageMobile" : "/Assets/P7Garbet/Summary/P7GarbetMobile.jpg",
-        "vignette" : "/Assets/P7Garbet/Vignette/P7GarbetVignetteFond.jpg",
+        "imageDesktop" : "/images/P7Garbet/Summary/P7GarbetDesktop.jpg",
+        "imageMobile" : "/images/P7Garbet/Summary/P7GarbetMobile.jpg",
+        "vignette" : "/images/P7Garbet/Vignette/P7GarbetVignetteFond.jpg",
         "imagesPageProject" : {
             "Desktop" : [
-                {"id" :  "idesk1", "url" :"/Assets/P7Garbet/ProjectPage/P7GarbetPageDesktop1.jpg"},
-                {"id" :  "idesk2", "url" :"/Assets/P7Garbet/ProjectPage/P7GarbetPageDesktop2.jpg"},
-                {"id" :  "idesk3", "url" :"/Assets/P7Garbet/ProjectPage/P7GarbetPageDesktop3.jpg"}
+                {"id" :  "idesk1", "url" :"/images/P7Garbet/ProjectPage/P7GarbetPageDesktop1.jpg"},
+                {"id" :  "idesk2", "url" :"/images/P7Garbet/ProjectPage/P7GarbetPageDesktop2.jpg"},
+                {"id" :  "idesk3", "url" :"/images/P7Garbet/ProjectPage/P7GarbetPageDesktop3.jpg"}
             ],
             "Mobile" : [
-                {"id" : "imobil1 ", "url" : "/Assets/P7Garbet/ProjectPage/P7GarbetPageMobile1.jpg"}
+                {"id" : "imobil1 ", "url" : "/images/P7Garbet/ProjectPage/P7GarbetPageMobile1.jpg"}
             ]
         }
     },
@@ -52,17 +52,17 @@
             {"id" :  "skill2",  "body" : "Initialiser une application avec Create React App"}, 
             {"id" :  "skill3",  "body" : "Développer des éléments de l'interface d'un site web grâce à des composants React"}
         ],
-        "imageDesktop" : "/Assets/P6Garbet/Summary/P6GarbetDesktop.jpg",
-        "imageMobile" : "/Assets/P6Garbet/Summary/P6GarbetMobile.jpg",
-        "vignette" : "/Assets/P6Garbet/Vignette/P6GarbetVignetteFond.jpg",
+        "imageDesktop" : "/images/P6Garbet/Summary/P6GarbetDesktop.jpg",
+        "imageMobile" : "/images/P6Garbet/Summary/P6GarbetMobile.jpg",
+        "vignette" : "/images/P6Garbet/Vignette/P6GarbetVignetteFond.jpg",
         "imagesPageProject" : {
             "Desktop" : [
-                {"id" :  "idesk1", "url" :"/Assets/P6Garbet/ProjectPage/P6GarbetPageDesktop1.jpg"},
-                {"id" :  "idesk2", "url" :"/Assets/P6Garbet/ProjectPage/P6GarbetPageDesktop2.jpg"},
-                {"id" :  "idesk3", "url" :"/Assets/P6Garbet/ProjectPage/P6GarbetPageDesktop3.jpg"}
+                {"id" :  "idesk1", "url" :"/images/P6Garbet/ProjectPage/P6GarbetPageDesktop1.jpg"},
+                {"id" :  "idesk2", "url" :"/images/P6Garbet/ProjectPage/P6GarbetPageDesktop2.jpg"},
+                {"id" :  "idesk3", "url" :"/images/P6Garbet/ProjectPage/P6GarbetPageDesktop3.jpg"}
             ],
             "Mobile" : [
-                {"id" : "imobil1 ", "url" : "/Assets/P6Garbet/ProjectPage/P6GarbetPageMobile1.jpg"}
+                {"id" : "imobil1 ", "url" : "/images/P6Garbet/ProjectPage/P6GarbetPageMobile1.jpg"}
             ]
         }
     },
@@ -86,15 +86,15 @@
             {"id" :  "skill2",  "body" : "Débugger un site web grâce aux Chrome DevTools"}, 
             {"id" :  "skill3",  "body" : "Rédiger un cahier de recette pour tester un site"}
         ],
-        "imageDesktop" : "/Assets/P5Garbet/Summary/P5GarbetDesktop.jpg",
-        "imageMobile" : "/Assets/P5Garbet/Summary/P5GarbetMobile.jpg",
-        "vignette" : "/Assets/P5Garbet/Vignette/P5GarbetVignetteFond.jpg",
+        "imageDesktop" : "/images/P5Garbet/Summary/P5GarbetDesktop.jpg",
+        "imageMobile" : "/images/P5Garbet/Summary/P5GarbetMobile.jpg",
+        "vignette" : "/images/P5Garbet/Vignette/P5GarbetVignetteFond.jpg",
         "imagesPageProject" : {
             "Desktop" : [
-                {"id" :  "idesk1", "url" :"/Assets/P5Garbet/ProjectPage/P5GarbetPageDesktop1.jpg"}
+                {"id" :  "idesk1", "url" :"/images/P5Garbet/ProjectPage/P5GarbetPageDesktop1.jpg"}
             ],
             "Mobile" : [
-                {"id" : "imobil1 ", "url" : "/Assets/P5Garbet/ProjectPage/P5GarbetPageMobile1.jpg"}
+                {"id" : "imobil1 ", "url" : "/images/P5Garbet/ProjectPage/P5GarbetPageMobile1.jpg"}
             ]
         }
     },
@@ -119,16 +119,16 @@
             {"id" :  "skill2",  "body" : "Manipuler les éléments du DOM avec JavaScript"}, 
             {"id" :  "skill3",  "body" : "Gérer les événements utilisateurs avec JavaScript"}
         ],
-        "imageDesktop" : "/Assets/P3Garbet/Summary/P3GarbetDesktop.jpg",
-        "imageMobile" : "/Assets/P3Garbet/Summary/P3GarbetMobile.jpg",
-        "vignette" : "/Assets/P3Garbet/Vignette/P3GarbetVignetteFond.png",
+        "imageDesktop" : "/images/P3Garbet/Summary/P3GarbetDesktop.jpg",
+        "imageMobile" : "/images/P3Garbet/Summary/P3GarbetMobile.jpg",
+        "vignette" : "/images/P3Garbet/Vignette/P3GarbetVignetteFond.png",
         "imagesPageProject" : {
             "Desktop" : [
-                {"id" :  "idesk1", "url" :"/Assets/P3Garbet/ProjectPage/P3GarbetPageDesktop1.jpg"},
-                {"id" :  "idesk2", "url" :"/Assets/P3Garbet/ProjectPage/P3GarbetPageDesktop2.jpg"}
+                {"id" :  "idesk1", "url" :"/images/P3Garbet/ProjectPage/P3GarbetPageDesktop1.jpg"},
+                {"id" :  "idesk2", "url" :"/images/P3Garbet/ProjectPage/P3GarbetPageDesktop2.jpg"}
             ],
             "Mobile" : [
-                {"id" : "imobil1 ", "url" : "/Assets/P3Garbet/ProjectPage/P3GarbetPageMobile1.jpg"}
+                {"id" : "imobil1 ", "url" : "/images/P3Garbet/ProjectPage/P3GarbetPageMobile1.jpg"}
             ]
         }
     },
@@ -151,15 +151,15 @@
             {"id" :  "skill1",  "body" : "Intégrer du contenu conformément à une maquette avec HTML et CSS"}, 
             {"id" : "skill2",  "body" :"Implémenter une interface responsive avec HTML et CSS"}
         ],
-        "imageDesktop" : "/Assets/P2Garbet/Summary/P2GarbetDesktop.jpg",
-        "imageMobile" : "/Assets/P2Garbet/Summary/P2GarbetMobile.jpg",
-        "vignette" : "/Assets/P2Garbet/Vignette/P2GarbetVignetteFond.jpg",
+        "imageDesktop" : "/images/P2Garbet/Summary/P2GarbetDesktop.jpg",
+        "imageMobile" : "/images/P2Garbet/Summary/P2GarbetMobile.jpg",
+        "vignette" : "/images/P2Garbet/Vignette/P2GarbetVignetteFond.jpg",
         "imagesPageProject" : {
             "Desktop" : [
-                {"id" :  "idesk1", "url" :"/Assets/P2Garbet/ProjectPage/P2GarbetPageDesktop1.jpg"}
+                {"id" :  "idesk1", "url" :"/images/P2Garbet/ProjectPage/P2GarbetPageDesktop1.jpg"}
             ],
             "Mobile" : [
-                {"id" : "imobil1 ", "url" : "/Assets/P2Garbet/ProjectPage/P2GarbetPageMobile1.jpg"}
+                {"id" : "imobil1 ", "url" : "/images/P2Garbet/ProjectPage/P2GarbetPageMobile1.jpg"}
             ]
         }
     }

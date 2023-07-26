@@ -34,7 +34,7 @@ function ProjectPage() {
       async function fetchProject() {
         setDataLoading(true)
         try {
-          const response = await fetch(`/datas/projects.json`)
+          const response = await fetch(`/datas/achievements.json`)
           const projectList = await response.json()
           setProjectList(projectList)
           setProjectTarget(projectList.filter((profile) => profile.id === idProject.id))
@@ -145,7 +145,7 @@ function ProjectPage() {
           <div className='containerAllCards'>
             
             {projectList.map((project) => (
-            <Link to ={`/projet/${project.id}`}
+            <Link to ={`/achievement/${project.id}`}
             key={project.id}
             onClick = {() => setDataLoading(true)}>
             <Card

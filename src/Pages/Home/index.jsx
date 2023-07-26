@@ -5,7 +5,7 @@ import Error from '../Error'
 import Header from '../../Components/Header';
 import Banner from '../../Components/Banner';
 import AboutMe from '../../Components/AboutMe';
-import Project from '../../Components/Project';
+import Summary from '../../Components/Summary';
 import Footer from '../../Components/Footer'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -28,7 +28,7 @@ function Main() {
     async function fetchProject() {
       setDataLoading(true)
       try {
-        const response = await fetch(`/datas/projects.json`)
+        const response = await fetch(`/datas/achievements.json`)
         const projectList = await response.json()
         setProjectList(projectList)
       } catch (err) {
@@ -73,7 +73,7 @@ function Main() {
           ) : (
             <div>
             {projectList?.map((project) => (
-              <Project
+              <Summary
               key = {project.id}
               id = {project.id}
               maincolor = {project.maincolor}

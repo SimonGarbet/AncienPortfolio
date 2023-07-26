@@ -3,13 +3,12 @@ import { Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faCircle, faDiamond, faSquare, faPlay, faShield} from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import '../../Scss/style.scss';
 
 
 
-function Project({id, maincolor, title, subtitle, category, summary, githubLink, imageDesktop, imageMobile}){
+function Summary({id, maincolor, title, subtitle, category, summary, githubLink, imageDesktop, imageMobile}){
 
     let iconFontAwesome = faShield
 
@@ -46,13 +45,13 @@ function Project({id, maincolor, title, subtitle, category, summary, githubLink,
                     <p>{summary}</p>
             
                     <div className='projectRedirectionHome'>
-                        <Link to = {`/projet/${id}`} className='projectView'>
+                        <Link to = {`/achievement/${id}`} className='projectView'>
                         <FontAwesomeIcon icon={faArrowRight} style={{color: maincolor,}} />
                         <p>Voir le <strong>Projet</strong></p>                       
                         </Link>
                         <a href={githubLink} target="_blank" rel="noopener noreferrer" className='projectView'>
                         <FontAwesomeIcon icon={faArrowRight} style={{color: maincolor,}} />
-                        <p>Voir le <strong>Github</strong></p>                     
+                        <p>Voir le <strong>Code</strong></p>                     
                         </a>
                     </div>       
                     </div>        
@@ -72,5 +71,5 @@ function Project({id, maincolor, title, subtitle, category, summary, githubLink,
 
 
 
-export default Project;
+export default Summary;
 

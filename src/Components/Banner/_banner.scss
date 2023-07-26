@@ -249,11 +249,11 @@
    @media (max-width: 750px) { 
 
     .globalBanner{
-      height: 700px;
+      height: 600px;
       }
 
     .homePicture {
-      height: 700px;
+      height: 600px;
     }
 
     .presentation{
@@ -261,7 +261,7 @@
       font-size: 28px;
       
       right: 70px;
-      top: 20%;
+      top: 10%;
 
       
       h2{
@@ -313,13 +313,22 @@
 
 
 
-   @media (max-width: 430px) { 
+   @media (max-width: 480px) { 
+
+    .globalBanner{
+      height: 500px;
+      }
+
+    .homePicture {
+      height: 500px;
+    }
 
     .presentation{
       min-width: 300px;
       font-size: 24px;
       
-      right: 20px;
+      right: 40px;
+      top: 5%;
 
       
       h2{
@@ -345,5 +354,16 @@
   
    }
 
+
+   @media (max-width: 480px) { 
+
+    .presentation{
+      min-width: 300px;
+      font-size: 24px;
+      
+      right: 10px;
+
+    }
+  }
 
    

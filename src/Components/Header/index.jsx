@@ -29,11 +29,11 @@ function Header(){
             ? { color : "#ff5925" , fontWeight : "700" ,textDecoration: 'none', borderBottomColor: '#ff5925' }
             : { color : "#111", fontWeight : "500", textDecoration: 'none', borderBottomColor: "#949494" }
           }>Home</NavLink>
-            <NavLink to = {`/projet`} style={({ isActive }) =>
+            <NavLink to = {`/achievement`} style={({ isActive }) =>
             isActive
             ? { color : "#ff5925" , fontWeight : "700" ,textDecoration: 'none', borderBottomColor: '#ff5925' }
             : { color : "#111", fontWeight : "500", textDecoration: 'none', borderBottomColor: "#949494" }
-          }>Projets</NavLink>
+          }>Réalisations</NavLink>
             </nav>
         </section>
     )

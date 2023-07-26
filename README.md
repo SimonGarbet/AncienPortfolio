@@ -1,4 +1,38 @@
-# Getting Started with Create React App
+# P8Garbet : Portfolio
+
+### Réalisé par [Simon Garbet](www.simongarbet.com)
+Dans le but d'un projet Openclassrooms et professionnel
+
+## Pour lancer ce site :
+
+Ce site ne possède pas de partie backend/base de données.
+
+Lancez le **front** de ce site :
+- cd {chemin du fichier}/P8Garbet
+- npm start
+
+
+## Que fait ce site ?
+
+Le Portfolio est réalisé en fin de formation Openclassrooms, c'est le 8ème projet.
+Il a pour but de clôturer la formation en nous faisant utiliser toutes les connaissances que l'on a acquises au cours de ces 6 mois.
+Nous en sommes à la **version 1.00** (**actualisée en juillet 2023*) de ce portfolio qui viendra a évoluer au fil de mes connaissances.
+
+Ce site est une vitrine de mes différents projets dans le développement web. 
+Il a été réalisé avec React ainsi que Sass. Il n'est pas relié par une BDD, et n'a pas de système d'authentifaction. Tous les ajouts de projets se font via le datas/projects.json ainsi que sur les Assets partie publique.
+Vous pouvez vous déplacer dans ce site pour y découvrir toutes mes créations.
+
+
+## Crédits 
+
+Sur la bannière le TypeWritter utilisé a été réalisé par [Tameemsafi](https://github.com/tameemsafi/typewriterjs).
+Les boutons Gravités ont été récupérés [ici](https://codepen.io/amit_sheen/pen/LYXPVKV) et adaptés en React par mes soins.
+
+
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 
-#lineAboutMe, #lineProjects, .lineProjects {
+#lineAboutMe, .lineProjects {
   border-bottom: 1px solid #cccccc;
   width: 85%;
   max-width: 2540px;
@@ -23,14 +23,43 @@
   margin-bottom: 30px;
 }
 
+#Projects {
+  position: relative;
+}
+
+.scrollTop {
+  padding: 28px;
+  padding-top: 30px;
+  font-size: 35px;
+  width: 80px;
+  margin: 160px auto -37px auto;
+  background-color: #262626;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scrollTop svg {
+  margin-top: -23px;
+}
+
 @media (max-width: 750px) {
-  #lineAboutMe, #lineProjects, .lineProjects {
+  #lineAboutMe, .lineProjects {
     padding: 50px 0;
     margin: 0 auto 80px auto;
   }
   #lineAboutMe {
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .scrollTop {
+    padding: 25px;
+    padding-top: 30px;
+    font-size: 30px;
+    margin: 160px auto -32px auto;
+  }
+  .scrollTop svg {
+    margin-top: -20px;
   }
 }
 .globalProjectPage {
@@ -257,6 +286,11 @@
   .descriptionProjectPage h3 {
     font-size: 30px;
   }
+  .containerAllCards {
+    flex-direction: column;
+    height: 380px;
+    gap: 2px;
+  }
 }
 @media (max-width: 480px) {
   .projectPageTitle .projectTitleGithub h2 {
@@ -318,11 +352,20 @@
 }
 
 @media (max-width: 1024px) {
+  .librarySelectPage {
+    margin: 50px 0;
+  }
   .librarySelectPage h3 {
     font-size: 30px;
     width: 80%;
     max-width: none;
     margin-left: 0;
+  }
+}
+@media (max-width: 750px) {
+  .containerAllCardsSelectPage {
+    flex-direction: column;
+    gap: 2px;
   }
 }
 .errorMessage {
@@ -413,6 +456,7 @@
 
 @media (max-width: 1024px) {
   #aboutMe {
+    width: 85%;
     flex-direction: column;
     justify-content: center;
     gap: 60px;
@@ -442,6 +486,7 @@
 }
 @media (max-width: 750px) {
   #aboutMe {
+    width: 95%;
     margin-bottom: 0px;
   }
   #aboutMe img {
@@ -532,7 +577,7 @@
   width: 100%;
   height: 100%;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 1px;
   text-decoration: none;
   background: #fff;
@@ -557,7 +602,7 @@
   font-weight: 700;
   position: absolute;
   padding: 20px;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 1px;
   overflow: hidden;
 }
@@ -635,16 +680,16 @@
 }
 @media (max-width: 750px) {
   .globalBanner {
-    height: 700px;
+    height: 600px;
   }
   .homePicture {
-    height: 700px;
+    height: 600px;
   }
   .presentation {
     min-width: 350px;
     font-size: 28px;
     right: 70px;
-    top: 20%;
+    top: 10%;
   }
   .presentation h2 {
     font-size: 28px;
@@ -656,10 +701,12 @@
     font-size: 60px;
   }
   .discoverButton {
-    font-size: 15px;
+    font-size: 17px;
+    padding: 18px;
   }
   .calqDiscoverButton {
-    font-size: 15px;
+    font-size: 17px;
+    padding: 18px;
   }
   .typeWriterSentence {
     gap: 10px;
@@ -676,11 +723,18 @@
     font-size: 10px;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 480px) {
+  .globalBanner {
+    height: 500px;
+  }
+  .homePicture {
+    height: 500px;
+  }
   .presentation {
     min-width: 300px;
     font-size: 24px;
-    right: 20px;
+    right: 40px;
+    top: 5%;
   }
   .presentation h2 {
     font-size: 24px;
@@ -689,10 +743,17 @@
     font-size: 50px;
   }
   .discoverButton {
-    font-size: 14px;
+    font-size: 16px;
   }
   .calqDiscoverButton {
-    font-size: 14px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .presentation {
+    min-width: 300px;
+    font-size: 24px;
+    right: 10px;
   }
 }
 .containerCard {
@@ -756,18 +817,54 @@
 }
 @media (max-width: 750px) {
   .containerCard {
-    width: 60px;
+    height: 80px;
+    width: 500px;
+  }
+  .containerCard .backCard {
+    width: 150px;
+    height: 70px;
+  }
+  .containerCard .cardProjectTitle {
+    left: 10px;
+    bottom: 33px;
+    transform: translate(0px, 0px) rotate(0deg);
+    width: 300px;
   }
   .containerCard .cardProjectSubtitle {
-    display: none;
+    left: 10px;
+    bottom: 10px;
+    transform: translate(0px, 0px) rotate(0deg);
+    width: 300px;
+  }
+}
+@media (max-width: 550px) {
+  .containerCard {
+    width: 350px;
+  }
+  .containerCard .backCard {
+    width: 100px;
+  }
+  .containerCard .cardProjectTitle {
+    font-size: 20px;
+  }
+  .containerCard .cardProjectSubtitle {
+    font-size: 16px;
   }
 }
 @media (max-width: 400px) {
   .containerCard {
-    width: 50px;
+    width: 280px;
+  }
+  .containerCard .backCard {
+    width: 80px;
   }
   .containerCard .cardProjectTitle {
-    left: -9px;
+    font-size: 18px;
+    width: 200px;
+  }
+  .containerCard .cardProjectSubtitle {
+    font-size: 15px;
+    width: 200px;
   }
 }
 .containerCollapse {
@@ -804,24 +901,20 @@
 
 .footer {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: #262626;
   padding: 100px 50px 50px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  position: relative;
 }
 .footer button {
   background: transparent;
 }
 .footer a {
   color: #ff5925;
-}
-
-.scrollTop {
-  margin-bottom: 30px;
-  font-size: 18px;
 }
 
 .emailLine {
@@ -1046,7 +1139,7 @@
   display: flex;
   gap: 60px;
   padding-right: 50px;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 @media (max-width: 750px) {
@@ -1146,6 +1239,12 @@
   text-align: justify;
 }
 
+.projectRedirectionHome {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .projectView {
   display: flex;
   align-items: center;
@@ -1154,8 +1253,6 @@
   font-size: 25px;
 }
 .projectView p {
-  font-size: 15;
-  font-weight: 700;
   color: #111;
 }
 
@@ -1220,36 +1317,54 @@
   }
 }
 @media (max-width: 750px) {
+  .globalDescriptionProject {
+    width: 80%;
+    align-items: center;
+    gap: 25px;
+  }
+  .globalTitlePartProject {
+    gap: 5px;
+  }
   .fontAwesomeTitleProject {
     font-size: 25px;
   }
   .titlePartProject {
     min-width: 0;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
   }
   .titlePartProject h3 {
     font-size: 35px;
+    text-align: center;
   }
   .subtitlePartProject {
-    margin-left: 55px;
+    margin-left: 0px;
+    flex-direction: column;
+    gap: 25px;
   }
   .rightsideDescriptionProject {
-    margin-left: 55px;
+    align-items: center;
+    margin-left: 0px;
+    gap: 20px;
   }
   .rightsideDescriptionProject p {
     font-size: 18px;
+    text-align: center;
   }
   .pictureDesktop {
     min-width: 0px;
     width: 420px;
     height: 330px;
+    top: -20px;
   }
   .pictureMobile {
     height: 350px;
     width: 190px;
+    top: 40px;
   }
   .picturePartProject {
-    height: 450px;
+    height: 380px;
   }
 }
 @media (max-width: 500px) {
@@ -1267,8 +1382,8 @@
     align-items: center;
     flex-direction: column;
     width: 80%;
-    margin: 25 auto;
-    height: 350px;
+    margin: 30px auto;
+    height: 330px;
   }
 }
 html {

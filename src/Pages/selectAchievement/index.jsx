@@ -12,7 +12,7 @@ import '../../Scss/style.scss';
         
 
 
-function SelectProject() {
+function SelectAchievement() {
 
     const [isDataLoading, setDataLoading] = useState(true);
     const [error, setError] = useState(false);
@@ -24,7 +24,7 @@ function SelectProject() {
       async function fetchProject() {
         setDataLoading(true)
         try {
-          const response = await fetch(`./datas/projects.json`)
+          const response = await fetch(`./datas/achievements.json`)
           const projectList = await response.json()
           setProjectList(projectList)
         } catch (err) {
@@ -59,7 +59,7 @@ function SelectProject() {
           <div className='containerAllCardsSelectPage'>
                 
             {projectList?.map((project) => (
-            <Link to ={`/projet/${project.id}`}
+            <Link to ={`/achievement/${project.id}`}
               key={project.id}
               onClick = {() => setDataLoading(true)}>
             <Card 
@@ -90,4 +90,4 @@ function SelectProject() {
 
 
 
-export default SelectProject;
+export default SelectAchievement;
