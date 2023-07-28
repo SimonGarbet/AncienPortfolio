@@ -28,12 +28,17 @@ function Header(){
             isActive
             ? { color : "#ff5925" , fontWeight : "700" ,textDecoration: 'none', borderBottomColor: '#ff5925' }
             : { color : "#111", fontWeight : "500", textDecoration: 'none', borderBottomColor: "#949494" }
-          }>Home</NavLink>
+          }>Accueil</NavLink>
             <NavLink to = {`/achievement`} style={({ isActive }) =>
             isActive
             ? { color : "#ff5925" , fontWeight : "700" ,textDecoration: 'none', borderBottomColor: '#ff5925' }
             : { color : "#111", fontWeight : "500", textDecoration: 'none', borderBottomColor: "#949494" }
           }>Réalisations</NavLink>
+            <NavLink to = {`/curriculumvitae`} style={({ isActive }) =>
+            isActive
+            ? { color : "#ff5925" , fontWeight : "700" ,textDecoration: 'none', borderBottomColor: '#ff5925' }
+            : { color : "#111", fontWeight : "500", textDecoration: 'none', borderBottomColor: "#949494" }
+          }>CV</NavLink>
             </nav>
         </section>
     )

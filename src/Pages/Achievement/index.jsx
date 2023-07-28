@@ -6,8 +6,6 @@ import { Link } from 'react-router-dom';
 import Error from '../Error'
 import Card from '../../Components/Card';
 import Collapse from '../../Components/Collapse';
-import Header from '../../Components/Header'
-import Footer from '../../Components/Footer'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faCircle, faListUl, faWrench } from '@fortawesome/free-solid-svg-icons';
@@ -66,7 +64,6 @@ function ProjectPage() {
           ) : (
         
         <div className='globalProjectPage'>
-            <Header />
 
 
 
@@ -167,8 +164,6 @@ function ProjectPage() {
         
         
         )}
-
-        <Footer/>
         </div>
     )
 

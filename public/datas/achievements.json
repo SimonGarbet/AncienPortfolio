@@ -7,7 +7,7 @@
         "category" : "Backend",
         "summary" : "Construction du Back End d'un site web en utilisant le framework ExpressJS et une base de données Mongo DB",
         "description" : [
-            {"id" :  "sen1", "body" : "Ceci est l'unique projet Openclassrooms de développement web backend reposant sur ExpressJS et MongoDB."},
+            {"id" :  "sen1", "body" : "Ce projet de développement web backend repose sur ExpressJS et MongoDB."},
             {"id" :  "sen2",  "body" :"L'objectif était de relier notre frontend déjà construit à notre serveur et base de données pour gérer toutes les requêtes possibles sur un site de notation de livres."},
             {"id" :  "sen3",  "body" : "Avec ce projet, j'ai découvert comment connecter une base de données Mongo DB à son site, utiliser les middlewares sur lequel repose Express et réaliser les opérations CRUD."}
             ],
@@ -41,7 +41,7 @@
         "category" : "React",
         "summary" : "Programmation du Front End du site Kasa en utilisant le framwork React sans mise en place du Back End",
         "description" : [
-            {"id" :  "sen1", "body" : "Ce projet Openclasrooms m'a appris à utiliser React. Framework que j'ai aussi utilisé pour ce portfolio."},
+            {"id" :  "sen1", "body" : "Ce projet Openclasrooms m'a appris à utiliser React, framework que j'ai aussi utilisé pour ce portfolio."},
             {"id" :  "sen2",  "body" :"A partir d'une maquette donnée, il fallait reproduire l'intégralité du visuel en créant et utilisant un maximum de composant."},
             {"id" :  "sen3",  "body" : "Pour ce projet, j'ai appris à utiliser React de manière générale, de la création de composant, au re-render du site via useEffect ou encore des changements de state, mais aussi me perfectionner en JavaScript."}
             ],
@@ -73,11 +73,11 @@
         "title" :  "Nina Carducci",
         "subtitle" : "Debug et Optimisation",
         "category" : "Optimisation",
-        "summary" : "Optimisation du site de Nina Carducci concernant les performances, la SEO, et l'accessibilité",
+        "summary" : "Optimisation du site d'une photographe en ciblant les performances, la SEO, et l'accessibilité",
         "description" : [
             {"id" :  "sen1", "body" : "Ce projet Openclassrooms était moins axé sur la programmation et plus sur l'optimisation d'un site."},
-            {"id" :  "sen2",  "body" :"Nous avions un site déjà tout fait, il fallait améliorer son score Lighthouse sur 3 axes, les performances, l'accessibilité et la SEO."},
-            {"id" :  "sen3",  "body" : "A la suite de ce projet, j'ai compris comment réaliser un audit d'un site et quels était les différentes actions à mener pour optimiser son site (et sa crawlabilité). En optimisant la taille des images, augmentant les contrastes, en utilisant des mots pertinents et en structurant de manière intelligente son site."}
+            {"id" :  "sen2",  "body" :"Sur la base d'un site pré-réalisé, l'objectif était d'améliorer son score Lighthouse sur 3 axes, les performances, l'accessibilité et la SEO."},
+            {"id" :  "sen3",  "body" : "Ce projet m'a appris à réaliser un audit d'un site et les différentes actions à mener pour optimiser son site (et sa crawlabilité). En optimisant la taille des images, augmentant les contrastes, en utilisant des mots ciblés et en structurant de manière pertinente son site."}
         ],
         "githubLink" : "https://github.com/SimonGarbet/P5Garbet",
         "figmaLink" : "",
@@ -105,12 +105,12 @@
         "title" :  "Sophie Bluel",
         "subtitle" : "Javascript Vanilla",
         "category" : "Javascript",
-        "summary" : "Développement du site de Sophie Bluel en Javascript Vanilla à l'aide d'un Back End déjà réalisé",
+        "summary" : "Développement d'une architecte en Javascript Vanilla sur la base d'un Back End déjà réalisé",
         "description" : [
             {"id" :  "sen1", "body" : "Projet Openclassrooms venant après le HTML et CSS pour travailller sur la dynamique d'un site."},
-            {"id" :  "sen2",  "body" :"Nous avions déjà un site entièrement réalisé sur sa structure fixe ainsi que sur le backend avec une API pré-établie."},
-            {"id" :  "sen3",  "body" :"L'objectif était de pouvoir filtrer les photos d'une Architecte : Sophie Bluel, ainsi que de pouvoir en déposer et supprimer de nouvelles."},
-            {"id" :  "sen4",  "body" : "A la suite de ce projet, j'ai appris les bases du JavaScript sur lesquelles ont reposé toute ma formation Openclassrooms. De la création de fonction, à la manipulation d'array en passant par l'utilisation d'outil comme les AddEventListener ou le Filter ou encore la manipulation du DOM."}
+            {"id" :  "sen2",  "body" :"Nous avions déjà un site réalisé en HTML et CSS ainsi que sur le backend avec une API pré-établie."},
+            {"id" :  "sen3",  "body" :" L'objectif était, à l'aide de JavaScript, de permettre à un visiteur de filtrer les photos de l'architecte, et à cette dernière de pouvoir en déposer et supprimer de nouvelles."},
+            {"id" :  "sen4",  "body" : "Ce projet à posé les bases des connaissances JavaScript sur lesquelles ont reposé ma formation Openclassrooms. De la création de fonction, à la manipulation d'array en passant par l'utilisation d'outil comme les AddEventListener ou le Filter ou encore la manipulation du DOM."}
             ],
         "githubLink" : "https://github.com/SimonGarbet/P3Garbet",
         "figmaLink" : "https://www.figma.com/file/W7CRXQQyYhde2WM9KHcuqE/Maquette-Sophie-Bluel?type=design&t=ywJtJiZCeatxeHnO-6",
@@ -139,7 +139,7 @@
         "title" :  "Booki",
         "subtitle" : "HTML et CSS",
         "category" : "CSS",
-        "summary" : "Création du visuel complet du site Booki avec l'aide d'une maquette pré-produite sur Figma",
+        "summary" : "Création du visuel complet d'un site de réservation d'hébergement sur le modèle d'une maquette Figma pré-produite",
         "description" : [
         {"id" :  "sen1", "body" : "Premier projet Openclassrooms de programmation que j'ai réalisé."},
         {"id" :  "sen2",  "body" :"La maquette à repoduire était celle d'un site de location de logement de vacances : Booki"},

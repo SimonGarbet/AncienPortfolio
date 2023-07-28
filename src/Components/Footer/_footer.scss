@@ -6,6 +6,7 @@
 .footer{
     color: #fff;
     background-color:  #262626;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     padding: 100px 50px 50px 50px;
 
 
@@ -16,6 +17,7 @@
     gap: 30px;
 
     position: relative;
+    z-index: 0;
 
     button{
         background: transparent;
@@ -39,11 +41,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba($color: #fff, $alpha: 0.1) 0px 0px 0px 3px, rgba($color: #fff, $alpha: 0.07) 0px 0px 0px 6px, rgba($color: #fff, $alpha: 0.05) 0px 0px 0px 9px, rgba($color: #fff, $alpha: 0.03) 0px 0px 0px 12px, rgba($color: #fff, $alpha: 0.01) 0px 0px 0px 15px;
     p{
         font-size: 20px;
         font-weight: 600;
         border-radius: 10px 0px 0px 10px;
-        border: 3px solid #fff;
         border-right: none;
         padding: 10px 25px;
     }
@@ -57,7 +60,6 @@
     border: none;
     font-size: 20px;
     border-radius: 0px 10px 10px 0px;
-    border: 3px solid #fff;
     border-left: none;
 }
 
@@ -68,11 +70,9 @@
     padding: 10px 15px;
     border: none;
     border-radius: 0px 10px 10px 0px;
-    border: 3px solid #fff;
     border-left: none;
     font-size: 20px;
     background-color: $greennode !important;
-
 }
 
 
@@ -88,13 +88,16 @@
     background-color: $greennode;
     padding: 10px 15px;
     border-radius: 10px;
-    border: 3px solid #fff;
-
+    border: 1px solid #fff;
   }
 
   .buttonLineFooter{
     display: flex;
     justify-content: center;
+
+    button{
+        box-shadow: rgba($color: #fff, $alpha: 0.1) 0px 0px 0px 3px, rgba($color: #fff, $alpha: 0.07) 0px 0px 0px 6px, rgba($color: #fff, $alpha: 0.05) 0px 0px 0px 9px, rgba($color: #fff, $alpha: 0.03) 0px 0px 0px 12px, rgba($color: #fff, $alpha: 0.01) 0px 0px 0px 15px;
+    }
     
 }
 
@@ -107,6 +110,13 @@
         font-size: 19px;
         text-align: center;
         font-style: italic;
+    }
+
+}
+
+@media (max-width: 1024px) { 
+    .disclaimerFooter {
+    margin-top: 30px;
     }
 }
 
@@ -139,7 +149,9 @@
 
 
     .disclaimerFooter {
-        margin-top: 30px;
+
+        margin-top: 50px;
+    
         p{
             font-size: 14px;
         }

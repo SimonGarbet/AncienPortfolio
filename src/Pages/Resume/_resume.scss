@@ -1,0 +1,534 @@
+@import '../../Scss/mixins';
+@import '../../Scss/variables';
+@import '../../Scss/placeholders';
+
+.resumeGlobal{
+    width: 85%;
+    margin : 80px auto;
+    max-width: 1800px;
+    padding: 30px;
+    background-color: rgba($color: #111, $alpha : 0.08);
+    border: 10px solid rgba($color: $greennode, $alpha : 0.8);
+    border-radius: 30px;
+}
+
+
+.enteteCV{
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid rgba($color: $greennode, $alpha : 0.8);
+    padding: 40px;
+    padding-bottom: 80px;
+
+    img{
+        width: 250px;
+        height: 250px;
+        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+        object-fit: cover;
+    }
+}
+
+.infosGeneralesCV{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 10px;
+
+    h2{
+        font-size: 65px;
+        margin-left: -10px;
+    }
+
+    h4{
+        font-size: 30px;
+        color: $terracota;
+        padding-bottom: 10px;
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+
+        svg{
+            color: $greennode;
+        }
+    }
+}
+
+
+.splitterCV{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30px;
+
+    h3{
+        font-size: 28px;
+        padding: 50px 0px;
+
+        svg{
+            color: $terracota;
+            margin-right: 10px;
+        }
+    }
+}
+
+
+
+.leftSideCV{
+    width: 58%;
+}
+
+
+.formationCV{
+
+    div{
+        padding-bottom: 30px;
+        h4{
+            font-size: 20px;
+        }
+
+        h5{
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        p{
+            font-size: 16px;
+            color: $greennode;
+            font-weight: bolder;
+            padding-top: 5px;
+        }
+
+        .dateFormationCV{
+           width: 30%;
+            color: #111;
+            padding-top: 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid rgba($color: $greennode, $alpha : 0.8);
+        }
+    }
+
+}
+
+
+
+.plusCV{
+
+    h3{
+        padding-bottom: 30px;
+    }
+    p{
+        padding-bottom: 5px;
+        font-size: 18px;
+
+    }
+}
+
+
+.rightSideCv{
+    width: 42%;
+}
+
+.xpProCV{
+
+    text-align: start;
+
+    figure{
+        padding-bottom: 30px;
+
+           
+      
+        h4{
+        font-size: 20px;
+        color: $terracota;
+        }
+        p{
+            font-size: 13px;
+            padding-top: 5px;
+        padding-left: 5px;
+        }
+
+    h5{
+        font-size: 18px;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+}
+
+}
+
+
+.competencesCV{
+
+    h3{
+        padding-bottom: 40px;
+    }
+
+    .competencesContainerCV{
+
+        div{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-bottom: 15px;
+            
+            h4{
+            font-size: 18px;
+            min-width : 100px;
+            }
+            p{
+                font-size: 17px;
+                }
+        }
+
+   
+    }
+}
+
+
+
+@media (max-width: 1040px) { 
+
+    .enteteCV{
+        flex-direction: column-reverse;
+        gap: 30px;
+
+        img{
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+    .infosGeneralesCV{
+            text-align: center;
+            align-items: center;
+
+            h2{
+                font-size: 50px;
+            }
+
+            h4{
+                font-size: 25px;
+            }
+
+            div{
+                font-size: 16px;
+            }
+    }
+
+    .splitterCV{
+        gap: 40px;
+        width: 95%;
+
+        h3{
+            font-size: 24px;
+        }
+    }
+
+    .formationCV{
+
+        div{
+
+            h4{
+                font-size: 18px;
+            }
+    
+            h5{
+                font-size: 16px;
+            }
+    
+            p{
+                font-size: 14px;
+            }
+        }
+    
+    }
+
+    .plusCV{
+
+        h3{
+            padding-bottom: 30px;
+        }
+        p{
+            font-size: 16px;
+    
+        }
+    }
+
+    .xpProCV{
+    
+        figure{
+    
+                       
+            h4{
+            font-size: 18px;
+            }
+    
+        h5{
+            font-size: 16px;
+        }
+    
+    }
+    
+    }
+
+    .competencesCV{
+
+        h3{
+            padding-bottom: 40px;
+        }
+    
+        .competencesContainerCV{
+    
+            div{
+
+                padding-bottom: 12px;
+                
+                h4{
+                font-size: 16px;
+                }
+                p{
+                    font-size: 15px;
+                    }
+            }
+    
+       
+        }
+    }
+
+}
+
+@media (max-width: 750px) { 
+
+    .enteteCV{
+
+        padding: 20px;
+        padding-bottom: 40px;
+
+        img{
+            height: 180px;
+            width: 180px;
+        }
+    }
+
+    .infosGeneralesCV{
+
+        width: 100%;
+
+            h2{
+                font-size: 40px;
+            }
+
+            h4{
+                font-size: 20px;
+            }
+
+            div{
+                font-size: 14px;
+            }
+    }
+
+    .splitterCV{
+       flex-direction: column-reverse;
+       align-items: center;
+       width: 100%;
+       padding-top: 10px;
+
+        h3{
+            font-size: 24px;
+        }
+    }
+
+    .formationCV{
+
+        text-align: center;
+
+        div{
+
+            h4{
+                font-size: 18px;
+            }
+    
+            h5{
+                font-size: 16px;
+            }
+    
+            p{
+                font-size: 14px;
+            }
+
+            .dateFormationCV{
+                margin: 0 auto;
+            }
+        }
+    
+    }
+
+    .plusCV{
+
+        text-align: center;
+        padding-bottom: 30px;
+
+        h3{
+            padding-bottom: 30px;
+        }
+        p{
+            font-size: 16px;
+    
+        }
+    }
+
+    .xpProCV{
+
+        text-align: center;
+    
+        figure{
+    
+                       
+            h4{
+            font-size: 18px;
+            }
+    
+        h5{
+            font-size: 16px;
+        }
+    
+    }
+    
+    }
+
+    .competencesCV{
+
+        text-align: center;
+    
+        .competencesContainerCV{
+    
+            div{
+             flex-direction: column;
+             
+             gap: 0;
+             padding-bottom: 20px;
+                
+                h4{
+                font-size: 16px;
+                }
+                p{
+                    font-size: 15px;
+                    }
+            }
+    
+       
+        }
+    }   
+
+}
+
+
+@media (max-width: 460px) { 
+
+
+    .enteteCV{
+
+        padding: 10px;
+        padding-bottom: 40px;
+
+        img{
+            height: 150px;
+            width: 150px;
+        }
+    }
+
+    .infosGeneralesCV{
+
+            h2{
+                font-size: 28px;
+            }
+
+            h4{
+                font-size: 18px;
+            }
+
+            div{
+                font-size: 11px;
+            }
+    }
+
+    .splitterCV{
+
+        h3{
+            font-size: 20px;
+        }
+    }
+
+    .formationCV{
+
+        div{
+
+            h4{
+                font-size: 16px;
+            }
+    
+            h5{
+                font-size: 15px;
+            }
+    
+            p{
+                font-size: 13px;
+            }
+
+        }
+    
+    }
+
+    .plusCV{
+
+        p{
+            font-size: 14px;
+    
+        }
+    }
+
+    .xpProCV{
+
+        figure{
+    
+                       
+            h4{
+            font-size: 15px;
+            }
+    
+        h5{
+            font-size: 14px;
+        }
+
+        p{
+            font-size: 11px;
+        }
+    
+    }
+    
+    }
+
+    .competencesCV{
+
+        .competencesContainerCV{
+    
+            div{
+                
+                p{
+                    font-size: 14px;
+                    }
+            }
+    
+       
+        }
+    }   
+
+
+}

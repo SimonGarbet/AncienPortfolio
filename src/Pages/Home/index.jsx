@@ -2,11 +2,10 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 
 import Error from '../Error'
-import Header from '../../Components/Header';
 import Banner from '../../Components/Banner';
 import AboutMe from '../../Components/AboutMe';
 import Summary from '../../Components/Summary';
-import Footer from '../../Components/Footer'
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
@@ -55,9 +54,6 @@ function Main() {
 
   return (
   <div className='globalHomePage'>
-    
-
-    <Header />
 
     <Banner /> 
 
@@ -97,9 +93,7 @@ function Main() {
       
       </section>
 
-      
 
-  <Footer />
 
   </div>
 

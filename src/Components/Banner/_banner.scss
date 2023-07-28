@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 1200px;
+  height: 90vh;
  
     width: 100%;
     margin: 0 auto;
@@ -18,9 +18,9 @@
 
 .homePicture {
   width: 100%;
+  height: 90vh;
   object-fit: cover;
-  filter: brightness(110%);
-  height: 1200px;
+  object-position: bottom left;
   position: absolute;
   z-index: 1;
 }
@@ -28,17 +28,30 @@
   
   
     //Presentation
-  
+
+
+    .containerPresentation{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      height: 70vh;
+      background: linear-gradient(rgba($color: #fff, $alpha: 0.5), rgba($color: #fff, $alpha: 0.05));
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
     .presentation{
-      border-radius: 20px;
+      border-radius: 50px;
       min-width: 500px;
       font-size: 40px;
       font-weight: 700;
-
-      position: absolute;
-      z-index: 2;
-      right: 12%;
-      top: 27%;
+     position: absolute;
+      z-index: 3;
+      margin-top: 300px;
+      margin-left: 300px;
     
       display: flex;
       flex-direction: column;
@@ -49,11 +62,6 @@
         margin-top: 20px;
         font-size: 40px;
         font-weight: 700;
-        margin-left: 20px;
-      }
-      
-      p{
-        margin-left: 20px;
       }
 
     }
@@ -63,8 +71,7 @@
     .helloPresentation {
       color: $terracota;
       font-size: 70px;
-      font-weight: bold; 
-      margin-left: 20px;
+      font-weight: 700;
     }
   
     
@@ -87,7 +94,7 @@
   transition: 0.5s;
   letter-spacing: 1px;
   border-radius: 20px;
-  margin: 30px 0px 0px 20px;
+  margin-top : 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -187,18 +194,19 @@
       display: flex;
       place-items: center;
       justify-content: center;
-      margin: 25px 0px 0px 5px;
+      margin: 25px 0px 0px -20px;
 
       button{
-        background: rgba(0, 0, 0, 0.60);
+        background: rgba(0, 0, 0, 0.4);
+        box-shadow: rgba($color: #fff, $alpha: 0.1) 0px 0px 0px 3px, rgba($color: #fff, $alpha: 0.07) 0px 0px 0px 6px, rgba($color: #fff, $alpha: 0.05) 0px 0px 0px 9px, rgba($color: #fff, $alpha: 0.03) 0px 0px 0px 12px, rgba($color: #fff, $alpha: 0.01) 0px 0px 0px 15px;
       }
 }
   
 
 
   .copiedDivDiscord {
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     position: relative;
   }
 
@@ -206,7 +214,7 @@
     content: 'Pseudo Discord Copié';
     position: absolute;
     color: #fff;
-    width: 200px;
+    width: 210px;
     text-align: center;
     left: 120px;
     top: 37px;
@@ -216,6 +224,7 @@
     padding: 15px;
     border-radius: 10px;
     animation: softGrindOpacity 2.75s;
+    border: #fff 1px solid;
   }
 
   @keyframes softGrindOpacity { 
@@ -246,32 +255,58 @@
     }
    }
 
-   @media (max-width: 750px) { 
+   @media (max-width: 1024px) { 
 
-    .globalBanner{
-      height: 600px;
-      }
-
-    .homePicture {
-      height: 600px;
-    }
+  
 
     .presentation{
-      min-width: 350px;
-      font-size: 28px;
+      min-width: 500px;
+      margin-left: 200px;
+    }
+
+    .copiedDivDiscord::before {
+      width: 160px;
+      left: -30px;
+      top: 95px;
+      font-size: 12px;
+    }
+  }
+
+   @media (max-width: 750px) { 
+
+
+
+    .globalBanner{
+      height: 82vh;
+      }
       
-      right: 70px;
-      top: 10%;
+    
+    .homePicture {
+      height: 82vh;
+    }
+
+    .containerPresentation{
+      height: 60vh;
+    }
+
+
+
+    .presentation{
+      font-size: 28px;
+      min-width: 350px;
+      margin-top: 200px;
+      margin-left: 50px;
 
       
       h2{
         font-size: 28px;
       }
-      
-      p{
-        margin-left: 20px;
-      }
 
+    }
+
+    .copiedDivDiscord{
+      width: 90px;
+      height: 90px;
     }
 
 
@@ -296,18 +331,7 @@
     
   }
 
-    .copiedDivDiscord {
-      width: 90px;
-      height: 90px;
-      position: relative;
-    }
-
-    .copiedDivDiscord::before {
-      width: 130px;
-      left: -20px;
-      top: 85px;
-      font-size: 10px;
-    }
+  
   
    }
 
@@ -315,21 +339,12 @@
 
    @media (max-width: 480px) { 
 
-    .globalBanner{
-      height: 500px;
-      }
-
-    .homePicture {
-      height: 500px;
-    }
 
     .presentation{
       min-width: 300px;
       font-size: 24px;
-      
-      right: 40px;
-      top: 5%;
-
+      margin-top: 150px;
+      margin-left: 35px;
       
       h2{
         font-size: 24px;
@@ -351,19 +366,51 @@
     .calqDiscoverButton {
       font-size: 16px;
   }
+
+    .copiedDivDiscord{
+      width: 70px;
+      height: 70px;
+    }
+
+    .copiedDivDiscord::before {
+      width: 160px;
+      left: -90px;
+      top: 80px;
+      font-size: 12px;
+    }
   
    }
 
+   @media (max-width: 350px) { 
 
-   @media (max-width: 480px) { 
 
     .presentation{
-      min-width: 300px;
-      font-size: 24px;
+      min-width: 260px;
+      font-size: 22px;
+      margin-top: 100px;
+      margin-left: 10px;
       
-      right: 10px;
+      h2{
+        font-size: 22px;
+      }
 
     }
+
+
+
+    .helloPresentation{
+      font-size: 45px;
+    }
+
+    
+    .discoverButton {
+      font-size: 15px;
+    }
+
+    .calqDiscoverButton {
+      font-size: 15px;
   }
+  
+   }
 
    

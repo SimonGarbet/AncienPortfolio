@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 
 import Error from '../Error'
 import Card from '../../Components/Card';
-import Header from '../../Components/Header'
-import Footer from '../../Components/Footer'
 
 import '../../Scss/style.scss';
 
@@ -51,7 +49,6 @@ function SelectAchievement() {
           ) : (
         
         <div className='globalSelectPage'>
-            <Header />
 
 
             <div className='librarySelectPage'>
@@ -81,8 +78,6 @@ function SelectAchievement() {
         
         
         )}
-
-        <Footer/>
         </div>
     )
 

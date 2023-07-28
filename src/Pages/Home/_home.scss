@@ -30,17 +30,18 @@
 
   #Projects{
     position: relative;
+    z-index: 1;
   }
 
   .scrollTop {
-    padding: 28px;
-    padding-top: 30px;
-    font-size: 35px;
+    padding: 25px;
+    padding-top: 29px;
+    font-size: 33px;
     width: 80px;
-    margin: 160px auto -37px auto;
+    margin: 160px auto -40px auto;
     
     background-color: #262626;
-    border-radius: 35px;
+    border-radius: 15px;
     
     
     display: flex;
@@ -48,9 +49,11 @@
     align-items: center;
 
     svg{
-        margin-top: -23px;
+        margin-top: -24px;
     }
 }
+
+
 
 
 
@@ -66,13 +69,13 @@
     }
 
     .scrollTop {
-      padding: 25px;
-      padding-top: 30px;
-      font-size: 30px;
-      margin: 160px auto -32px auto;
+     padding: 25px 0px 20px 0px;
+      border-radius: 15px;
+      font-size: 25px;
+      margin: 160px auto -30px auto;
   
       svg{
-          margin-top: -20px;
+          margin-top: -18px;
       }
   }
   }

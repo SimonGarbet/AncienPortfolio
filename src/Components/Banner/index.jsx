@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 
-import { faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faDiscord, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import Typewriter from 'typewriter-effect';
 
 import GravityButton from '../GravityButton';
-import homePicture from '../../Assets/homePicture3.jpg'
+import homePicture from '../../Assets/homePicture.jpg'
 
 import '../../Scss/style.scss';
 
@@ -28,7 +28,7 @@ function Home(){
     <section className='globalBanner'>
 
         <img src={homePicture} className='homePicture' alt= "Photographie d'une personne faisant du surf" />
-
+        <div className='containerPresentation'>
         <div className='presentation'>
 
             <p className='helloPresentation'>Bonjour!</p>
@@ -49,7 +49,7 @@ function Home(){
                 .pasteString('<span style="color: #563D7C;"><strong>CSS</strong></span>')
                 .pauseFor(1500)
                 .deleteChars(6)
-                .typeString('<span style="color: #F0DB4F;"><strong> Javascript</strong></span>')
+                .typeString('<span style="color: #ccb72c;"><strong> Javascript</strong></span>')
                 .pauseFor(1500)
                 .deleteChars(13)
                 .typeString('<span style="color: #15D7F7;"><strong> React</strong></span>')
@@ -87,7 +87,16 @@ function Home(){
                 size = 'lg'
                 color = '#fff'
             />
-            </a> 
+            </a>
+
+            <a href='https://www.linkedin.com/in/simon-garbet-356532285/' target="_blank" rel="noopener noreferrer">   
+                <GravityButton 
+                key = 'GravityButton2'
+                logo = {faLinkedin}
+                size = 'lg'
+                color = '#fff'
+            />
+            </a>
 
             <div className = {animation ? "copiedDivDiscord" : "classicDivDiscord" } onClick={() => {setAnimation(true); navigator.clipboard.writeText('_syzymon')}}>
                 <GravityButton 
@@ -98,7 +107,7 @@ function Home(){
             />
             </div>
             </div>     
-        
+            </div>
         </div>
 
     </section>

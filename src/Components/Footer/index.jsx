@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import {  faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import {  faGithub, faDiscord, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faCopy } from '@fortawesome/free-solid-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -64,6 +64,15 @@ function Footer(){
             />
             </a>
 
+            <a href='https://www.linkedin.com/in/simon-garbet-356532285/' target="_blank" rel="noopener noreferrer">   
+                <GravityButton 
+                key = 'GravityButton2'
+                logo = {faLinkedin}
+                size = 'lg'
+                color = '#fff'
+            />
+            </a>
+
             <div className = {animation ? "copiedDivDiscord" : "classicDivDiscord" } onClick={() => {setAnimation(true); navigator.clipboard.writeText('_syzymon')}}>
                 <GravityButton 
                 key = 'GravityButton8'
@@ -76,8 +85,7 @@ function Footer(){
             </div>
             
             <div className='disclaimerFooter'>
-            <p >Site réalisé par Simon Garbet avec <strong>l'outil de TypeWriter</strong> que vous pouvez consulter <a href='https://github.com/tameemsafi/typewriterjs' target="_blank" rel="noopener noreferrer">ici</a> et le <strong>Bouton Gravité</strong> récupéré <a href='https://codepen.io/amit_sheen/pen/LYXPVKV' target="_blank" rel="noopener noreferrer">ici</a></p>
-            <p>Vous pouvez retrouver le code de ce site juste <a href='https://github.com/SimonGarbet/P8Garbet' target="_blank" rel="noopener noreferrer">ici</a></p>
+            <p ><a href='https://github.com/SimonGarbet/P8Garbet' target="_blank" rel="noopener noreferrer">Site</a> réalisé par <strong>Simon Garbet</strong> avec l'outil <a href='https://github.com/tameemsafi/typewriterjs' target="_blank" rel="noopener noreferrer">TypeWriter</a>  et le <a href='https://codepen.io/amit_sheen/pen/LYXPVKV' target="_blank" rel="noopener noreferrer">Bouton gravité</a>. </p>
             </div>
         </section>
     )

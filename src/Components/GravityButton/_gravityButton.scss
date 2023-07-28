@@ -10,7 +10,7 @@
   font-size: 25px;
   display: grid;
   place-items: center;
-  width: 130px;
+  width: 100px;
   aspect-ratio: 1;
   border-radius: 50%;
   
@@ -60,7 +60,7 @@
   font-size: 25px;
   display: grid;
   place-items: center;
-  width: 130px;
+  width: 100px;
   aspect-ratio: 1;
   border-radius: 50%;
   
@@ -106,7 +106,6 @@
 
 
 
-
   @media (max-width: 750px) { 
 
     .gravityButton {
@@ -137,5 +136,32 @@
         transform: translate(0);
       }
     }
+
+}
+
+
+@media (max-width: 480px) { 
+  
+
+  .gravityButton {
+    width: 70px;
+    font-size: 18px;
+
+    .buttonIcon, .buttonIconCheck {
+      width: 50px;
+    }
+
+  
+}
+  
+  .gravityCopied {
+    width: 70px;
+    font-size: 18px;
+    
+    .buttonIcon, .buttonIconCheck {
+      width: 50px; 
+    }
+  
+  }
 
 }
