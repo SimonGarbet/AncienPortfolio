@@ -105,7 +105,7 @@
         "title" :  "Sophie Bluel",
         "subtitle" : "Javascript Vanilla",
         "category" : "Javascript",
-        "summary" : "Développement d'une architecte en Javascript Vanilla sur la base d'un Back End déjà réalisé",
+        "summary" : "Développement d'un portfolio d'architecte en Javascript Vanilla sur la base d'un Back End déjà réalisé",
         "description" : [
             {"id" :  "sen1", "body" : "Projet Openclassrooms venant après le HTML et CSS pour travailller sur la dynamique d'un site."},
             {"id" :  "sen2",  "body" :"Nous avions déjà un site réalisé en HTML et CSS ainsi que sur le backend avec une API pré-établie."},
