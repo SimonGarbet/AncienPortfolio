@@ -20,8 +20,8 @@ root.render(
       <Header />
       <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='/achievement' element={<SelectAchievement/>}/>
-      <Route path='/achievement/:id' element={<Achievement/>} />
+      <Route path='/achievements' element={<SelectAchievement/>}/>
+      <Route path='/:id' element={<Achievement/>} />
       <Route path='/curriculumvitae' element={<Resume/>} />
       <Route path='*' element={<Error/>}/>
       </Routes>
