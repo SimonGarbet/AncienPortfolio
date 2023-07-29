@@ -25,22 +25,23 @@
 
 #Projects {
   position: relative;
+  z-index: 1;
 }
 
 .scrollTop {
-  padding: 28px;
-  padding-top: 30px;
-  font-size: 35px;
+  padding: 25px;
+  padding-top: 29px;
+  font-size: 33px;
   width: 80px;
-  margin: 160px auto -37px auto;
+  margin: 160px auto -40px auto;
   background-color: #262626;
-  border-radius: 35px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .scrollTop svg {
-  margin-top: -23px;
+  margin-top: -24px;
 }
 
 @media (max-width: 750px) {
@@ -53,13 +54,13 @@
     margin-bottom: 0;
   }
   .scrollTop {
-    padding: 25px;
-    padding-top: 30px;
-    font-size: 30px;
-    margin: 160px auto -32px auto;
+    padding: 25px 0px 20px 0px;
+    border-radius: 15px;
+    font-size: 25px;
+    margin: 160px auto -30px auto;
   }
   .scrollTop svg {
-    margin-top: -20px;
+    margin-top: -18px;
   }
 }
 .globalProjectPage {
@@ -368,6 +369,339 @@
     gap: 2px;
   }
 }
+.resumeGlobal {
+  width: 85%;
+  margin: 80px auto;
+  max-width: 1800px;
+  padding: 30px;
+  background-color: rgba(17, 17, 17, 0.08);
+  border: 10px solid rgba(144, 197, 63, 0.8);
+  border-radius: 30px;
+}
+
+.enteteCV {
+  display: flex;
+  align-items: center;
+  border-bottom: 5px solid rgba(144, 197, 63, 0.8);
+  padding: 40px;
+  padding-bottom: 80px;
+}
+.enteteCV img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.infosGeneralesCV {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 10px;
+}
+.infosGeneralesCV h2 {
+  font-size: 65px;
+  margin-left: -10px;
+}
+.infosGeneralesCV h4 {
+  font-size: 30px;
+  color: #ff5925;
+  padding-bottom: 10px;
+}
+.infosGeneralesCV div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+.infosGeneralesCV div svg {
+  color: #90c53f;
+}
+
+.splitterCV {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+.splitterCV h3 {
+  font-size: 28px;
+  padding: 50px 0px;
+}
+.splitterCV h3 svg {
+  color: #ff5925;
+  margin-right: 10px;
+}
+
+.leftSideCV {
+  width: 58%;
+}
+
+.formationCV div {
+  padding-bottom: 30px;
+}
+.formationCV div h4 {
+  font-size: 20px;
+}
+.formationCV div h5 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+.formationCV div p {
+  font-size: 16px;
+  color: #90c53f;
+  font-weight: bolder;
+  padding-top: 5px;
+}
+.formationCV div .dateFormationCV {
+  width: 30%;
+  color: #111;
+  padding-top: 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgba(144, 197, 63, 0.8);
+}
+
+.plusCV h3 {
+  padding-bottom: 30px;
+}
+.plusCV p {
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.rightSideCv {
+  width: 42%;
+}
+
+.xpProCV {
+  text-align: start;
+}
+.xpProCV figure {
+  padding-bottom: 30px;
+}
+.xpProCV figure h4 {
+  font-size: 20px;
+  color: #ff5925;
+}
+.xpProCV figure p {
+  font-size: 13px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.xpProCV figure h5 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.competencesCV h3 {
+  padding-bottom: 40px;
+}
+.competencesCV .competencesContainerCV div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 15px;
+}
+.competencesCV .competencesContainerCV div h4 {
+  font-size: 18px;
+  min-width: 100px;
+}
+.competencesCV .competencesContainerCV div p {
+  font-size: 17px;
+}
+
+@media (max-width: 1040px) {
+  .enteteCV {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .enteteCV img {
+    height: 200px;
+    width: 200px;
+  }
+  .infosGeneralesCV {
+    text-align: center;
+    align-items: center;
+  }
+  .infosGeneralesCV h2 {
+    font-size: 50px;
+  }
+  .infosGeneralesCV h4 {
+    font-size: 25px;
+  }
+  .infosGeneralesCV div {
+    font-size: 16px;
+  }
+  .splitterCV {
+    gap: 40px;
+    width: 95%;
+  }
+  .splitterCV h3 {
+    font-size: 24px;
+  }
+  .formationCV div h4 {
+    font-size: 18px;
+  }
+  .formationCV div h5 {
+    font-size: 16px;
+  }
+  .formationCV div p {
+    font-size: 14px;
+  }
+  .plusCV h3 {
+    padding-bottom: 30px;
+  }
+  .plusCV p {
+    font-size: 16px;
+  }
+  .xpProCV figure h4 {
+    font-size: 18px;
+  }
+  .xpProCV figure h5 {
+    font-size: 16px;
+  }
+  .competencesCV h3 {
+    padding-bottom: 40px;
+  }
+  .competencesCV .competencesContainerCV div {
+    padding-bottom: 12px;
+  }
+  .competencesCV .competencesContainerCV div h4 {
+    font-size: 16px;
+  }
+  .competencesCV .competencesContainerCV div p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 750px) {
+  .enteteCV {
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+  .enteteCV img {
+    height: 180px;
+    width: 180px;
+  }
+  .infosGeneralesCV {
+    width: 100%;
+  }
+  .infosGeneralesCV h2 {
+    font-size: 40px;
+  }
+  .infosGeneralesCV h4 {
+    font-size: 20px;
+  }
+  .infosGeneralesCV div {
+    font-size: 14px;
+  }
+  .splitterCV {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+  }
+  .splitterCV h3 {
+    font-size: 24px;
+  }
+  .formationCV {
+    text-align: center;
+  }
+  .formationCV div h4 {
+    font-size: 18px;
+  }
+  .formationCV div h5 {
+    font-size: 16px;
+  }
+  .formationCV div p {
+    font-size: 14px;
+  }
+  .formationCV div .dateFormationCV {
+    margin: 0 auto;
+  }
+  .plusCV {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .plusCV h3 {
+    padding-bottom: 30px;
+  }
+  .plusCV p {
+    font-size: 16px;
+  }
+  .xpProCV {
+    text-align: center;
+  }
+  .xpProCV figure h4 {
+    font-size: 18px;
+  }
+  .xpProCV figure h5 {
+    font-size: 16px;
+  }
+  .competencesCV {
+    text-align: center;
+  }
+  .competencesCV .competencesContainerCV div {
+    flex-direction: column;
+    gap: 0;
+    padding-bottom: 20px;
+  }
+  .competencesCV .competencesContainerCV div h4 {
+    font-size: 16px;
+  }
+  .competencesCV .competencesContainerCV div p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 460px) {
+  .enteteCV {
+    padding: 10px;
+    padding-bottom: 40px;
+  }
+  .enteteCV img {
+    height: 150px;
+    width: 150px;
+  }
+  .infosGeneralesCV h2 {
+    font-size: 28px;
+  }
+  .infosGeneralesCV h4 {
+    font-size: 18px;
+  }
+  .infosGeneralesCV div {
+    font-size: 11px;
+  }
+  .splitterCV h3 {
+    font-size: 20px;
+  }
+  .formationCV div h4 {
+    font-size: 16px;
+  }
+  .formationCV div h5 {
+    font-size: 15px;
+  }
+  .formationCV div p {
+    font-size: 13px;
+  }
+  .plusCV p {
+    font-size: 14px;
+  }
+  .xpProCV figure h4 {
+    font-size: 15px;
+  }
+  .xpProCV figure h5 {
+    font-size: 14px;
+  }
+  .xpProCV figure p {
+    font-size: 11px;
+  }
+  .competencesCV .competencesContainerCV div p {
+    font-size: 14px;
+  }
+}
 .errorMessage {
   display: flex;
   flex-direction: column;
@@ -506,7 +840,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 1200px;
+  height: 90vh;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -514,23 +848,36 @@
 
 .homePicture {
   width: 100%;
+  height: 90vh;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: brightness(110%);
-  height: 1200px;
+  -o-object-position: bottom left;
+     object-position: bottom left;
   position: absolute;
   z-index: 1;
 }
 
+.containerPresentation {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 70vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.05));
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .presentation {
-  border-radius: 20px;
+  border-radius: 50px;
   min-width: 500px;
   font-size: 40px;
   font-weight: 700;
   position: absolute;
-  z-index: 2;
-  right: 12%;
-  top: 27%;
+  z-index: 3;
+  margin-top: 300px;
+  margin-left: 300px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -540,17 +887,12 @@
   margin-top: 20px;
   font-size: 40px;
   font-weight: 700;
-  margin-left: 20px;
-}
-.presentation p {
-  margin-left: 20px;
 }
 
 .helloPresentation {
   color: #ff5925;
   font-size: 70px;
-  font-weight: bold;
-  margin-left: 20px;
+  font-weight: 700;
 }
 
 .typeWriterSentence {
@@ -567,7 +909,7 @@
   transition: 0.5s;
   letter-spacing: 1px;
   border-radius: 20px;
-  margin: 30px 0px 0px 20px;
+  margin-top: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -631,15 +973,16 @@
   display: flex;
   place-items: center;
   justify-content: center;
-  margin: 25px 0px 0px 5px;
+  margin: 25px 0px 0px -20px;
 }
 .buttonLine button {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 0px 3px, rgba(255, 255, 255, 0.07) 0px 0px 0px 6px, rgba(255, 255, 255, 0.05) 0px 0px 0px 9px, rgba(255, 255, 255, 0.03) 0px 0px 0px 12px, rgba(255, 255, 255, 0.01) 0px 0px 0px 15px;
 }
 
 .copiedDivDiscord {
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   position: relative;
 }
 
@@ -647,7 +990,7 @@
   content: "Pseudo Discord Copié";
   position: absolute;
   color: #fff;
-  width: 200px;
+  width: 210px;
   text-align: center;
   left: 120px;
   top: 37px;
@@ -657,6 +1000,7 @@
   padding: 15px;
   border-radius: 10px;
   animation: softGrindOpacity 2.75s;
+  border: #fff 1px solid;
 }
 
 @keyframes softGrindOpacity {
@@ -678,24 +1022,40 @@
     right: 35%;
   }
 }
+@media (max-width: 1024px) {
+  .presentation {
+    min-width: 500px;
+    margin-left: 200px;
+  }
+  .copiedDivDiscord::before {
+    width: 160px;
+    left: -30px;
+    top: 95px;
+    font-size: 12px;
+  }
+}
 @media (max-width: 750px) {
   .globalBanner {
-    height: 600px;
+    height: 82vh;
   }
   .homePicture {
-    height: 600px;
+    height: 82vh;
+  }
+  .containerPresentation {
+    height: 60vh;
   }
   .presentation {
-    min-width: 350px;
     font-size: 28px;
-    right: 70px;
-    top: 10%;
+    min-width: 350px;
+    margin-top: 200px;
+    margin-left: 50px;
   }
   .presentation h2 {
     font-size: 28px;
   }
-  .presentation p {
-    margin-left: 20px;
+  .copiedDivDiscord {
+    width: 90px;
+    height: 90px;
   }
   .helloPresentation {
     font-size: 60px;
@@ -711,30 +1071,13 @@
   .typeWriterSentence {
     gap: 10px;
   }
-  .copiedDivDiscord {
-    width: 90px;
-    height: 90px;
-    position: relative;
-  }
-  .copiedDivDiscord::before {
-    width: 130px;
-    left: -20px;
-    top: 85px;
-    font-size: 10px;
-  }
 }
 @media (max-width: 480px) {
-  .globalBanner {
-    height: 500px;
-  }
-  .homePicture {
-    height: 500px;
-  }
   .presentation {
     min-width: 300px;
     font-size: 24px;
-    right: 40px;
-    top: 5%;
+    margin-top: 150px;
+    margin-left: 35px;
   }
   .presentation h2 {
     font-size: 24px;
@@ -748,12 +1091,35 @@
   .calqDiscoverButton {
     font-size: 16px;
   }
+  .copiedDivDiscord {
+    width: 70px;
+    height: 70px;
+  }
+  .copiedDivDiscord::before {
+    width: 160px;
+    left: -90px;
+    top: 80px;
+    font-size: 12px;
+  }
 }
-@media (max-width: 480px) {
+@media (max-width: 350px) {
   .presentation {
-    min-width: 300px;
-    font-size: 24px;
-    right: 10px;
+    min-width: 260px;
+    font-size: 22px;
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+  .presentation h2 {
+    font-size: 22px;
+  }
+  .helloPresentation {
+    font-size: 45px;
+  }
+  .discoverButton {
+    font-size: 15px;
+  }
+  .calqDiscoverButton {
+    font-size: 15px;
   }
 }
 .containerCard {
@@ -902,6 +1268,7 @@
 .footer {
   color: #fff;
   background-color: #262626;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   padding: 100px 50px 50px 50px;
   display: flex;
   flex-direction: column;
@@ -909,6 +1276,7 @@
   align-items: center;
   gap: 30px;
   position: relative;
+  z-index: 0;
 }
 .footer button {
   background: transparent;
@@ -921,12 +1289,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 0px 3px, rgba(255, 255, 255, 0.07) 0px 0px 0px 6px, rgba(255, 255, 255, 0.05) 0px 0px 0px 9px, rgba(255, 255, 255, 0.03) 0px 0px 0px 12px, rgba(255, 255, 255, 0.01) 0px 0px 0px 15px;
 }
 .emailLine p {
   font-size: 20px;
   font-weight: 600;
   border-radius: 10px 0px 0px 10px;
-  border: 3px solid #fff;
   border-right: none;
   padding: 10px 25px;
 }
@@ -938,7 +1307,6 @@
   border: none;
   font-size: 20px;
   border-radius: 0px 10px 10px 0px;
-  border: 3px solid #fff;
   border-left: none;
 }
 
@@ -949,7 +1317,6 @@
   padding: 10px 15px;
   border: none;
   border-radius: 0px 10px 10px 0px;
-  border: 3px solid #fff;
   border-left: none;
   font-size: 20px;
   background-color: #90c53f !important;
@@ -967,12 +1334,15 @@
   background-color: #90c53f;
   padding: 10px 15px;
   border-radius: 10px;
-  border: 3px solid #fff;
+  border: 1px solid #fff;
 }
 
 .buttonLineFooter {
   display: flex;
   justify-content: center;
+}
+.buttonLineFooter button {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 0px 3px, rgba(255, 255, 255, 0.07) 0px 0px 0px 6px, rgba(255, 255, 255, 0.05) 0px 0px 0px 9px, rgba(255, 255, 255, 0.03) 0px 0px 0px 12px, rgba(255, 255, 255, 0.01) 0px 0px 0px 15px;
 }
 
 .disclaimerFooter p {
@@ -981,6 +1351,11 @@
   font-style: italic;
 }
 
+@media (max-width: 1024px) {
+  .disclaimerFooter {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 750px) {
   .emailLine p {
     font-size: 14px;
@@ -998,7 +1373,7 @@
     font-size: 12px;
   }
   .disclaimerFooter {
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .disclaimerFooter p {
     font-size: 14px;
@@ -1009,7 +1384,7 @@
   font-size: 25px;
   display: grid;
   place-items: center;
-  width: 130px;
+  width: 100px;
   aspect-ratio: 1;
   border-radius: 50%;
 }
@@ -1049,7 +1424,7 @@
   font-size: 25px;
   display: grid;
   place-items: center;
-  width: 130px;
+  width: 100px;
   aspect-ratio: 1;
   border-radius: 50%;
 }
@@ -1109,13 +1484,29 @@
     transform: translate(0);
   }
 }
+@media (max-width: 480px) {
+  .gravityButton {
+    width: 70px;
+    font-size: 18px;
+  }
+  .gravityButton .buttonIcon, .gravityButton .buttonIconCheck {
+    width: 50px;
+  }
+  .gravityCopied {
+    width: 70px;
+    font-size: 18px;
+  }
+  .gravityCopied .buttonIcon, .gravityCopied .buttonIconCheck {
+    width: 50px;
+  }
+}
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  height: 10vh;
+  padding: 25px 0;
   width: 85%;
   max-width: 2040px;
 }
@@ -1124,12 +1515,12 @@
   display: flex;
   align-items: baseline;
   gap: 10px;
-  font-size: 20px;
+  font-size: 22px;
   text-decoration: none;
 }
 .logo h1 {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 27px;
   color: #111;
   letter-spacing: -0.5px;
   text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.35);
@@ -1138,42 +1529,58 @@
 #header nav {
   display: flex;
   gap: 60px;
-  padding-right: 50px;
   font-size: 24px;
 }
 
+@media (max-width: 1024px) {
+  #header nav {
+    gap: 50px;
+    font-size: 20px;
+  }
+}
 @media (max-width: 750px) {
   #header {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
     width: 100%;
+    height: 18vh;
+    padding-top: 20px;
+    padding-bottom: 0px;
   }
   #header .logo {
-    font-size: 30px;
+    font-size: 20px;
     gap: 20px;
   }
   #header .logo h1 {
-    font-size: 35px;
+    font-size: 25px;
   }
   #header nav {
     width: 100%;
-    font-size: 25px;
+    font-size: 18px;
     padding-right: 0;
-    justify-content: center;
     gap: 0;
   }
   #header nav a {
     width: 50%;
-    padding: 30px;
+    padding: 15px;
     text-align: center;
     border-bottom: #949494 solid 3px;
   }
 }
 @media (max-width: 500px) {
+  #header {
+    padding-top: 30px;
+    gap: 20px;
+  }
+  #header .logo {
+    font-size: 18px;
+  }
+  #header .logo h1 {
+    font-size: 22px;
+  }
   #header nav {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .globalProjectComponent {
