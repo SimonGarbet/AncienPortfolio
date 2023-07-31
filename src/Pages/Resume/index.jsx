@@ -20,8 +20,7 @@ function Resume(){
             <div className='infosGeneralesCV'>
                 <h2>Simon Garbet</h2>
                 <h4>Développeur Web Front-End</h4>
-                <div><FontAwesomeIcon icon={faPhone} /> <p>06 46 85 05 73 </p></div>
-                <div><FontAwesomeIcon icon={faLocationDot} /> <p>6 rue Luckner 33000 Bordeaux</p></div>
+                <div><FontAwesomeIcon icon={faLocationDot} /> <p>33000 Bordeaux</p></div>
                 <div><FontAwesomeIcon icon={faEnvelope} /> <p>simon.garbet@gmail.com</p></div>
                 <div><FontAwesomeIcon icon={faCar} /> <p>Permis B et véhiculé</p></div>
             </div>
