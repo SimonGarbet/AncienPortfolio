@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faCar, faEnvelope, faLocationDot, faBriefcase, faSquarePlus, faGraduationCap, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
+import { faCar, faEnvelope, faLocationDot, faBriefcase, faSquarePlus, faGraduationCap, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 
 import imageProfil from '../../Assets/imageProfil.jpg'
 
