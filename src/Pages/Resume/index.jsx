@@ -10,16 +10,32 @@ import '../../Scss/style.scss'
 
 function Resume(){
 
+    const onButtonClick = () => {
+        fetch('GarbetSimonCV.pdf').then(response => {
+            response.blob().then(blob => {
+                const fileURL = window.URL.createObjectURL(blob);
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'GarbetSimonCV.pdf';
+                alink.click();
+            })
+        })
+    }
+
 
 
     return (
+        <div className='globalResumePage'>
+
+        <button className = 'downloadPDF' onClick={onButtonClick}>Exporter en PDF</button>
+
         <section className='resumeGlobal'>
 
             <div className='enteteCV'>
             
             <div className='infosGeneralesCV'>
                 <h2>Simon Garbet</h2>
-                <h4>Développeur Web Front-End</h4>
+                <h4>Développeur Web</h4>
                 <div><FontAwesomeIcon icon={faLocationDot} /> <p>33000 Bordeaux</p></div>
                 <div><FontAwesomeIcon icon={faEnvelope} /> <p>simon.garbet@gmail.com</p></div>
                 <div><FontAwesomeIcon icon={faCar} /> <p>Permis B et véhiculé</p></div>
@@ -190,6 +206,7 @@ function Resume(){
 
 
         </section>
+        </div>
     )
     
 

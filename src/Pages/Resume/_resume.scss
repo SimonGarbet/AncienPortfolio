@@ -2,9 +2,34 @@
 @import '../../Scss/variables';
 
 
+.globalResumePage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.downloadPDF{
+    width: 30%;
+    padding: 30px;
+    margin: 50px 0;
+    border-radius: 20px;
+    background-color: $terracota;
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition:  all 0.5s ease-in-out;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+
 .resumeGlobal{
     width: 85%;
-    margin : 80px auto;
+    margin : 30px auto;
     max-width: 1800px;
     padding: 30px;
     background-color: rgba($color: #111, $alpha : 0.08);
@@ -305,6 +330,11 @@
 }
 
 @media (max-width: 750px) { 
+
+    .downloadPDF{
+        width: 50%;
+      font-size: 15px;
+    }
 
     .enteteCV{
 
