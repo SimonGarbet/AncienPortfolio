@@ -86,6 +86,7 @@ function Footer(){
             
             <div className='disclaimerFooter'>
             <p ><a href='https://github.com/SimonGarbet/P8Garbet' target="_blank" rel="noopener noreferrer">Site</a> réalisé par <strong>Simon Garbet</strong> avec l'outil <a href='https://github.com/tameemsafi/typewriterjs' target="_blank" rel="noopener noreferrer">TypeWriter</a>  et le <a href='https://codepen.io/amit_sheen/pen/LYXPVKV' target="_blank" rel="noopener noreferrer">Bouton gravité</a>. </p>
+            <p>Crédits Photo : <a href= "https://jeremybishopphotography.com/" target="_blank" rel="noopener noreferrer"> Jeremy Bishop</a>.</p>
             </div>
         </section>
     )
