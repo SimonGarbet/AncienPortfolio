@@ -11,12 +11,12 @@ import '../../Scss/style.scss'
 function Resume(){
 
     const onButtonClick = () => {
-        fetch('GarbetSimonCV.pdf').then(response => {
+        fetch('CV_Simon_Garbet.pdf').then(response => {
             response.blob().then(blob => {
                 const fileURL = window.URL.createObjectURL(blob);
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = 'GarbetSimonCV.pdf';
+                alink.download = 'CV_Simon_Garbet.pdf';
                 alink.click();
             })
         })
