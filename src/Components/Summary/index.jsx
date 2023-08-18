@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faCircle, faSquare, faPlay, faShield} from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faCircle, faDiamond, faSquare, faPlay, faShield} from '@fortawesome/free-solid-svg-icons';
 
 import '../../Scss/style.scss';
 
@@ -10,7 +10,7 @@ import '../../Scss/style.scss';
 
 function Summary({id, maincolor, title, subtitle, category, summary, githubLink, imageDesktop, imageMobile}){
 
-    let iconFontAwesome = null;
+    let iconFontAwesome = faDiamond;
 
     if (category === 'frontbackend'){
         iconFontAwesome = faPlay
