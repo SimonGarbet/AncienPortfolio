@@ -6,7 +6,7 @@
         "title" :  "Fever",
         "subtitle" : "Framework VueJS",
         "category" : "frontend",
-        "summary" : "Reproduction du visuel du site Fever avec le framework VueJS (Projet Personnel)",
+        "summary" : "Reproduction du visuel du site Fever avec le framework VueJS - Projet Personnel",
         "description" : [
             {"id" :  "sen1", "body" : "Ce projet de développement web personnel backend repose sur VueJS"},
             {"id" :  "sen2",  "body" :"Mon objectif était de reproduire de manière quasi identitque le visuel du site Fever, vendeur de places de concerts."},
@@ -42,7 +42,7 @@
         "title" :  "Mon Vieux Grimoire",
         "subtitle" : "ExpressJS et MongoDB",
         "category" : "backend",
-        "summary" : "Construction du Back End d'un site web en utilisant le framework ExpressJS et une base de données Mongo DB",
+        "summary" : "Construction du Back End d'un site web en utilisant le framework ExpressJS et une base de données Mongo DB - Projet OpenClassrooms",
         "description" : [
             {"id" :  "sen1", "body" : "Ce projet de développement web backend repose sur ExpressJS et MongoDB."},
             {"id" :  "sen2",  "body" :"L'objectif était de relier notre frontend déjà construit à notre serveur et base de données pour gérer toutes les requêtes possibles sur un site de notation de livres."},
@@ -76,7 +76,7 @@
         "title" :  "Kasa",
         "subtitle" : "Framework ReactJS",
         "category" : "frontend",
-        "summary" : "Programmation du Front End du site Kasa en utilisant le framwork React sans mise en place du Back End",
+        "summary" : "Programmation du Front End du site Kasa en utilisant le framwork React sans mise en place du Back End - Projet OpenClassrooms",
         "description" : [
             {"id" :  "sen1", "body" : "Ce projet Openclasrooms m'a appris à utiliser React, framework que j'ai aussi utilisé pour ce portfolio."},
             {"id" :  "sen2",  "body" :"A partir d'une maquette donnée, il fallait reproduire l'intégralité du visuel en créant et utilisant un maximum de composant."},
@@ -110,7 +110,7 @@
         "title" :  "Nina Carducci",
         "subtitle" : "Debug et Optimisation",
         "category" : "optimisation",
-        "summary" : "Optimisation du site d'une photographe en ciblant les performances, la SEO, et l'accessibilité",
+        "summary" : "Optimisation du site d'une photographe en ciblant les performances, la SEO, et l'accessibilité - Projet OpenClassrooms",
         "description" : [
             {"id" :  "sen1", "body" : "Ce projet Openclassrooms était moins axé sur la programmation et plus sur l'optimisation d'un site."},
             {"id" :  "sen2",  "body" :"Sur la base d'un site pré-réalisé, l'objectif était d'améliorer son score Lighthouse sur 3 axes, les performances, l'accessibilité et la SEO."},
@@ -142,7 +142,7 @@
         "title" :  "Sophie Bluel",
         "subtitle" : "Javascript Vanilla",
         "category" : "frontend",
-        "summary" : "Développement d'un portfolio d'architecte en Javascript Vanilla sur la base d'un Back End déjà réalisé",
+        "summary" : "Développement d'un portfolio d'architecte en Javascript Vanilla sur la base d'un Back End déjà réalisé - Projet OpenClassrooms",
         "description" : [
             {"id" :  "sen1", "body" : "Projet Openclassrooms venant après le HTML et CSS pour travailller sur la dynamique d'un site."},
             {"id" :  "sen2",  "body" :"Nous avions déjà un site réalisé en HTML et CSS ainsi que sur le backend avec une API pré-établie."},
@@ -176,7 +176,7 @@
         "title" :  "Booki",
         "subtitle" : "HTML et CSS",
         "category" : "frontend",
-        "summary" : "Création du visuel complet d'un site de réservation d'hébergement sur le modèle d'une maquette Figma pré-produite",
+        "summary" : "Création du visuel complet d'un site de réservation d'hébergement sur le modèle d'une maquette Figma pré-produite - Projet OpenClassrooms",
         "description" : [
         {"id" :  "sen1", "body" : "Premier projet Openclassrooms de programmation que j'ai réalisé."},
         {"id" :  "sen2",  "body" :"La maquette à repoduire était celle d'un site de location de logement de vacances : Booki"},
