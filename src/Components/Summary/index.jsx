@@ -45,7 +45,7 @@ function Summary({id, maincolor, title, subtitle, category, summary, githubLink,
                     <p>{summary}</p>
             
                     <div className='projectRedirectionHome'>
-                        <Link to = {`/${id}`} className='projectView'>
+                        <Link to = {`/achievements/${id}`} className='projectView'>
                         <FontAwesomeIcon icon={faArrowRight} style={{color: maincolor,}} />
                         <p>Voir le <strong>Détail</strong></p>                
                         </Link>

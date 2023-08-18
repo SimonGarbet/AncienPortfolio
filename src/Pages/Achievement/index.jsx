@@ -142,7 +142,7 @@ function ProjectPage() {
           <div className='containerAllCards'>
             
             {projectList.map((project) => (
-            <Link to ={`/${project.id}`}
+            <Link to ={`/achievements/${project.id}`}
             key={project.id}
             onClick = {() => setDataLoading(true)}>
             <Card

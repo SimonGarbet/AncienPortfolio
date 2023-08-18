@@ -56,7 +56,7 @@ function SelectAchievement() {
           <div className='containerAllCardsSelectPage'>
                 
             {projectList?.map((project) => (
-            <Link to ={`/${project.id}`}
+            <Link to ={`/achievements/${project.id}`}
               key={project.id}
               onClick = {() => setDataLoading(true)}>
             <Card 

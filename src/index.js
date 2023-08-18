@@ -21,7 +21,7 @@ root.render(
       <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/achievements' element={<SelectAchievement/>}/>
-      <Route path='/:id' element={<Achievement/>} />
+      <Route path='/achievements/:id' element={<Achievement/>} />
       <Route path='/curriculumvitae' element={<Resume/>} />
       <Route path='*' element={<Error/>}/>
       </Routes>
