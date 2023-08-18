@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faCircle, faDiamond, faSquare, faPlay, faShield} from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faCircle, faSquare, faPlay, faShield} from '@fortawesome/free-solid-svg-icons';
 
 import '../../Scss/style.scss';
 
@@ -10,15 +10,15 @@ import '../../Scss/style.scss';
 
 function Summary({id, maincolor, title, subtitle, category, summary, githubLink, imageDesktop, imageMobile}){
 
-    let iconFontAwesome = faShield
+    let iconFontAwesome = null;
 
-    if (category === 'Javascript'){
+    if (category === 'frontbackend'){
         iconFontAwesome = faPlay
-    } else if (category === 'React') {
+    } else if (category === 'optimisation') {
+        iconFontAwesome = faShield
+    } else if (category === 'backend') {
         iconFontAwesome = faSquare
-    } else if (category === 'Backend') {
-        iconFontAwesome = faDiamond
-    } else if (category === 'CSS') {
+    } else if (category === 'frontend') {
         iconFontAwesome = faCircle
     }
  

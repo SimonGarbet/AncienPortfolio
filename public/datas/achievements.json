@@ -1,10 +1,47 @@
 [
+
+    {
+        "id" : "6",
+        "maincolor": "#eb0052",
+        "title" :  "Fever",
+        "subtitle" : "Framework VueJS",
+        "category" : "frontend",
+        "summary" : "Reproduction du visuel du site Fever avec le framework VueJS (Projet Personnel)",
+        "description" : [
+            {"id" :  "sen1", "body" : "Ce projet de développement web personnel backend repose sur VueJS"},
+            {"id" :  "sen2",  "body" :"Mon objectif était de reproduire de manière quasi identitque le visuel du site Fever, vendeur de places de concerts."},
+            {"id" :  "sen3",  "body" : "Avec ce projet, j'ai découvert comment me servir des outils de base de VueJS, de l'initialisation d'un projet Vue3, à l'utilisation des Props en passant par l'utilisation des Emits"}
+            ],
+        "githubLink" : "https://github.com/SimonGarbet/FeverVue",
+        "figmaLink" : "",
+        "skills" : [
+            {"id" :  "skill1",  "body" : "Initialitialiser une projet Vue3 avec les différentes routes du projet"}, 
+            {"id" :  "skill2",  "body" : "Créer des composants lorsque c'est nécessaire"}, 
+            {"id" :  "skill3",  "body" : "Envoyer et récupérer des données entre composant enfant/parent avec les Props et Emits"}
+        ],
+        "imageDesktop" : "/images/P9Garbet/Summary/P9GarbetDesktop.jpg",
+        "imageMobile" : "/images/P9Garbet/Summary/P9GarbetMobile.jpg",
+        "vignette" : "/images/P9Garbet/Vignette/P9GarbetVignetteFond.jpg",
+        "imagesPageProject" : {
+            "Desktop" : [
+                {"id" :  "idesk1", "url" :"/images/P9Garbet/ProjectPage/P9GarbetPageDesktop1.jpg"},
+                {"id" :  "idesk2", "url" :"/images/P9Garbet/ProjectPage/P9GarbetPageDesktop2.jpg"},
+                {"id" :  "idesk3", "url" :"/images/P9Garbet/ProjectPage/P9GarbetPageDesktop3.jpg"},
+                {"id" :  "idesk4", "url" :"/images/P9Garbet/ProjectPage/P9GarbetPageDesktop4.jpg"}
+            ],
+            "Mobile" : [
+                {"id" : "imobil1 ", "url" : "/images/P9Garbet/ProjectPage/P9GarbetPageMobile1.jpg"}
+            ]
+        }
+    },
+
+
     {
         "id" : "5",
         "maincolor": "#dbaa62",
         "title" :  "Mon Vieux Grimoire",
         "subtitle" : "ExpressJS et MongoDB",
-        "category" : "Backend",
+        "category" : "backend",
         "summary" : "Construction du Back End d'un site web en utilisant le framework ExpressJS et une base de données Mongo DB",
         "description" : [
             {"id" :  "sen1", "body" : "Ce projet de développement web backend repose sur ExpressJS et MongoDB."},
@@ -37,8 +74,8 @@
         "id" : "4",
         "maincolor" : "#ff6060",
         "title" :  "Kasa",
-        "subtitle" : "Framework React",
-        "category" : "React",
+        "subtitle" : "Framework ReactJS",
+        "category" : "frontend",
         "summary" : "Programmation du Front End du site Kasa en utilisant le framwork React sans mise en place du Back End",
         "description" : [
             {"id" :  "sen1", "body" : "Ce projet Openclasrooms m'a appris à utiliser React, framework que j'ai aussi utilisé pour ce portfolio."},
@@ -72,7 +109,7 @@
         "maincolor" : "#111",
         "title" :  "Nina Carducci",
         "subtitle" : "Debug et Optimisation",
-        "category" : "Optimisation",
+        "category" : "optimisation",
         "summary" : "Optimisation du site d'une photographe en ciblant les performances, la SEO, et l'accessibilité",
         "description" : [
             {"id" :  "sen1", "body" : "Ce projet Openclassrooms était moins axé sur la programmation et plus sur l'optimisation d'un site."},
@@ -104,7 +141,7 @@
         "maincolor" : "#b1663c",
         "title" :  "Sophie Bluel",
         "subtitle" : "Javascript Vanilla",
-        "category" : "Javascript",
+        "category" : "frontend",
         "summary" : "Développement d'un portfolio d'architecte en Javascript Vanilla sur la base d'un Back End déjà réalisé",
         "description" : [
             {"id" :  "sen1", "body" : "Projet Openclassrooms venant après le HTML et CSS pour travailller sur la dynamique d'un site."},
@@ -138,7 +175,7 @@
         "maincolor" : "#0165fc",
         "title" :  "Booki",
         "subtitle" : "HTML et CSS",
-        "category" : "CSS",
+        "category" : "frontend",
         "summary" : "Création du visuel complet d'un site de réservation d'hébergement sur le modèle d'une maquette Figma pré-produite",
         "description" : [
         {"id" :  "sen1", "body" : "Premier projet Openclassrooms de programmation que j'ai réalisé."},
