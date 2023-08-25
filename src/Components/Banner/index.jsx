@@ -71,7 +71,7 @@ function Home(){
 
             <div className='buttonLine'>
 
-            <a href='mailto: simon.garbet@gmail.com' target="_blank" rel="noopener noreferrer">
+            <a href='mailto: contact@simongarbet.com' target="_blank" rel="noopener noreferrer">
             <GravityButton 
                 key = 'GravityButton1'
                 logo = {faEnvelope}

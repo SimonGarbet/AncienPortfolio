@@ -37,7 +37,7 @@ function Resume(){
                 <h2>Simon Garbet</h2>
                 <h4>Développeur Web</h4>
                 <div><FontAwesomeIcon icon={faLocationDot} /> <p>33000 Bordeaux</p></div>
-                <div><FontAwesomeIcon icon={faEnvelope} /> <p>simon.garbet@gmail.com</p></div>
+                <div><FontAwesomeIcon icon={faEnvelope} /> <p>contact@simongarbet.com</p></div>
                 <div><FontAwesomeIcon icon={faCar} /> <p>Permis B et véhiculé</p></div>
             </div>
 

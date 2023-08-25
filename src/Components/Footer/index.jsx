@@ -38,15 +38,15 @@ function Footer(){
         <section className='footer'>
 
             <div className='emailLine'>
-                <p>simon.garbet@gmail.com </p>
-                <button className= {animationEmail ? "copiedButtonEmail" : "classicButtonEmail"} onClick={() => {setAnimationEmail(true); navigator.clipboard.writeText('simon.garbet@gmail.com')}}>
+                <p>contact@simongarbet.com</p>
+                <button className= {animationEmail ? "copiedButtonEmail" : "classicButtonEmail"} onClick={() => {setAnimationEmail(true); navigator.clipboard.writeText('contact@simongarbet.com')}}>
                     <FontAwesomeIcon icon={faCopy} style={{color: "#ffffff",}} />
                 </button>
            </div>
 
             <div className='buttonLineFooter'>
 
-            <a href='mailto: simon.garbet@gmail.com' target="_blank" rel="noopener noreferrer">
+            <a href='mailto: contact@simongarbet.com' target="_blank" rel="noopener noreferrer">
             <GravityButton 
                 key = 'GravityButton5'
                 logo = {faEnvelope}
